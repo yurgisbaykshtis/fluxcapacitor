@@ -1,0 +1,21 @@
+<assembly>
+  <id>bundle</id>
+  <formats>
+    <format>tar.gz</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <fileSets>
+    <fileSet>
+      <directory>target/dist</directory>
+      <outputDirectory>flux</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>conf</directory>
+      <outputDirectory>flux/conf</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>bin</directory>
+      <outputDirectory>flux/bin</outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>

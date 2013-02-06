@@ -1,0 +1,93 @@
+#!/bin/sh
+
+if [ "x$FLUX_INCLUDE" = "x" ]; then
+    for include in "`dirname $0`/flux.in.sh"; do
+        if [ -r "$include" ]; then
+            . "$include"
+            break
+        fi
+    done
+elif [ -r "$FLUX_INCLUDE" ]; then
+    . "$FLUX_INCLUDE"
+fi
+
+# Use JAVA_HOME if set, otherwise look for java in PATH
+if [ -n "$JAVA_HOME" ]; then
+    JAVA="$JAVA_HOME/bin/java"
+else
+    JAVA=java
+fi
+
+#JMX
+JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.port=9999"
+JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.ssl=false"
+JVM_OPTS="$JVM_OPTS -Dcom.sun.management.jmxremote.authenticate=false"
+JVM_OPTS="$JVM_OPTS -Darchaius.deployment.applicationId=middletier"
+
+launch_service()
+{
+    pidpath=$1
+    foreground=$2
+    props=$3
+    class=$4
+    flux_parms=""
+
+    if [ "x$pidpath" != "x" ]; then
+        flux_parms="$flux_parms -Dflux-pidfile=$pidpath"
+    fi
+
+    # The flux-foreground option will tell script not to close stdout/stderr, but it's up to us not to background.
+    if [ "x$foreground" != "x" ]; then
+        flux_parms="$flux_parms -Dflux-foreground=yes"
+        exec "$JAVA" $JVM_OPTS $flux_parms -cp "$CLASSPATH" $props "$class"
+    # Startup fluxDaemon, background it, and write the pid.
+    else
+        exec "$JAVA" $JVM_OPTS $flux_parms -cp "$CLASSPATH" $props "$class" <&- &
+        [ ! -z "$pidpath" ] && printf "%d" $! > "$pidpath"
+        true
+    fi
+
+    return $?
+}
+
+# Parse any command line options.
+args=`getopt vfhp:bD: "$@"`
+eval set -- "$args"
+
+classname="com.fluxcapacitor.middletier.server.MiddleTierServer"
+
+while true; do
+    case "$1" in
+        -p)
+            pidfile="$2"
+            shift 2
+        ;;
+        -f)
+            foreground="yes"
+            shift
+        ;;
+        -h)
+            echo "Usage: $0 [-f] [-h] [-p pidfile]"
+            exit 0
+        ;;
+        -D)
+            properties="$properties -D$2"
+            shift 2
+        ;;
+        --)
+            shift
+            break
+        ;;
+        *)
+            echo "Error parsing arguments!" >&2
+            exit 1
+        ;;
+    esac
+done
+
+# Start up the service
+launch_service "$pidfile" "$foreground" "$properties" "$classname"
+
+exit $?
+
+# vi:ai sw=4 ts=4 tw=0 et

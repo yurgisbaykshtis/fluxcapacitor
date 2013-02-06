@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export FLUX_PID=`ps -ef |grep java |grep Start |grep -v grep| awk '{print $2}'`;
+
+if [ ! -z "$FLUX_PID" ]; then
+    echo Killing Java process with $FLUX_PID
+    kill -9 $FLUX_PID;
+else
+    echo Flux Process not running!
+fi
