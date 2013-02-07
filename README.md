@@ -58,19 +58,25 @@ How to Run
 
 Build and Deploy Eureka Server
 ------------------------------
-- Update all eureka/eureka-server/conf/eureka-client.properties and eureka-client-<env>.properties files to use the following url:
+- Update the following files in ${EUREKA_HOME}/eureka-server/conf/
 
-	http://localhost:8080/eureka/v2/
+	eureka-client.properties
+	eureka-client-test.properties
+	eureka-client-prod.properties
+	(and any other eureka-client-env.properties that are appropriate)
 
-versus http://localhost/eureka/v2/
+to use the following urls with port 8080 versus port 80:
 
-- Build the new eureka-server-<version>.war per the following: https://github.com/Netflix/eureka/wiki/Building-Eureka-Client-and-Server
-- Copy eureka/eureka-server/build/libs/eureka-server-<version>.war to the tomcat/webapps/eureka.war
+	eureka.serviceUrl.defaultZone=http://localhost:8080/eureka/v2/
+	eureka.serviceUrl.default.defaultZone=http://localhost:8080/eureka/v2/
+	
+- Build the new eureka-server-x.x.x.war per the following: https://github.com/Netflix/eureka/wiki/Building-Eureka-Client-and-Server
+- Copy eureka/eureka-server/build/libs/eureka-server-x.x.x.war to the tomcat/webapps/eureka.war
 
 Deploy Hystrix Dashboard
 ------------------------
-- Build the latest hystrix-dashboard-<version>.war per the following: https://github.com/Netflix/Hystrix/wiki/Dashboard
-- Copy Hystrix/hystrix-dashboard/build/libs/hystrix-dashboard-<version>.war to the tomcat/webapps/hystrix-dashboard.war
+- Build the latest hystrix-dashboard-x.x.x.war per the following: https://github.com/Netflix/Hystrix/wiki/Dashboard
+- Copy Hystrix/hystrix-dashboard/build/libs/hystrix-dashboard-x.x.x.war to the tomcat/webapps/hystrix-dashboard.war
 
 Install Python and Graphite 0.9.10 (Optional)
 ---------------------------------------------
