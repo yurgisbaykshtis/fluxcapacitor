@@ -38,7 +38,7 @@ launch_service()
 
     # The flux-foreground option will tell script not to close stdout/stderr, but it's up to us not to background.
     if [ "x$foreground" != "x" ]; then
-        flux_parms="$flux_parms -Dflux-foreground=yes"
+        flux_parms="$flux_parms -Dflux-foreground=yes -Dlog4j.configuration=log4j-middle.properties"
         exec "$JAVA" $JVM_OPTS $flux_parms -cp "$CLASSPATH" $props "$class"
     # Startup fluxDaemon, background it, and write the pid.
     else
