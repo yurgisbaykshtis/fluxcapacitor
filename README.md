@@ -19,6 +19,8 @@ In addition to the Netflix OSS components listed above, Flux Capacitor uses the 
 - graphite 
 - netty io
 - tomcat
+- jetty
+- twitter bootstrap
 
 Flux Capacitor covers everything from dynamic configuration to scalable deployment to real-time metrics.
 
@@ -99,7 +101,7 @@ Start MiddleTier
 	
 	export APP_ENV=dev
  
-- From the ${FLUX_HOME}/bin directory, run the middletier service on port 9090 by running the following script:
+- From the ${FLUX_HOME}/bin directory, run the middletier service on port 9191 by running the following script:
 
 	./start-middletier
 	
@@ -109,7 +111,7 @@ Start Edge
 	
 	export APP_ENV=dev
 
-- From the ${FLUX_HOME}/bin directory, run the edge service on port 9191 by running the following script:
+- From the ${FLUX_HOME}/bin directory, run the edge service on port 9090 by running the following script:
 	
 	./start-edge
 	
