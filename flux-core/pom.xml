@@ -127,6 +127,11 @@
 		  	<artifactId>servo-core</artifactId>
 		  	<version>0.4.32</version>
 		</dependency>   
+        <dependency>
+		  	<groupId>com.netflix.servo</groupId>
+		  	<artifactId>servo-graphite</artifactId>
+		  	<version>0.4.32</version>
+		</dependency>   
 		<dependency>      
 		  	<groupId>com.netflix.eureka</groupId>
 		  	<artifactId>eureka-client</artifactId>
