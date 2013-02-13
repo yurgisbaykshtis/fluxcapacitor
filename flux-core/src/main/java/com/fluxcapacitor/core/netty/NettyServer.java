@@ -5,25 +5,19 @@ import java.lang.Thread.UncaughtExceptionHandler;
 import java.net.InetSocketAddress;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 
-import org.jboss.netty.bootstrap.ClientBootstrap;
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelFactory;
-import org.jboss.netty.channel.ChannelFuture;
-import org.jboss.netty.channel.ChannelFutureListener;
 import org.jboss.netty.channel.ChannelHandler;
 import org.jboss.netty.channel.ChannelPipeline;
 import org.jboss.netty.channel.ChannelPipelineFactory;
 import org.jboss.netty.channel.Channels;
 import org.jboss.netty.channel.group.ChannelGroup;
 import org.jboss.netty.channel.group.DefaultChannelGroup;
-import org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
 import org.jboss.netty.handler.codec.http.HttpRequestDecoder;
 import org.jboss.netty.handler.codec.http.HttpResponseEncoder;
@@ -168,42 +162,6 @@ public final class NettyServer implements Closeable {
 
 			return server;
 		}
-
-		/**
-		 * Creates a connection to the given host and port
-		 */
-		public Channel buildClient() {
-			PipelineFactory pipelinefactory = new ClientPipelineFactory(
-					handlers, encoder, decoder);
-
-			ChannelFactory nioServer = new NioClientSocketChannelFactory(
-					Executors.newCachedThreadPool(),
-					Executors.newCachedThreadPool());
-
-			ClientBootstrap bootstrap = new ClientBootstrap(nioServer);
-			bootstrap.setOption("reuseAddress", true);
-			bootstrap.setOption("keepAlive", true);
-			bootstrap.setOption("child.tcpNoDelay", true);
-			bootstrap.setOption("child.keepAlive", true);
-			bootstrap.setPipelineFactory(pipelinefactory);
-
-			InetSocketAddress address = new InetSocketAddress(host, port);
-
-			ChannelFuture channelFuture = bootstrap.connect(address);
-			channelFuture.addListener(createChannelFutureListener(bootstrap,
-					address));
-
-			boolean isConnected = channelFuture.awaitUninterruptibly()
-					.isSuccess();
-			if (!isConnected) {
-				throw new RuntimeException("Cannot connect to " + host + ":"
-						+ port);
-			}
-
-			logger.info("Created outgoing connection to {}:{}", host, port);
-
-			return channelFuture.getChannel();
-		}
 	}
 
 	public static class PipelineFactory implements ChannelPipelineFactory {
@@ -268,37 +226,6 @@ public final class NettyServer implements Closeable {
 
 			return pipeline;
 		}
-	}
-
-	/**
-	 * http://stackoverflow.com/questions/9873237/netty-clientbootstrap-connect-
-	 * retries
-	 * 
-	 * @param bs
-	 * @param address
-	 * 
-	 * @return
-	 */
-	private static final int maxretries = 5;
-
-	private static ChannelFutureListener createChannelFutureListener(
-			final ClientBootstrap bs, final InetSocketAddress address) {
-
-		final AtomicInteger retryCount = new AtomicInteger();
-
-		return new ChannelFutureListener() {
-			@Override
-			public void operationComplete(ChannelFuture future)
-					throws Exception {
-				if (!future.isSuccess()) {
-					if (retryCount.incrementAndGet() > maxretries) {
-						future.getChannel().close();
-					} else {
-						bs.connect(address).addListener(this);
-					}
-				}
-			}
-		};
 	}
 
 	@Override
