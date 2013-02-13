@@ -51,9 +51,11 @@ Pre-baked AMIs
 
 How to Build
 ============
-Flux Capacitor uses Maven as its build mechanism.  After cloning the repo, run the following command from the ${FLUX_HOME} parent directory:
+Flux Capacitor uses Maven as its build mechanism.  After cloning the repo, run the following command from the fluxcapacitor/ parent directory:
 
-	mvn clean install
+	mvn clean install assembly:assembly
+	
+This will create target/flux-0.1.tar.gz.  Untar this and navigate to the flux/ directory.  This is the new ${FLUX_HOME} runtime directory.
 
 How to Run
 ==========
