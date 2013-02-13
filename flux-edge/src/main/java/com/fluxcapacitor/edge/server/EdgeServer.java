@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.fluxcapacitor.core.AppConfiguration;
-import com.fluxcapacitor.core.server.BaseServer;
+import com.fluxcapacitor.core.server.BaseJettyServer;
 import com.fluxcapacitor.core.util.FluxModule;
 import com.google.inject.Inject;
 import com.google.inject.Injector;
@@ -15,7 +15,7 @@ import com.netflix.governator.lifecycle.LifecycleManager;
 /**
  * @author cfregly
  */
-public class EdgeServer extends BaseServer {
+public class EdgeServer extends BaseJettyServer {
 	private static final Logger logger = LoggerFactory
 			.getLogger(EdgeServer.class);
 

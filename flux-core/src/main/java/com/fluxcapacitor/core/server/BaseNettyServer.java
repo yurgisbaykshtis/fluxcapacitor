@@ -22,17 +22,22 @@ import com.sun.jersey.api.core.PackagesResourceConfig;
 /**
  * @author cfregly
  */
-public class BaseServer implements Closeable {
+public class BaseNettyServer implements Closeable {
 	private static final Logger logger = LoggerFactory
-			.getLogger(BaseServer.class);
+			.getLogger(BaseNettyServer.class);
 
 	public NettyServer server;
+	public final String host;
+	public final int port;
 
 	protected final AppConfiguration config;
 
 	@Inject
-	public BaseServer(AppConfiguration config) {
+	public BaseNettyServer(AppConfiguration config) {
 		this.config = config;
+		
+		this.host = "0.0.0.0";
+		this.port = config.getInt("netty.http.port", Integer.MIN_VALUE);
 	}
 
 	public void start() {
@@ -44,9 +49,9 @@ public class BaseServer implements Closeable {
 
 		server = NettyServer
 				.builder()
-				.host("0.0.0.0")
+				.host(host)
 				// listen on any interface
-				.port(config.getInt("netty.http.port", Integer.MIN_VALUE))
+				.port(port)
 				.addHandler(
 						"jerseyHandler",
 						ContainerFactory.createContainer(
@@ -54,7 +59,7 @@ public class BaseServer implements Closeable {
 				.numBossThreads(NettyServer.cpus)
 				.numWorkerThreads(NettyServer.cpus * 4).build();
 
-		// Register with Eurekas
+		// Register instance with eureka
 		MyDataCenterInstanceConfig instanceConfig = new MyDataCenterInstanceConfig();
 
 		ApplicationInfoManager.getInstance().initComponent(instanceConfig);

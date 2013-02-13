@@ -17,5 +17,9 @@
       <directory>bin</directory>
       <outputDirectory>flux/bin</outputDirectory>
     </fileSet>
+    <fileSet>
+      <directory>flux-edge/webapp</directory>
+      <outputDirectory>flux/webapp</outputDirectory>
+    </fileSet>
   </fileSets>
 </assembly>

@@ -48,8 +48,8 @@ public class EdgeIntegrationTest extends BaseAppTest {
 		client = Client.create(clientConfig);
 		// TODO: clean this up
 		webResource = client.resource("http://"
-				+ edge.edgeServer.server.getListenHost() + ":"
-				+ edge.edgeServer.server.getListenPort());
+				+ edge.edgeServer.host + ":"
+				+ edge.edgeServer.port);
 	}
 
 	@Test

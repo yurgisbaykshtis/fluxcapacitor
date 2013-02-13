@@ -101,9 +101,9 @@ Start MiddleTier
 	
 	export APP_ENV=dev
  
-- From the ${FLUX_HOME}/bin directory, run the middletier service on port 9191 by running the following script:
+- From the ${FLUX_HOME} directory, run the middletier service on port 9191 by running the following script:
 
-	./start-middletier
+	bin/start-middletier
 	
 Start Edge
 ----------
@@ -111,15 +111,31 @@ Start Edge
 	
 	export APP_ENV=dev
 
-- From the ${FLUX_HOME}/bin directory, run the edge service on port 9090 by running the following script:
+- From the ${FLUX_HOME} directory, run the edge service on port 9090 by running the following script:
 	
-	./start-edge
+	bin/start-edge
+	
+Note:  you must run the start-edge script from the bin/ directory or the jsp's won't be found.  I'm fixing this.
 	
 Test It!
 --------
+Eureka
+- http://localhost:8080/eureka 
+
+Flux Capacitor
 - Once tomcat/eureka starts up and the middletier service has registered, navigate to the following in your favorite browser:
 	
-	http://localhost:9090/edge/get  
+	http://localhost:9090/fraggle.jsp  
 	
-The middletier service is configured to randomly sleep anywhere between 0 and 2s.  The edge service is configured to timeout and fallback ("Fraggle Fallback!" response) if the middletier sleeps >1s.  
+Note: The middletier service is configured to randomly sleep anywhere between 0 and 2s.  The edge service is configured to timeout and fallback ("Fraggle Fallback!" response) if the middletier sleeps >1s.  
 Therefore, it may take a few refreshes to see a successful response of "Fraggle Rock!".
+
+Hystrix
+- http://localhost:8080/hystrix-dashboard/monitor/monitor.html?stream=http%3A%2F%2Flocalhost%3A9090%2Fhystrix.stream
+or
+- curl http://localhost:9090/hystrix.stream
+
+Note:  The Hystrix dashboard will show "Loading..." until there is data to show.  Hit refresh on the Flux Capacitor jsp above a few times and the dashboard will light up. 
+
+Graphite
+- Coming soon
