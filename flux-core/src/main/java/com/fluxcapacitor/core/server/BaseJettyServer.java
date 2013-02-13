@@ -2,13 +2,9 @@ package com.fluxcapacitor.core.server;
 
 import java.io.Closeable;
 
-import javax.ws.rs.core.Application;
-
 import org.apache.jasper.servlet.JspServlet;
-import org.mortbay.jetty.Connector;
 import org.mortbay.jetty.Server;
-import org.mortbay.jetty.bio.SocketConnector;
-import org.mortbay.jetty.webapp.WebAppContext;
+import org.mortbay.jetty.servlet.Context;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,22 +12,12 @@ import com.fluxcapacitor.core.AppConfiguration;
 import com.fluxcapacitor.core.util.InetAddressUtils;
 import com.google.inject.Inject;
 import com.netflix.appinfo.ApplicationInfoManager;
-import com.netflix.appinfo.MyDataCenterInstanceConfig;
 import com.netflix.appinfo.InstanceInfo.InstanceStatus;
+import com.netflix.appinfo.MyDataCenterInstanceConfig;
 import com.netflix.blitz4j.LoggingConfiguration;
 import com.netflix.discovery.DefaultEurekaClientConfig;
 import com.netflix.discovery.DiscoveryManager;
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
-import com.netflix.servo.publish.BasicMetricFilter;
-import com.netflix.servo.publish.MonitorRegistryMetricPoller;
-import com.netflix.servo.publish.PollCallable;
-import com.sun.jersey.api.core.DefaultResourceConfig;
-import com.sun.jersey.api.core.PackagesResourceConfig;
-import com.sun.jersey.spi.container.servlet.ServletContainer;
-
-import org.mortbay.jetty.servlet.Context;
-import org.mortbay.jetty.servlet.DefaultServlet;
-import org.mortbay.jetty.servlet.ServletHolder;
 
 /**
  * @author cfregly
