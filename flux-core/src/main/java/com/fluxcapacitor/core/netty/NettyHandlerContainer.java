@@ -56,9 +56,8 @@ import com.sun.jersey.spi.container.WebApplication;
  * SOFTWARE.
  * 
  * Snagged from the following RenderShark component:
- * https://code.google.com/p/rendershark
- * /source/browse/trunk/rendershark/src/main
- * /java/com/sun/jersey/server/impl/container/netty/NettyHandlerContainer.java
+ * 		
+ * 		https://code.google.com/p/rendershark/source/browse/trunk/rendershark/src/main/java/com/sun/jersey/server/impl/container/netty/NettyHandlerContainer.java
  * 
  */
 @Sharable
