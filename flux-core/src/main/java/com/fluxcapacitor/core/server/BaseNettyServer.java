@@ -26,7 +26,6 @@ import com.fluxcapacitor.core.netty.NettyServer;
 import com.google.common.io.Closeables;
 import com.google.inject.Injector;
 import com.netflix.blitz4j.LoggingConfiguration;
-import com.netflix.config.ConfigurationManager;
 import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.karyon.server.KaryonServer;
 import com.sun.jersey.api.container.ContainerFactory;

@@ -27,7 +27,6 @@ import com.fluxcapacitor.core.AppConfiguration;
 import com.fluxcapacitor.core.util.InetAddressUtils;
 import com.google.inject.Injector;
 import com.netflix.blitz4j.LoggingConfiguration;
-import com.netflix.config.ConfigurationManager;
 import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import com.netflix.karyon.server.KaryonServer;

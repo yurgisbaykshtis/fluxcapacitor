@@ -21,7 +21,6 @@ import org.slf4j.LoggerFactory;
 import com.fluxcapacitor.core.server.BaseNettyServer;
 import com.google.inject.Inject;
 import com.netflix.appinfo.InstanceInfo;
-import com.netflix.config.ConfigurationManager;
 import com.netflix.discovery.DiscoveryManager;
 import com.netflix.karyon.spi.PropertyNames;
 
