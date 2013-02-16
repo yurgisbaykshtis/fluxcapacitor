@@ -33,14 +33,16 @@ public class EdgeServer extends BaseJettyServer {
 	}
 
 	public static void main(final String[] args) throws Exception {
-		System.setProperty("archaius.deployment.applicationId", "edge");
         System.setProperty(PropertyNames.SERVER_BOOTSTRAP_BASE_PACKAGES_OVERRIDE, "com.fluxcapacitor");
 
+        String appId = ConfigurationManager.getDeploymentContext().getApplicationId();
+        String env = ConfigurationManager.getDeploymentContext().getDeploymentEnvironment();
+		
 		// populate the eureka-specific properties
-		System.setProperty("eureka.client.props", ConfigurationManager
-				.getDeploymentContext().getApplicationId());
-		System.setProperty("eureka.environment", ConfigurationManager
-				.getDeploymentContext().getDeploymentEnvironment());
+		System.setProperty("eureka.client.props", appId);
+		if (env != null) {
+			System.setProperty("eureka.environment", env);
+		}
 
 		EdgeServer edgeServer = new EdgeServer();
 		edgeServer.start();

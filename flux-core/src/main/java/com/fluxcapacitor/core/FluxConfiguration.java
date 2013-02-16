@@ -20,6 +20,7 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
+import com.google.common.base.Strings;
 import com.netflix.config.ConcurrentCompositeConfiguration;
 import com.netflix.config.ConfigurationManager;
 import com.netflix.config.DynamicBooleanProperty;
@@ -45,9 +46,21 @@ import com.netflix.governator.annotations.AutoBindSingleton;
 public class FluxConfiguration implements AppConfiguration {
 	private static final Logger logger = LoggerFactory
 			.getLogger(FluxConfiguration.class);
-	private boolean initialized = false;
 
 	public FluxConfiguration() {
+		String app = ConfigurationManager.getDeploymentContext().getApplicationId();
+		String env = ConfigurationManager.getDeploymentContext().getDeploymentEnvironment();
+
+		logger.info(
+				"Configuration set to application [{}] and env [{}]", app, env);
+		
+		if (Strings.isNullOrEmpty(app)) {
+			logger.warn("System property 'archaius.deployment.applicationId' is empty.  Configuration may be invalid.");
+		}
+		
+		if (Strings.isNullOrEmpty(env)) {
+			logger.warn("System property 'archaius.deployment.environment' is empty.  Configuration may be invalid.  Set APP_ENV environment variable to populate the environment appropriately.");
+		}
 	}
 
 	@Override
@@ -81,8 +94,6 @@ public class FluxConfiguration implements AppConfiguration {
 	@Override
 	@VisibleForTesting
 	public void setOverrideProperty(String key, Object value) {
-		Preconditions.checkState(initialized,
-				"Must initialize FluxConfiguration before use.");
 		((ConcurrentCompositeConfiguration) ConfigurationManager
 				.getConfigInstance()).setOverrideProperty(key, value);
 	}

@@ -21,6 +21,7 @@ import org.slf4j.LoggerFactory;
 import com.fluxcapacitor.core.server.BaseNettyServer;
 import com.google.inject.Inject;
 import com.netflix.appinfo.InstanceInfo;
+import com.netflix.config.ConfigurationManager;
 import com.netflix.discovery.DiscoveryManager;
 import com.netflix.karyon.spi.PropertyNames;
 
@@ -66,7 +67,6 @@ public class MiddleTierServer extends BaseNettyServer {
     }
         
     public static void main(String args[]) throws Exception {
-    	System.setProperty("archaius.deployment.applicationId", "middletier");
         System.setProperty(PropertyNames.SERVER_BOOTSTRAP_BASE_PACKAGES_OVERRIDE, "com.fluxcapacitor");
     	
     	MiddleTierServer middleTierServer = new MiddleTierServer();
