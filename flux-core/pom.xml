@@ -196,6 +196,11 @@
 		    <groupId>ant</groupId>
 		    <artifactId>ant</artifactId>
 		    <version>1.7.0</version>
-		</dependency>				
+		</dependency>
+		<dependency>
+		    <groupId>com.netflix.karyon</groupId>
+		    <artifactId>karyon-server</artifactId>
+		    <version>0.1.1</version>
+		</dependency>
  	</dependencies>
 </project>

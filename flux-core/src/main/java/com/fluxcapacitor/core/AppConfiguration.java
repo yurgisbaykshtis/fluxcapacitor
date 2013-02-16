@@ -17,6 +17,7 @@ package com.fluxcapacitor.core;
 
 import java.io.Closeable;
 
+
 public interface AppConfiguration extends Closeable {
 
 	public String getString(String key, String defaultValue);
@@ -35,6 +36,4 @@ public interface AppConfiguration extends Closeable {
 	 * @param value
 	 */
 	public void setOverrideProperty(String key, Object value);
-
-	public void start();
 }

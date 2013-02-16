@@ -25,14 +25,11 @@ import org.slf4j.LoggerFactory;
 
 import com.fluxcapacitor.core.AppConfiguration;
 import com.fluxcapacitor.core.util.InetAddressUtils;
-import com.google.inject.Inject;
-import com.netflix.appinfo.ApplicationInfoManager;
-import com.netflix.appinfo.InstanceInfo.InstanceStatus;
-import com.netflix.appinfo.MyDataCenterInstanceConfig;
+import com.google.inject.Injector;
 import com.netflix.blitz4j.LoggingConfiguration;
-import com.netflix.discovery.DefaultEurekaClientConfig;
-import com.netflix.discovery.DiscoveryManager;
+import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
+import com.netflix.karyon.server.KaryonServer;
 
 /**
  * @author cfregly
@@ -41,45 +38,67 @@ public class BaseJettyServer implements Closeable {
 	private static final Logger logger = LoggerFactory
 			.getLogger(BaseJettyServer.class);
 
-	public final Server server;
-	public final String host;
-	public final int port;
-	protected final AppConfiguration config;
+	public final Server jettyServer;
 
-	@Inject
-	public BaseJettyServer(AppConfiguration config) {
-		this.config = config;
+	public final KaryonServer karyonServer;
 
-		server = new Server();
+	public String host;
+	public int port;
 
-		port = config.getInt("jetty.http.port", Integer.MIN_VALUE);
-		host = InetAddressUtils.getBestReachableIp();
+	protected final Injector injector;
+
+	protected AppConfiguration config;
+
+	public BaseJettyServer() {
+		// This must be set before karyonServer.initialize() otherwise the
+		// archaius properties will not be available in JMX/jconsole
+		System.setProperty(DynamicPropertyFactory.ENABLE_JMX, "true");
+
+		this.karyonServer = new KaryonServer();
+		this.injector = karyonServer.initialize();
+		
+		this.jettyServer = new Server();
 	}
 
 	public void start() {
 		LoggingConfiguration.getInstance().configure();
 
+		try {
+			karyonServer.start();
+		} catch (Exception exc) {
+			throw new RuntimeException("Cannot start karyon server.", exc);
+		}
+
+		// Note:  after karyonServer.start(), the service will be marked as UP in eureka discovery.
+		//		  this is not ideal, but we need to call karyonServer.start() in order to start the Guice LifecyleManager 
+		//			to ultimately get the FluxConfiguration in the next step...
+
+		config = injector.getInstance(AppConfiguration.class);
+
+		port = config.getInt("jetty.http.port", Integer.MIN_VALUE);
+		host = InetAddressUtils.getBestReachableIp();
+
 		// NOTE: make sure any changes made here are reflected in web.xml -->
 
 		// Thanks to Aaron Wirtz for this snippet:
-		// 	
-		final Context context = new Context(server, "/", Context.SESSIONS);
+		//
+		final Context context = new Context(jettyServer, "/", Context.SESSIONS);
 		context.setResourceBase("webapp");
 
 		context.setClassLoader(Thread.currentThread().getContextClassLoader());
 
 		context.addServlet(JspServlet.class, "*.jsp");
 
-		// TODO:  enable Jersey
-		//	PackagesResourceConfig rcf = new PackagesResourceConfig(
-		//		config.getString("jersey.resources.package",
-		//		"not-found-in-configuration"));
+		// TODO: enable Jersey
+		// PackagesResourceConfig rcf = new PackagesResourceConfig(
+		// config.getString("jersey.resources.package",
+		// "not-found-in-configuration"));
 		// ServletContainer container = new ServletContainer(rcf);
 		// context.addServlet(new ServletHolder(container), "/edge/*");
 
-		// TODO:  enable hystrix.stream
+		// TODO: enable hystrix.stream
 		context.addServlet(HystrixMetricsStreamServlet.class, "/hystrix.stream");
-		
+
 		final Server server = new Server(port);
 		server.setHandler(context);
 
@@ -88,26 +107,13 @@ public class BaseJettyServer implements Closeable {
 		} catch (Exception exc) {
 			logger.error("Error starting jetty.", exc);
 		}
-
-		// Enable eureka client functionality
-		MyDataCenterInstanceConfig instanceConfig = new MyDataCenterInstanceConfig();
-
-		ApplicationInfoManager.getInstance().initComponent(instanceConfig);
-		ApplicationInfoManager.getInstance().setInstanceStatus(
-				InstanceStatus.UP);
-
-		// Note: If running locally on MacOS, you'll need to make sure your
-		// /etc/hosts file contains the following entry:
-		// 127.0.0.1 <hostname>.local
-		// or else clients will likely not be able to connect.
-		DiscoveryManager.getInstance().initComponent(instanceConfig,
-				new DefaultEurekaClientConfig());		
 	}
 
 	@Override
 	public void close() {
 		try {
-			server.stop();
+			jettyServer.stop();
+			karyonServer.close();
 		} catch (Exception exc) {
 			logger.error("Error stopping jetty.", exc);
 		}
