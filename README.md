@@ -1,7 +1,7 @@
 Overview
 ========
 
-Flux Capacitor is a Java-based referencea app demonstrating the following Netflix Open Source components (in alphabetical order):
+Flux Capacitor is a Java-based reference app demonstrating the following Netflix Open Source components (in alphabetical order):
 - archaius
 - asgard (coming soon)
 - astyanax
@@ -11,20 +11,20 @@ Flux Capacitor is a Java-based referencea app demonstrating the following Netfli
 - exhibitor (coming soon)
 - governator
 - hystrix
+- karyon
 - ribbon
 - servo
 
 In addition to the Netflix OSS components listed above, Flux Capacitor uses the following Open Source components:
-- jersey
 - graphite 
-- netty io
-- tomcat
+- jersey
 - jetty
-- twitter bootstrap
+- netty
+- tomcat
 
-Flux Capacitor covers everything from dynamic configuration to scalable deployment to real-time metrics.
+This project demonstrates many aspects of a complete distributed, scalable application from dynamic configuration to real-time metrics.
 
-Flux Capacitor can be deployed standalone, in a data center, or in an AWS (Amazon Web Services) environment.
+This app can be deployed standalone, in a data center, or in an AWS (Amazon Web Services) environment with just a few configuration changes.
 
 Modules
 =======

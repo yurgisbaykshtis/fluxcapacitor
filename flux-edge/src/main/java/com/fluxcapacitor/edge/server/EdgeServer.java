@@ -23,7 +23,7 @@ import com.netflix.config.ConfigurationManager;
 import com.netflix.karyon.spi.PropertyNames;
 
 /**
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class EdgeServer extends BaseJettyServer {
 	private static final Logger logger = LoggerFactory

@@ -26,7 +26,7 @@ import com.netflix.governator.guice.LifecycleInjector;
 import com.netflix.governator.lifecycle.LifecycleManager;
 
 /**
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class EmbeddedMiddleTierForTests {
     private static final Logger logger = LoggerFactory.getLogger(EmbeddedMiddleTierForTests.class);

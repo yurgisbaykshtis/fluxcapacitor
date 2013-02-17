@@ -26,7 +26,7 @@ import com.netflix.governator.guice.LifecycleInjector;
 import com.netflix.governator.lifecycle.LifecycleManager;
 
 /**
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class EmbeddedEdgeForTests {
 	private static final Logger logger = LoggerFactory

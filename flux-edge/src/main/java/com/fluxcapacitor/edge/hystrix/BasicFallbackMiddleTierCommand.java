@@ -41,7 +41,7 @@ import com.netflix.niws.client.http.RestClient;
  * 
  * Uses Netflix Ribbon as the communication mechanism to the middletier service.
  * 
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class BasicFallbackMiddleTierCommand extends HystrixCommand<String> {
 	public BasicFallbackMiddleTierCommand() {

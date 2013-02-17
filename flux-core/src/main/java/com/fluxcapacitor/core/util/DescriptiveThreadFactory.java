@@ -18,7 +18,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class DescriptiveThreadFactory implements ThreadFactory {
 	private final String description;

@@ -38,7 +38,7 @@ import com.netflix.servo.monitor.Stopwatch;
 import com.netflix.servo.stats.StatsConfig;
 
 /**
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 @Path("/edge")
 public class EdgeResource {

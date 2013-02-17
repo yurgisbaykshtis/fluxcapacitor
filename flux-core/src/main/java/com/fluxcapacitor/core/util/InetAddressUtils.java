@@ -33,7 +33,7 @@ import com.google.common.collect.Lists;
 /**
  * Utils for various ip-related functionality (discovery, etc)
  * 
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class InetAddressUtils {
 	private static final Logger logger = LoggerFactory

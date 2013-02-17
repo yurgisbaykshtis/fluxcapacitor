@@ -25,7 +25,7 @@ import com.netflix.discovery.DiscoveryManager;
 import com.netflix.karyon.spi.PropertyNames;
 
 /**
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class MiddleTierServer extends BaseNettyServer {
     private static final Logger logger = LoggerFactory.getLogger(MiddleTierServer.class);

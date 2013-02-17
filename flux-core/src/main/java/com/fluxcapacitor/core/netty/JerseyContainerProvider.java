@@ -26,7 +26,7 @@ import com.sun.jersey.spi.container.WebApplication;
  * src/main/resources/META-INF/services/com.sun.jersey.spi.container.
  * ContainerProvider
  * 
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class JerseyContainerProvider implements
 		ContainerProvider<NettyHandlerContainer> {

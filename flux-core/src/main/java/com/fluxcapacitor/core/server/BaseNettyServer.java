@@ -32,7 +32,7 @@ import com.sun.jersey.api.container.ContainerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 
 /**
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class BaseNettyServer implements Closeable {
 	private static final Logger logger = LoggerFactory

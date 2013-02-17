@@ -49,7 +49,7 @@ import com.google.common.collect.Maps;
 /**
  * NettyServer and Builder
  * 
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public final class NettyServer implements Closeable {
 	private static final Logger logger = LoggerFactory

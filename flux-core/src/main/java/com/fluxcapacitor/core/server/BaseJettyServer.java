@@ -32,7 +32,7 @@ import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServl
 import com.netflix.karyon.server.KaryonServer;
 
 /**
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 public class BaseJettyServer implements Closeable {
 	private static final Logger logger = LoggerFactory

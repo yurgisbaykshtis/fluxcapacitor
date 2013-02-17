@@ -39,7 +39,7 @@ import com.netflix.governator.annotations.AutoBindSingleton;
  * JMX: All properties can be viewed and updated (on a per instance basis) here:
  * Config-com.netflix.config.jmx.BaseConfigMBean
  * 
- * @author cfregly
+ * @author Chris Fregly (chris@fregly.com)
  */
 @AutoBindSingleton(AppConfiguration.class)
 public class FluxConfiguration implements AppConfiguration {
