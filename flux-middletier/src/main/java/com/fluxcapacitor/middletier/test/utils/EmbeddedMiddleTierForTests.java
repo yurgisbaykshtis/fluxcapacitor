@@ -18,12 +18,8 @@ package com.fluxcapacitor.middletier.test.utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fluxcapacitor.core.util.FluxModule;
 import com.fluxcapacitor.middletier.server.MiddleTierServer;
 import com.google.common.io.Closeables;
-import com.google.inject.Injector;
-import com.netflix.governator.guice.LifecycleInjector;
-import com.netflix.governator.lifecycle.LifecycleManager;
 
 /**
  * @author Chris Fregly (chris@fregly.com)
@@ -40,12 +36,7 @@ public class EmbeddedMiddleTierForTests {
     	System.setProperty("archaius.deployment.applicationId", "middletier");
     	System.setProperty("archaius.deployment.environment", "ci");
         
-    	Injector injector = LifecycleInjector.builder().withModules(new FluxModule()).createInjector();
-
-    	LifecycleManager lifecycleManager = injector.getInstance(LifecycleManager.class);
-    	lifecycleManager.start();
-
-    	middleTierServer = injector.getInstance(MiddleTierServer.class);
+    	middleTierServer = new MiddleTierServer();
     	middleTierServer.start();
     }
 

@@ -73,7 +73,7 @@ public class BaseNettyServer implements Closeable {
 		this.config = injector.getInstance(AppConfiguration.class);
 		
 		// listen on any interface
-		this.host = "0.0.0.0";
+		this.host = config.getString("netty.http.host", "not-found-in-configuration");
 		this.port = config.getInt("netty.http.port", Integer.MIN_VALUE);
 
 		PackagesResourceConfig rcf = new PackagesResourceConfig(

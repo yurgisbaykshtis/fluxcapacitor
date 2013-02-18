@@ -96,7 +96,7 @@ public class BaseJettyServer implements Closeable {
 		// ServletContainer container = new ServletContainer(rcf);
 		// context.addServlet(new ServletHolder(container), "/edge/*");
 
-		// TODO: enable hystrix.stream
+		// enable hystrix.stream
 		context.addServlet(HystrixMetricsStreamServlet.class, "/hystrix.stream");
 
 		final Server server = new Server(port);

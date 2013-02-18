@@ -60,7 +60,7 @@ public class InetAddressUtils {
 							return address.getHostAddress();
 						}
 					} catch (Exception exc) {
-						// NoOp
+						logger.trace("Could not find the best reachable IP. Trying the next one..");
 					}
 				}
 			}

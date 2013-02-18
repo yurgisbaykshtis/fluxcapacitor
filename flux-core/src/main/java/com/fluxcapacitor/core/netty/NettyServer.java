@@ -68,7 +68,7 @@ public final class NettyServer implements Closeable {
 				logger.error("Thread Exc {}", thread.getName(), exc);
 				for (Throwable exc2 = exc; exc2 != null; exc2 = exc2.getCause()) {
 					if (exc2 instanceof OutOfMemoryError)
-						System.exit(1);
+						throw new RuntimeException("OutOfMemoryError");
 				}
 			}
 		});

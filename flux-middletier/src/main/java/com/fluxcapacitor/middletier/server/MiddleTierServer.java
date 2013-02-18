@@ -19,7 +19,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.fluxcapacitor.core.server.BaseNettyServer;
-import com.google.inject.Inject;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.DiscoveryManager;
 import com.netflix.karyon.spi.PropertyNames;
@@ -30,9 +29,7 @@ import com.netflix.karyon.spi.PropertyNames;
 public class MiddleTierServer extends BaseNettyServer {
     private static final Logger logger = LoggerFactory.getLogger(MiddleTierServer.class);
     
-    @Inject
     public MiddleTierServer() {
-    	super();
     }
     
     public void start() {
