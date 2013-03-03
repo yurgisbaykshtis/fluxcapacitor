@@ -20,6 +20,7 @@ import java.io.Closeable;
 import org.apache.jasper.servlet.JspServlet;
 import org.mortbay.jetty.Server;
 import org.mortbay.jetty.servlet.Context;
+import org.mortbay.jetty.servlet.ServletHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,6 +31,8 @@ import com.netflix.blitz4j.LoggingConfiguration;
 import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import com.netflix.karyon.server.KaryonServer;
+import com.sun.jersey.api.core.PackagesResourceConfig;
+import com.sun.jersey.spi.container.servlet.ServletContainer;
 
 /**
  * @author Chris Fregly (chris@fregly.com)
@@ -84,17 +87,15 @@ public class BaseJettyServer implements Closeable {
 		//
 		final Context context = new Context(jettyServer, "/", Context.SESSIONS);
 		context.setResourceBase("webapp");
-
 		context.setClassLoader(Thread.currentThread().getContextClassLoader());
-
-		context.addServlet(JspServlet.class, "*.jsp");
-
-		// TODO: enable Jersey
-		// PackagesResourceConfig rcf = new PackagesResourceConfig(
-		// config.getString("jersey.resources.package",
-		// "not-found-in-configuration"));
-		// ServletContainer container = new ServletContainer(rcf);
-		// context.addServlet(new ServletHolder(container), "/edge/*");
+		
+		// enable jsp's
+		context.addServlet(JspServlet.class, "/jsp/*.jsp");
+		
+		// enable Jersey REST endpoints
+		final PackagesResourceConfig rcf = new PackagesResourceConfig(config.getString("jersey.resources.package", "not-found-in-configuration"));
+		final ServletContainer container = new ServletContainer(rcf);
+		context.addServlet(new ServletHolder(container), "/service/*");
 
 		// enable hystrix.stream
 		context.addServlet(HystrixMetricsStreamServlet.class, "/hystrix.stream");

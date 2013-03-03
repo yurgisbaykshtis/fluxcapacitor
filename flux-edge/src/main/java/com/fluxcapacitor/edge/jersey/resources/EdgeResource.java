@@ -40,7 +40,7 @@ import com.netflix.servo.stats.StatsConfig;
 /**
  * @author Chris Fregly (chris@fregly.com)
  */
-@Path("/edge")
+@Path("edge")
 public class EdgeResource {
 	private static final Logger logger = LoggerFactory
 			.getLogger(EdgeResource.class);

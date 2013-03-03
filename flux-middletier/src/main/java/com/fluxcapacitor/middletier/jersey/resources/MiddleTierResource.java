@@ -38,7 +38,7 @@ import com.netflix.servo.stats.StatsConfig;
 /**
  * @author Chris Fregly (chris@fregly.com)
  */
-@Path("/middletier")
+@Path("middletier")
 public class MiddleTierResource {
     private static final Logger logger = LoggerFactory.getLogger(MiddleTierResource.class);
 
