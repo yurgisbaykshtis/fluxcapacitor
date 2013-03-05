@@ -2,11 +2,11 @@ Overview
 ========
 Flux Capacitor is a Java-based reference app demonstrating the following Netflix Open Source components (in alphabetical order):
 * [archaius] (https://github.com/Netflix/archaius)
-* [astyanax] (https://github.com/Netflix/astyanax) - coming soon
+* [astyanax] (https://github.com/Netflix/astyanax) soon
 * [blitz4j] (https://github.com/Netflix/blitz4j)
-* [curator] (https://github.com/Netflix/curator) - coming soon
+* [curator] (https://github.com/Netflix/curator)
 * [eureka] (https://github.com/Netflix/eureka)
-* [exhibitor] (https://github.com/Netflix/exhibitor) - coming soon
+* [exhibitor] (https://github.com/Netflix/exhibitor)
 * [governator] (https://github.com/Netflix/governator)
 * [hystrix] (https://github.com/Netflix/hystrix)
 * [karyon] (https://github.com/Netflix/karyon)
@@ -24,12 +24,13 @@ This project demonstrates many aspects of a complete distributed, scalable appli
 
 This app can be deployed standalone, in a data center, or in an AWS (Amazon Web Services) environment with just a few configuration changes.
 
-Modules
-=======
-flux-core
------------
-* Shared classes between edge and middletier.
+Architecture Overview
+=====================
+<img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-logo.png">
+<img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-netflixoss-overview.jpg">
 
+Module Overview
+===============
 flux-edge
 -----------
 * Customer-facing edge service.
@@ -37,6 +38,10 @@ flux-edge
 flux-middletier
 -----------------
 * Internal middletier service.
+
+flux-core
+-----------
+* Shared classes between edge and middletier.
 
 Pre-baked AMIs
 ==============

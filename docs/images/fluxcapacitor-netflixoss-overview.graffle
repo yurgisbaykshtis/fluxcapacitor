@@ -2464,7 +2464,8 @@ Provided by Eureka Discovery}</string>
 {\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf2 Archaius (Configuration)}</string>
+\f0\fs24 \cf2 Archaius/Curator\
+(Configuration)}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -2659,7 +2660,7 @@ ZooKeeper Admin\
 {\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf2 Archaius (Configuration)}</string>
+\f0\fs24 \cf2 Archaius/Curator (Configuration)}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -3075,7 +3076,7 @@ Cluster\
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-03-05 21:44:39 +0000</string>
+	<string>2013-03-05 22:13:38 +0000</string>
 	<key>Modifier</key>
 	<string>Chris Fregly</string>
 	<key>NotesVisible</key>
