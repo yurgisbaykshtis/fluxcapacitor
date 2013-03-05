@@ -1,8 +1,10 @@
+<img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-logo.png">
+
 Overview
 ========
 Flux Capacitor is a Java-based reference app demonstrating the following Netflix Open Source components (in alphabetical order):
 * [archaius] (https://github.com/Netflix/archaius)
-* [astyanax] (https://github.com/Netflix/astyanax) soon
+* [astyanax] (https://github.com/Netflix/astyanax)
 * [blitz4j] (https://github.com/Netflix/blitz4j)
 * [curator] (https://github.com/Netflix/curator)
 * [eureka] (https://github.com/Netflix/eureka)
@@ -14,11 +16,11 @@ Flux Capacitor is a Java-based reference app demonstrating the following Netflix
 * [servo] (https://github.com/Netflix/servo)
 
 In addition to the Netflix OSS components listed above, Flux Capacitor uses the following Open Source components:
-* graphite 
-* jersey
-* jetty
-* netty
-* tomcat
+* graphite (http://graphite.wikidot.com)
+* jersey (http://jersey.java.net)
+* jetty (http://jetty.codehaus.org/jetty)
+* netty io (http://netty.io)
+* tomcat (http://tomcat.apache.org/)
 
 This project demonstrates many aspects of a complete distributed, scalable application from dynamic configuration to real-time metrics.
 
@@ -26,7 +28,6 @@ This app can be deployed standalone, in a data center, or in an AWS (Amazon Web 
 
 Architecture Overview
 =====================
-<img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-logo.png">
 <img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-netflixoss-overview.jpg">
 
 Module Overview
