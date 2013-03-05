@@ -16,11 +16,11 @@ Flux Capacitor is a Java-based distributed application demonstrating the followi
 * [servo] (https://github.com/Netflix/servo) metrics
 
 In addition to the Netflix OSS components listed above, Flux Capacitor uses the following Open Source components:
-* graphite (http://graphite.wikidot.com) metrics
-* jersey (http://jersey.java.net) REST 
-* jetty (http://jetty.codehaus.org/jetty) servlet container 
-* netty (http://netty.io) io server 
-* tomcat (http://tomcat.apache.org/) servlet container
+* [graphite] (http://graphite.wikidot.com) metrics
+* [jersey] (http://jersey.java.net) REST 
+* [jetty] (http://jetty.codehaus.org/jetty) servlet container 
+* [netty] (http://netty.io) io server 
+* [tomcat] (http://tomcat.apache.org/) servlet container
 
 This project demonstrates many aspects of a complete distributed, scalable application from dynamic configuration to real-time metrics.
 
