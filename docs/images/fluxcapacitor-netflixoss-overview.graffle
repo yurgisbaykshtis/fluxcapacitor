@@ -2428,7 +2428,7 @@ Provided by Eureka Discovery}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{440.25, 426.09090909090958}, {93.999999999999957, 63.863636363636417}}</string>
+			<string>{{443.0625, 426.09090909090958}, {93.999999999999957, 63.863636363636417}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2449,7 +2449,7 @@ Provided by Eureka Discovery}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{440.25, 343.0681818181821}, {93.999999999999957, 63.863636363636417}}</string>
+			<string>{{443.0625, 343.0681818181821}, {93.999999999999957, 63.863636363636417}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2469,7 +2469,7 @@ Provided by Eureka Discovery}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{440.25, 94.000000000000142}, {94, 63.863636363636417}}</string>
+			<string>{{443.0625, 94.000000000000142}, {94, 63.863636363636417}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2491,7 +2491,7 @@ Governator\
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{440.25, 509.00949859619141}, {94, 63.863636363636417}}</string>
+			<string>{{443.0625, 509.00949859619141}, {94, 63.863636363636417}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2511,7 +2511,7 @@ Governator\
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{440.25, 260.04545454545473}, {94, 63.863636363636417}}</string>
+			<string>{{443.0625, 260.04545454545473}, {94, 63.863636363636417}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2532,7 +2532,7 @@ Governator\
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{440.25, 177.02272727272737}, {94, 63.863636363636417}}</string>
+			<string>{{443.0625, 177.02272727272737}, {94, 63.863636363636417}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2797,7 +2797,7 @@ Metrics Cluster\
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{246.875, 125.79176399924529}, {86.5, 63}}</string>
+			<string>{{245, 125.79176399924529}, {86.5, 63}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -3075,7 +3075,7 @@ Cluster\
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-03-05 21:43:31 +0000</string>
+	<string>2013-03-05 21:44:39 +0000</string>
 	<key>Modifier</key>
 	<string>Chris Fregly</string>
 	<key>NotesVisible</key>
