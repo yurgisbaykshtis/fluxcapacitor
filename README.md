@@ -46,10 +46,6 @@ flux-core
 -----------
 * Shared classes between edge and middletier.
 
-Pre-baked AMIs
-==============
-* Coming soon
-
 Documentation
 ==============
 Please see [wiki] (https://github.com/cfregly/fluxcapacitor/wiki) for detailed documentation.
