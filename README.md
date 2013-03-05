@@ -1,4 +1,4 @@
--> <img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-logo.png"> <-
+-><img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-logo.png"><-
 
 Overview
 ========
@@ -28,7 +28,7 @@ This app can be deployed standalone, in a data center, or in an AWS (Amazon Web 
 
 Architecture Overview
 =====================
--> <img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-netflixoss-overview.jpg"> <-
+-><img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-netflixoss-overview.jpg"><-
 
 Module Overview
 ===============
