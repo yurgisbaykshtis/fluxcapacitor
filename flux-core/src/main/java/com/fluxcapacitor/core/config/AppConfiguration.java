@@ -13,13 +13,12 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package com.fluxcapacitor.core;
+package com.fluxcapacitor.core.config;
 
 import java.io.Closeable;
 
 
 public interface AppConfiguration extends Closeable {
-
 	public String getString(String key, String defaultValue);
 
 	public int getInt(String key, int defaultValue);

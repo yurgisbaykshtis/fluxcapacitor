@@ -24,8 +24,10 @@ import org.mortbay.jetty.servlet.ServletHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fluxcapacitor.core.AppConfiguration;
+import com.fluxcapacitor.core.config.AppConfiguration;
+import com.fluxcapacitor.core.metrics.AppMetrics;
 import com.fluxcapacitor.core.util.InetAddressUtils;
+import com.google.common.io.Closeables;
 import com.google.inject.Injector;
 import com.netflix.blitz4j.LoggingConfiguration;
 import com.netflix.config.DynamicPropertyFactory;
@@ -33,6 +35,7 @@ import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServl
 import com.netflix.karyon.server.KaryonServer;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.spi.container.servlet.ServletContainer;
+
 
 /**
  * @author Chris Fregly (chris@fregly.com)
@@ -51,6 +54,7 @@ public class BaseJettyServer implements Closeable {
 	protected final Injector injector;
 
 	protected AppConfiguration config;
+	protected AppMetrics metrics;
 
 	public BaseJettyServer() {
 		// This must be set before karyonServer.initialize() otherwise the
@@ -77,7 +81,8 @@ public class BaseJettyServer implements Closeable {
 		//			to ultimately get the FluxConfiguration in the next step...
 
 		config = injector.getInstance(AppConfiguration.class);
-
+		metrics = injector.getInstance(AppMetrics.class);
+		
 		port = config.getInt("jetty.http.port", Integer.MIN_VALUE);
 		host = InetAddressUtils.getBestReachableIp();
 
@@ -100,6 +105,12 @@ public class BaseJettyServer implements Closeable {
 		// enable hystrix.stream
 		context.addServlet(HystrixMetricsStreamServlet.class, "/hystrix.stream");
 
+		try {
+			metrics.start();
+		} catch (Exception exc) {
+			logger.error("Error starting metrics publisher.", exc);
+		}
+
 		final Server server = new Server(port);
 		server.setHandler(context);
 
@@ -107,16 +118,18 @@ public class BaseJettyServer implements Closeable {
 			server.start();
 		} catch (Exception exc) {
 			logger.error("Error starting jetty.", exc);
-		}
+			throw new RuntimeException("Error starting jetty.", exc);
+		}			
 	}
 
 	@Override
 	public void close() {
 		try {
 			jettyServer.stop();
-			karyonServer.close();
+			Closeables.closeQuietly(karyonServer);
+			Closeables.closeQuietly(metrics);
 		} catch (Exception exc) {
-			logger.error("Error stopping jetty.", exc);
+			logger.error("Error shutting down jetty.", exc);
 		}
 		LoggingConfiguration.getInstance().stop();
 	}

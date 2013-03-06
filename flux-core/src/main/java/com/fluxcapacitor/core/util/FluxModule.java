@@ -15,13 +15,16 @@
  */
 package com.fluxcapacitor.core.util;
 
-import com.fluxcapacitor.core.AppConfiguration;
-import com.fluxcapacitor.core.FluxConfiguration;
+import com.fluxcapacitor.core.config.AppConfiguration;
+import com.fluxcapacitor.core.config.FluxConfiguration;
+import com.fluxcapacitor.core.metrics.AppMetrics;
+import com.fluxcapacitor.core.metrics.FluxMetrics;
 import com.google.inject.AbstractModule;
 
 public class FluxModule extends AbstractModule {
 	@Override
 	protected void configure() {
 		bind(AppConfiguration.class).to(FluxConfiguration.class);
+		bind(AppMetrics.class).to(FluxMetrics.class);
 	}
 }

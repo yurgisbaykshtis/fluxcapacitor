@@ -20,7 +20,8 @@ import java.io.Closeable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fluxcapacitor.core.AppConfiguration;
+import com.fluxcapacitor.core.config.AppConfiguration;
+import com.fluxcapacitor.core.metrics.AppMetrics;
 import com.fluxcapacitor.core.netty.NettyHandlerContainer;
 import com.fluxcapacitor.core.netty.NettyServer;
 import com.google.common.io.Closeables;
@@ -47,6 +48,7 @@ public class BaseNettyServer implements Closeable {
 	protected final Injector injector;
 
 	protected AppConfiguration config;
+	protected AppMetrics metrics;
 
 	public BaseNettyServer() {
 		// This must be set before karyonServer.initialize() otherwise the
@@ -71,6 +73,7 @@ public class BaseNettyServer implements Closeable {
 		//			to ultimately get the FluxConfiguration in the next step...
 		
 		this.config = injector.getInstance(AppConfiguration.class);
+		this.metrics = injector.getInstance(AppMetrics.class);
 		
 		// listen on any interface
 		this.host = config.getString("netty.http.host", "not-found-in-configuration");
@@ -79,6 +82,12 @@ public class BaseNettyServer implements Closeable {
 		PackagesResourceConfig rcf = new PackagesResourceConfig(
 				config.getString("jersey.resources.package",
 						"not-found-in-configuration"));
+
+		try {
+			metrics.start();
+		} catch (Exception exc) {
+			logger.error("Error starting metrics publisher.", exc);
+		}
 
 		nettyServer = NettyServer
 				.builder()
@@ -96,6 +105,7 @@ public class BaseNettyServer implements Closeable {
 	public void close() {
 		Closeables.closeQuietly(nettyServer);
 		Closeables.closeQuietly(karyonServer);
+		Closeables.closeQuietly(metrics);
 		LoggingConfiguration.getInstance().stop();
 	}
 }

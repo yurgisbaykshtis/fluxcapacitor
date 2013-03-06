@@ -1,0 +1,58 @@
+package com.fluxcapacitor.core.metrics;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import com.fluxcapacitor.core.config.AppConfiguration;
+import com.google.inject.Inject;
+import com.netflix.governator.annotations.AutoBindSingleton;
+import com.netflix.servo.publish.AsyncMetricObserver;
+import com.netflix.servo.publish.BasicMetricFilter;
+import com.netflix.servo.publish.CounterToRateMetricTransform;
+import com.netflix.servo.publish.MetricObserver;
+import com.netflix.servo.publish.MetricPoller;
+import com.netflix.servo.publish.MonitorRegistryMetricPoller;
+import com.netflix.servo.publish.PollRunnable;
+import com.netflix.servo.publish.PollScheduler;
+import com.netflix.servo.publish.graphite.GraphiteMetricObserver;
+
+@AutoBindSingleton(AppMetrics.class)
+public class FluxMetrics implements AppMetrics {
+	
+	@Inject
+	private AppConfiguration config;
+	
+	public void start() throws Exception {
+        final List<MetricObserver> observers = new ArrayList<MetricObserver>();
+        observers.add(createGraphiteObserver());
+
+        final MetricPoller poller = new MonitorRegistryMetricPoller();
+        final PollRunnable task = new PollRunnable(poller, BasicMetricFilter.MATCH_ALL, observers);
+
+        PollScheduler.getInstance().start();
+        PollScheduler.getInstance().addPoller(task, config.getLong("graphite.poll.interval", 5), TimeUnit.SECONDS);
+	}
+	
+	private MetricObserver rateTransform(MetricObserver observer) {
+        final long heartbeat = 2 * config.getLong("graphite.poll.interval", 5);
+        return new CounterToRateMetricTransform(observer, heartbeat, TimeUnit.SECONDS);
+    }
+
+    private MetricObserver async(String name, MetricObserver observer) {
+        final long expireTime = 2000 * config.getLong("graphite.poll.interval", 5);
+        final int queueSize = 10;
+        return new AsyncMetricObserver(name, observer, queueSize, expireTime);
+    }
+
+    private MetricObserver createGraphiteObserver() {
+        final String prefix = config.getString("graphite.metrics.prefix", "not-found-in-flux-configuration");
+        final String addr = config.getString("graphite.server.address", "not-found-in-flux-configuration");
+        
+        return rateTransform(async("graphite", new GraphiteMetricObserver(prefix, addr)));
+    }
+    
+    @Override
+    public void close() {
+    }
+}
