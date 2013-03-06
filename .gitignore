@@ -67,3 +67,4 @@ atlassian-ide-plugin.xml
 .nbattrs
 /eclipse
 /logs
+/graphite.out
