@@ -30,6 +30,10 @@ Architecture Overview
 =====================
 <img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-netflixoss-overview.jpg">
 
+Hystrix Circuit Breaker Dashboard
+=================================
+<img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-hystrix-dashboard.jpg">
+
 Project Overview
 ================
 The following project layout is typical of many distributed applications: 
