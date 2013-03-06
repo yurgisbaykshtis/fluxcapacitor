@@ -44,15 +44,17 @@ The following project layout is typical of many distributed applications:
 
 flux-edge
 -----------
-* Customer-facing edge service.
+* Customer-facing REST-based edge service
+* Uses Jetty as the servlet container and messaging engine
 
 flux-middletier
 -----------------
-* Internal middletier service called by the edge service.
+* Internal REST-based middletier service called by the edge service  
+* Uses Netty as the messaging engine
 
 flux-core
 -----------
-* Shared classes between edge and middletier.
+* Shared classes between edge and middletier
 
 Documentation
 ==============
