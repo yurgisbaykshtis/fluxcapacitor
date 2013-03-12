@@ -80,8 +80,8 @@ public class GetLogsCommand extends HystrixCommand<String> {
 			RestClient client = (RestClient) ClientFactory
 					.getNamedClient("middletier-client");
 
-			MultivaluedMap<String, String> headers = new MultivaluedMapImpl();
-			headers.putSingle("Content-Type", "text/plain");
+			//MultivaluedMap<String, String> headers = new MultivaluedMapImpl();
+			//headers.putSingle("Content-Type", "text/plain");
 
 			// Note: If running locally on MacOS, you'll need to make sure your
 			// /etc/hosts file contains the following entry:
@@ -98,7 +98,7 @@ public class GetLogsCommand extends HystrixCommand<String> {
 							+ FluxConstants.MIDDLETIER_WEB_RESOURCE_GET_PATH
 							+ "/"
 							+ key))
-					.setHeaders(headers)
+					//.setHeaders(headers)
 					.build();
 			
 			HttpClientResponse response = client
