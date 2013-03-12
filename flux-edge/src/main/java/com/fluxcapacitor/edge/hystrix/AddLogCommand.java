@@ -16,6 +16,7 @@
 package com.fluxcapacitor.edge.hystrix;
 
 import java.net.URI;
+import java.net.URLEncoder;
 
 import javax.ws.rs.core.MultivaluedMap;
 
@@ -86,7 +87,7 @@ public class AddLogCommand extends HystrixCommand<String> {
 			//headers.putSingle("Content-Type", MediaType.APPLICATION_JSON);
 
 			MultivaluedMap<String, String> queryParams = new MultivaluedMapImpl();
-			queryParams.putSingle("log", log);
+			queryParams.putSingle("log", URLEncoder.encode(log, Charsets.UTF_8.name()));
 
 			// Note: If running locally on MacOS, you'll need to make sure your
 			// /etc/hosts file contains the following entry:
