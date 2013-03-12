@@ -17,7 +17,11 @@ package com.fluxcapacitor.edge.hystrix;
 
 import java.net.URI;
 
+import javax.ws.rs.core.MultivaluedMap;
+
 import org.apache.commons.io.IOUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.fluxcapacitor.core.FluxConstants;
 import com.google.common.base.Charsets;
@@ -30,31 +34,42 @@ import com.netflix.niws.client.http.HttpClientRequest;
 import com.netflix.niws.client.http.HttpClientRequest.Verb;
 import com.netflix.niws.client.http.HttpClientResponse;
 import com.netflix.niws.client.http.RestClient;
+import com.sun.jersey.core.util.MultivaluedMapImpl;
 
 /**
+ * Retrieve the logs.
+ * 
  * Example of a basic command with fallback.
  * 
  * By default, timeout is set to 1000ms per the following configuration
  * property:
- * hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=1000
- * which can be overridden using any archaius configuration source.
+ * 
+ *   	hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=1000
+ * 
+ * This timeout can be overridden using any archaius configuration source.
  * 
  * Uses Netflix Ribbon as the communication mechanism to the middletier service.
  * 
  * @author Chris Fregly (chris@fregly.com)
  */
-public class BasicFallbackMiddleTierCommand extends HystrixCommand<String> {
-	public BasicFallbackMiddleTierCommand() {
+public class GetLogsCommand extends HystrixCommand<String> {
+	private static final Logger logger = LoggerFactory.getLogger(GetLogsCommand.class);
+
+	private final String key;
+	
+	public GetLogsCommand(String key) {
 		super(
 				Setter.withGroupKey(
 						HystrixCommandGroupKey.Factory
 								.asKey(FluxConstants.MIDDLETIER_HYSTRIX_GROUP))
 						.andCommandKey(
 								HystrixCommandKey.Factory
-										.asKey(FluxConstants.MIDDLETIER_HYSTRIX_COMMAND_KEY))
+										.asKey(FluxConstants.MIDDLETIER_HYSTRIX_GET_LOGS_COMMAND_KEY))
 						.andThreadPoolKey(
 								HystrixThreadPoolKey.Factory
 										.asKey(FluxConstants.MIDDLETIER_HYSTRIX_THREAD_POOL)));
+		
+		this.key = key;
 	}
 
 	@Override
@@ -64,6 +79,9 @@ public class BasicFallbackMiddleTierCommand extends HystrixCommand<String> {
 			// configuration specified in the edge.properties file
 			RestClient client = (RestClient) ClientFactory
 					.getNamedClient("middletier-client");
+
+			MultivaluedMap<String, String> headers = new MultivaluedMapImpl();
+			headers.putSingle("Content-Type", "text/plain");
 
 			// Note: If running locally on MacOS, you'll need to make sure your
 			// /etc/hosts file contains the following entry:
@@ -75,19 +93,31 @@ public class BasicFallbackMiddleTierCommand extends HystrixCommand<String> {
 					.setUri(new URI("/"
 							+ FluxConstants.MIDDLETIER_WEB_RESOURCE_ROOT_PATH
 							+ "/"
-							+ FluxConstants.MIDDLETIER_WEB_RESOURCE_GET_PATH))
+							+ FluxConstants.MIDDLETIER_WEB_RESOURCE_VERSION
+							+ "/"
+							+ FluxConstants.MIDDLETIER_WEB_RESOURCE_GET_PATH
+							+ "/"
+							+ key))
+					.setHeaders(headers)
 					.build();
+			
 			HttpClientResponse response = client
 					.executeWithLoadBalancer(request);
 
+			if (response.getStatus() != 200) {	
+				logger.error("error status: {}", response.getStatus());
+				throw new Exception("error status: " + response.getStatus());
+			}
+			
 			return IOUtils.toString(response.getRawEntity(), Charsets.UTF_8);
 		} catch (Exception exc) {
+			logger.error("Exception calling middletier while retrieving logs.", exc);
 			throw new RuntimeException("Exception", exc);
 		}
 	}
 
 	@Override
 	protected String getFallback() {
-		return "Fraggle Fallback!";
+		return "Fallback:  Great Scott!";
 	}
 }

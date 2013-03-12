@@ -1,9 +1,9 @@
 <%@ page import="java.util.concurrent.Future" %>
-<%@ page import="com.fluxcapacitor.edge.hystrix.BasicFallbackMiddleTierCommand" %>
+<%@ page import="com.fluxcapacitor.edge.hystrix.GetLogsCommand" %>
 <%@ page import="com.netflix.hystrix.HystrixCommand" %>
 
 <%
-	HystrixCommand<String> getCommand = new BasicFallbackMiddleTierCommand();
+	HystrixCommand<String> getCommand = new GetLogsCommand();
 	Future<String> future = getCommand.queue();
 	String responseString = future.get();
 

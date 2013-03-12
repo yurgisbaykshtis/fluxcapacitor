@@ -18,8 +18,13 @@ package com.fluxcapacitor.edge.jersey.resources;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -27,7 +32,8 @@ import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fluxcapacitor.edge.hystrix.BasicFallbackMiddleTierCommand;
+import com.fluxcapacitor.edge.hystrix.AddLogCommand;
+import com.fluxcapacitor.edge.hystrix.GetLogsCommand;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.servo.DefaultMonitorRegistry;
 import com.netflix.servo.monitor.BasicCounter;
@@ -79,8 +85,9 @@ public class EdgeResource {
 	}
 
 	@GET
-	@Path("/get")
-	public Response get() {
+	@Path("/v1/logs/{key}")
+    @Produces(MediaType.TEXT_PLAIN)
+    public Response getLogs(final @PathParam("key") String key) {
 		Stopwatch stopwatch = statsTimer.start();
 
 		try {
@@ -88,7 +95,7 @@ public class EdgeResource {
 			requestCounter.increment();
 
 			// invoke service through Hystrix
-			HystrixCommand<String> getCommand = new BasicFallbackMiddleTierCommand();
+			HystrixCommand<String> getCommand = new GetLogsCommand(key);
 			Future<String> future = getCommand.queue();
 			String responseString = future.get();
 
@@ -99,7 +106,7 @@ public class EdgeResource {
 			// this is here for demo purposes.
 			if (getCommand.isResponseFromFallback()) {
 				fallbackCounter.increment();
-				responseString += " fallback=true";
+				//responseString += " fallback=true";
 			}
 
 			// increment the timeout counter if the response timed out and
@@ -109,24 +116,85 @@ public class EdgeResource {
 			// this is here for demo purposes.
 			if (getCommand.isResponseTimedOut()) {
 				timeoutCounter.increment();
-				responseString += " timeout=true";
+				//responseString += " timeout=true";
 			}
 
 			// append failed=true
 			// TODO: this isn't needed as the hystrix framework exports its own
 			// metrics on a per-command basis.
 			// this is here for demo purposes.
-			if (getCommand.isFailedExecution()) {
-				responseString += " failed=true";
-			}
+//			if (getCommand.isFailedExecution()) {
+//				//responseString += " failed=true";
+//			}
 
 			// return response
-			return Response.ok(responseString, MediaType.TEXT_PLAIN).build();
+			return Response.ok(responseString).build();
 		} catch (Exception ex) {
 			// add error counter
 			errorCounter.increment();
 
 			logger.error("Error processing the get request.", ex);
+
+			return Response.status(HttpStatus.SC_INTERNAL_SERVER_ERROR).build();
+		} finally {
+			stopwatch.stop();
+
+			statsTimer.record(stopwatch.getDuration(TimeUnit.MILLISECONDS),
+					TimeUnit.MILLISECONDS);
+		}
+	}
+	
+	@POST
+    @Path("/v1/log/{key}")
+    @Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+    public Response addLog(final @PathParam("key") String key, final String log) {    
+		Stopwatch stopwatch = statsTimer.start();
+
+		try {
+			// increment request counter
+			requestCounter.increment();
+
+			// invoke service through Hystrix
+			HystrixCommand<String> getCommand = new AddLogCommand(key, log);
+			Future<String> future = getCommand.queue();
+			String responseString = future.get();
+
+			// increment the fallback counter if the response came from a
+			// fallback
+			// TODO: this isn't needed as the hystrix framework exports its own
+			// metrics on a per-command basis.
+			// this is here for demo purposes.
+			if (getCommand.isResponseFromFallback()) {
+				fallbackCounter.increment();
+				//responseString += " fallback=true";
+			}
+
+			// increment the timeout counter if the response timed out and
+			// triggered fallback
+			// TODO: this isn't needed as the hystrix framework exports its own
+			// metrics on a per-command basis.
+			// this is here for demo purposes.
+			if (getCommand.isResponseTimedOut()) {
+				timeoutCounter.increment();
+				//responseString += " timeout=true";
+			}
+
+			// append failed=true
+			// TODO: this isn't needed as the hystrix framework exports its own
+			// metrics on a per-command basis.
+			// this is here for demo purposes.
+//			if (getCommand.isFailedExecution()) {
+//				//responseString += " failed=true";
+//			}
+
+			// return response
+			return Response.ok(responseString).build();
+		} catch (Exception ex) {
+			// add error counter
+			errorCounter.increment();
+
+			logger.error("Error processing the add request.", ex);
 
 			return Response.status(HttpStatus.SC_INTERNAL_SERVER_ERROR).build();
 		} finally {

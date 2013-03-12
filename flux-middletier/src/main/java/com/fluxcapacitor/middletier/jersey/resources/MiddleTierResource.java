@@ -15,11 +15,17 @@
  */
 package com.fluxcapacitor.middletier.jersey.resources;
 
-import java.util.Random;
+import java.net.URLDecoder;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -27,6 +33,10 @@ import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fluxcapacitor.middletier.store.AppStore;
+import com.fluxcapacitor.middletier.store.cassandra.FluxCassandraStore;
+import com.google.common.base.Charsets;
+import com.google.gson.Gson;
 import com.netflix.servo.DefaultMonitorRegistry;
 import com.netflix.servo.monitor.BasicCounter;
 import com.netflix.servo.monitor.Counter;
@@ -51,8 +61,9 @@ public class MiddleTierResource {
     // JMX:  com.netflix.servo.COUNTER.MiddleTierResource_statsTimer
     // JMX:  com.netflix.servo.MiddleTierResource_statsTimer (95th and 99th percentile)
     private static StatsTimer statsTimer = new StatsTimer(MonitorConfig.builder("MiddleTierResource_statsTimer").build(), new StatsConfig.Builder().build());
-
-    private static Random random = new Random();
+        
+    private final AppStore store;
+    private final Gson gson = new Gson();
     
     static {
     	DefaultMonitorRegistry.getInstance().register(requestCounter);
@@ -61,30 +72,62 @@ public class MiddleTierResource {
     }
 
     public MiddleTierResource() {
+    	store = new FluxCassandraStore();    	
+
+    	// TODO:  avoid calling start() from the constructor.
+    	// 		  it would be nice to use Guice/Governator to control the lifecycle of these jersey resources
+    	store.start();    	
     }
     
     @GET
-    @Path("/get")
-    public Response get() {
+    @Path("/v1/logs/{key}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getLogs(final @PathParam("key") String key) {
     	Stopwatch stopwatch = statsTimer.start();
     	try {
         	// increment request counter
         	requestCounter.increment();
         	            
-        	// intentionally multiplying by 2000ms in order to straddle the default hystrix command timeout of 1000ms.
-        	// this will cause the calling hystrix command to succeed in some cases and timeout in other cases (triggering client-side fallback).
-        	int delayMillis = (int)(random.nextFloat() * 2000);
-            Thread.sleep(delayMillis);
-
-            // return response
-            String responseString = "Fraggle Rock! serverDelay=" + delayMillis; 
+            List<String> logs = store.getLogs(key);
             
-            return Response.ok(responseString, MediaType.TEXT_PLAIN).build();            
+            logger.debug("retrieved key={} logs={}", key, logs);
+            
+            return Response.ok(gson.toJson(logs)).build();            
         } catch (Exception ex) {
         	// increment error counter
         	errorCounter.increment();
 
             logger.error("Error processing the get request.", ex);
+            
+            return Response.status(HttpStatus.SC_INTERNAL_SERVER_ERROR).build();
+        } finally {
+            stopwatch.stop();
+            
+            statsTimer.record(stopwatch.getDuration(TimeUnit.MILLISECONDS), TimeUnit.MILLISECONDS);
+        }
+    }
+    
+    @POST
+    @Path("/v1/log/{key}")
+    public Response addLog(final @PathParam("key") String key, final @QueryParam("log") String log) {    
+    	Stopwatch stopwatch = statsTimer.start();
+    	try {
+        	// increment request counter
+        	requestCounter.increment();
+        	
+        	String decodedLog = URLDecoder.decode(log, Charsets.UTF_8.name());
+        	            
+            store.addLog(key, decodedLog);
+            
+            // return response
+            logger.debug("added key={} log={}", key, decodedLog); 
+            
+            return Response.ok().build();            
+        } catch (Exception ex) {
+        	// increment error counter
+        	errorCounter.increment();
+
+            logger.error("Error processing the add request.", ex);
             
             return Response.status(HttpStatus.SC_INTERNAL_SERVER_ERROR).build();
         } finally {

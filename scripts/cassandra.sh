@@ -1,0 +1,9 @@
+create keyspace fluxcapacitor;
+
+use fluxcapacitor;
+
+create column family logs
+  with column_type = 'Standard'
+  and comparator = 'UTF8Type'
+  and default_validation_class = 'UTF8Type'
+  and key_validation_class = 'UTF8Type';

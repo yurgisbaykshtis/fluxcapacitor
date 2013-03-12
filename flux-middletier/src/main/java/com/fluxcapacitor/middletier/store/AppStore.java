@@ -13,18 +13,23 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package com.fluxcapacitor.core.util;
+package com.fluxcapacitor.middletier.store;
 
-import com.fluxcapacitor.core.config.AppConfiguration;
-import com.fluxcapacitor.core.config.FluxConfiguration;
-import com.fluxcapacitor.core.metrics.AppMetrics;
-import com.fluxcapacitor.core.metrics.FluxMetrics;
-import com.google.inject.AbstractModule;
+import java.util.List;
 
-public class FluxModule extends AbstractModule {
-	@Override
-	protected void configure() {
-		bind(AppConfiguration.class).to(FluxConfiguration.class);
-		bind(AppMetrics.class).to(FluxMetrics.class);
-	}
+public interface AppStore {
+	/**
+	 * Get the logs 
+	 */
+	public List<String> getLogs(String key) throws Exception;
+
+	/**
+	 * Add log 
+	 */
+	public void addLog(String key, String log) throws Exception;
+	
+	/**
+	 * Readies the Store impl
+	 */
+	public void start();
 }

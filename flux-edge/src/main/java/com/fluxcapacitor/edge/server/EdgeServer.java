@@ -18,7 +18,6 @@ package com.fluxcapacitor.edge.server;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fluxcapacitor.core.server.BaseJettyServer;
 import com.netflix.config.ConfigurationManager;
 import com.netflix.karyon.spi.PropertyNames;
 

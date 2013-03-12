@@ -24,9 +24,19 @@ public class FluxConstants {
 	public static String MIDDLETIER_EUREKA_SERVICE_NAME = "middletier";
 
 	public static String MIDDLETIER_HYSTRIX_GROUP = "MiddleTierGroup";
-	public static String MIDDLETIER_HYSTRIX_COMMAND_KEY = "MiddleTier";
+	public static String MIDDLETIER_HYSTRIX_GET_LOGS_COMMAND_KEY = "GetLogs";
+	public static String MIDDLETIER_HYSTRIX_ADD_LOG_COMMAND_KEY = "AddLog";
 	public static String MIDDLETIER_HYSTRIX_THREAD_POOL = "MiddleTierThreadPool";
 
 	public static String MIDDLETIER_WEB_RESOURCE_ROOT_PATH = "middletier";
-	public static String MIDDLETIER_WEB_RESOURCE_GET_PATH = "get";
+	public static String MIDDLETIER_WEB_RESOURCE_VERSION = "v1";
+	public static String MIDDLETIER_WEB_RESOURCE_GET_PATH = "logs";
+	public static String MIDDLETIER_WEB_RESOURCE_ADD_PATH = "log";
+	
+	// cassandra
+    public static final String CASSANDRA_HOST            = "cassandra.host";
+    public static final String CASSANDRA_PORT            = "cassandra.port";
+    public static final String CASSANDRA_MAXCONNSPERHOST = "cassandra.maxConnectionsPerHost";
+    public static final String CASSANDRA_KEYSPACE        = "cassandra.keyspace";
+    public static final String CASSANDRA_COLUMNFAMILY    = "cassandra.columnfamily";
 }
