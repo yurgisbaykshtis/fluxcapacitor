@@ -85,13 +85,16 @@ public class BaseJettyServer implements Closeable {
 		metrics = injector.getInstance(AppMetrics.class);
 
 		// Configure zookeeper config source
-		ZooKeeperClientFactory.initializeAndStartZkConfigSource();
-		
+		try {
+			ZooKeeperClientFactory.initializeAndStartZkConfigSource();
+		} catch (Exception exc) {
+			throw new RuntimeException("Cannot initialize and start zk config source.", exc);
+		}
+
 		port = config.getInt("jetty.http.port", Integer.MIN_VALUE);
 		host = InetAddressUtils.getBestReachableIp();
 
 		// NOTE: make sure any changes made here are reflected in web.xml -->
-
 		final Context context = new Context(jettyServer, "/", Context.SESSIONS);
 		context.setResourceBase("webapp");
 		context.setClassLoader(Thread.currentThread().getContextClassLoader());

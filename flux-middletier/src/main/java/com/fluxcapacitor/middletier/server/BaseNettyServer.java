@@ -77,7 +77,11 @@ public class BaseNettyServer implements Closeable {
 		this.metrics = injector.getInstance(AppMetrics.class);
 
 		// Configure zookeeper config source
-		ZooKeeperClientFactory.initializeAndStartZkConfigSource();
+		try {
+			ZooKeeperClientFactory.initializeAndStartZkConfigSource();
+		} catch (Exception exc) {
+			throw new RuntimeException("Cannot initialize and start zk config source.", exc);
+		}
 
 		// listen on any interface
 		this.host = config.getString("netty.http.host", "not-found-in-configuration");

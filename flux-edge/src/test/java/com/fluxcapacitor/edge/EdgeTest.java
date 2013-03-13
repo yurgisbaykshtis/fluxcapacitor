@@ -45,7 +45,7 @@ public class EdgeTest extends BaseAppTest {
 	@Test
 	@Ignore
 	public void test1() throws InterruptedException {
-		Response response = edge.addLog("1234", "Fraggle Rock!");
+		Response response = edge.addLogWithPost("1234", "Fraggle Rock!");
 		Assert.assertEquals(200, response.getStatus());
 
 		response = edge.getLogs("1234");

@@ -28,9 +28,6 @@ import com.netflix.config.DynamicWatchedConfiguration;
 import com.netflix.config.source.ZooKeeperConfigurationSource;
 import com.netflix.curator.framework.CuratorFramework;
 import com.netflix.curator.framework.CuratorFrameworkFactory;
-import com.netflix.curator.framework.recipes.cache.PathChildrenCache;
-import com.netflix.curator.framework.recipes.cache.PathChildrenCacheEvent;
-import com.netflix.curator.framework.recipes.cache.PathChildrenCacheListener;
 import com.netflix.curator.retry.ExponentialBackoffRetry;
 
 /**
@@ -55,37 +52,22 @@ public class ZooKeeperClientFactory {
         return createZKClient(ensemble);
     }
 
-	public static void initializeAndStartZkConfigSource() {
+	public static void initializeAndStartZkConfigSource() throws Exception {
         String zkConfigEnsemble = DynamicPropertyFactory.getInstance().getStringProperty(FluxConstants.ZK_CONFIG_ENSEMBLE, "not-found-in-flux-configuration").get();
         String zkConfigRootPath = DynamicPropertyFactory.getInstance().getStringProperty(FluxConstants.ZK_CONFIG_ROOT_PATH, "not-found-in-flux-configuration").get();
 
         // ZooKeeper Dynamic Override Properties
         CuratorFramework client = ZooKeeperClientFactory.getStartedZKClient(zkConfigEnsemble);
         ZooKeeperConfigurationSource zookeeperConfigSource = new ZooKeeperConfigurationSource(
-                client, FluxConstants.ZK_CONFIG_ROOT_PATH);
+                client, zkConfigRootPath);
+        zookeeperConfigSource.start();
+        
         DynamicWatchedConfiguration zookeeperDynamicConfig = new DynamicWatchedConfiguration(
         		zookeeperConfigSource);
 
         // insert ZK DynamicConfig into the 2nd spot
         ((ConcurrentCompositeConfiguration) ConfigurationManager.getConfigInstance()).addConfigurationAtIndex(
                 zookeeperDynamicConfig, "zk dynamic override", 1);
-
-        PathChildrenCache pathChildrenCache = new PathChildrenCache(client, zkConfigRootPath, true);
-        pathChildrenCache.getListenable().addListener(new PathChildrenCacheListener() {
-			@Override
-			public void childEvent(CuratorFramework client,
-					PathChildrenCacheEvent event) throws Exception {
-				logger.debug("childEvent {}", event);
-			}
-        });
-
-        try {
-            pathChildrenCache.start();
-        } catch (Exception e) {
-            logger.error("Cannot start pathChildrenCache", e);
-            throw new RuntimeException("Cannot start pathChildrenCache", e);
-        }
-//        initializedZk = true;
     }
 
     /**

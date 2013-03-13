@@ -17,7 +17,6 @@ package com.fluxcapacitor.edge.jersey.resources;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
-import java.net.URLEncoder;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
