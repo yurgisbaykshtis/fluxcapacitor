@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 import com.fluxcapacitor.core.config.AppConfiguration;
 import com.fluxcapacitor.core.metrics.AppMetrics;
 import com.fluxcapacitor.core.util.InetAddressUtils;
+import com.fluxcapacitor.core.zookeeper.ZooKeeperClientFactory;
 import com.google.common.io.Closeables;
 import com.google.inject.Injector;
 import com.netflix.blitz4j.LoggingConfiguration;
@@ -63,10 +64,10 @@ public class BaseJettyServer implements Closeable {
 
 		this.karyonServer = new KaryonServer();
 		this.injector = karyonServer.initialize();
-		
+
 		this.jettyServer = new Server();
 	}
-
+	
 	public void start() {
 		LoggingConfiguration.getInstance().configure();
 
@@ -82,14 +83,15 @@ public class BaseJettyServer implements Closeable {
 
 		config = injector.getInstance(AppConfiguration.class);
 		metrics = injector.getInstance(AppMetrics.class);
+
+		// Configure zookeeper config source
+		ZooKeeperClientFactory.initializeAndStartZkConfigSource();
 		
 		port = config.getInt("jetty.http.port", Integer.MIN_VALUE);
 		host = InetAddressUtils.getBestReachableIp();
 
 		// NOTE: make sure any changes made here are reflected in web.xml -->
 
-		// Thanks to Aaron Wirtz for this snippet:
-		//
 		final Context context = new Context(jettyServer, "/", Context.SESSIONS);
 		context.setResourceBase("webapp");
 		context.setClassLoader(Thread.currentThread().getContextClassLoader());

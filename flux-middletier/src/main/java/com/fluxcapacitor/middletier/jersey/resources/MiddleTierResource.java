@@ -19,7 +19,6 @@ import java.net.URLDecoder;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -109,6 +108,7 @@ public class MiddleTierResource {
     
     @POST
     @Path("/v1/log/{key}")
+    @Produces(MediaType.APPLICATION_JSON)
     public Response addLog(final @PathParam("key") String key, final @QueryParam("log") String log) {    
     	Stopwatch stopwatch = statsTimer.start();
     	try {
@@ -117,12 +117,12 @@ public class MiddleTierResource {
         	
         	String decodedLog = URLDecoder.decode(log, Charsets.UTF_8.name());
         	            
-            store.addLog(key, decodedLog);
+            long timestamp = store.addLog(key, decodedLog);
+            
+            logger.debug("added key={} log={} timestamp={}", key, decodedLog, timestamp); 
             
             // return response
-            logger.debug("added key={} log={}", key, decodedLog); 
-            
-            return Response.ok().build();            
+            return Response.ok(gson.toJson(String.valueOf(timestamp))).build();            
         } catch (Exception ex) {
         	// increment error counter
         	errorCounter.increment();

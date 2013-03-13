@@ -83,9 +83,6 @@ public class AddLogCommand extends HystrixCommand<String> {
 			RestClient client = (RestClient) ClientFactory
 					.getNamedClient("middletier-client");
 
-			//MultivaluedMap<String, String> headers = new MultivaluedMapImpl();
-			//headers.putSingle("Content-Type", MediaType.APPLICATION_JSON);
-
 			MultivaluedMap<String, String> queryParams = new MultivaluedMapImpl();
 			queryParams.putSingle("log", URLEncoder.encode(log, Charsets.UTF_8.name()));
 
@@ -105,7 +102,6 @@ public class AddLogCommand extends HystrixCommand<String> {
 							+ "/"
 							+ key)
 					)
-					//.setHeaders(headers)
 					.setQueryParams(queryParams)
 					.build();
 			

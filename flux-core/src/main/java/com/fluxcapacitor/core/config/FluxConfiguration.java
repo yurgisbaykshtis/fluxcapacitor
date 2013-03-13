@@ -59,7 +59,7 @@ public class FluxConfiguration implements AppConfiguration {
 		
 		if (Strings.isNullOrEmpty(env)) {
 			logger.warn("System property 'archaius.deployment.environment' is empty.  Configuration may be invalid.  Set APP_ENV environment variable to populate the environment appropriately.");
-		}
+		}		
 	}
 
 	@Override

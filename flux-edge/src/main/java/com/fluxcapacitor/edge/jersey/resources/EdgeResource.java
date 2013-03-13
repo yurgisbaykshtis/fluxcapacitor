@@ -15,6 +15,9 @@
  */
 package com.fluxcapacitor.edge.jersey.resources;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
@@ -34,6 +37,8 @@ import org.slf4j.LoggerFactory;
 
 import com.fluxcapacitor.edge.hystrix.AddLogCommand;
 import com.fluxcapacitor.edge.hystrix.GetLogsCommand;
+import com.google.common.base.Charsets;
+import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.servo.DefaultMonitorRegistry;
 import com.netflix.servo.monitor.BasicCounter;
@@ -90,6 +95,8 @@ public class EdgeResource {
     public Response getLogs(final @PathParam("key") String key) {
 		Stopwatch stopwatch = statsTimer.start();
 
+		DynamicPropertyFactory.getInstance().getStringProperty("yoyo", "not-found").get();
+		
 		try {
 			// increment request counter
 			requestCounter.increment();
@@ -106,7 +113,6 @@ public class EdgeResource {
 			// this is here for demo purposes.
 			if (getCommand.isResponseFromFallback()) {
 				fallbackCounter.increment();
-				//responseString += " fallback=true";
 			}
 
 			// increment the timeout counter if the response timed out and
@@ -116,16 +122,7 @@ public class EdgeResource {
 			// this is here for demo purposes.
 			if (getCommand.isResponseTimedOut()) {
 				timeoutCounter.increment();
-				//responseString += " timeout=true";
 			}
-
-			// append failed=true
-			// TODO: this isn't needed as the hystrix framework exports its own
-			// metrics on a per-command basis.
-			// this is here for demo purposes.
-//			if (getCommand.isFailedExecution()) {
-//				//responseString += " failed=true";
-//			}
 
 			// return response
 			return Response.ok(responseString).build();
@@ -148,7 +145,23 @@ public class EdgeResource {
     @Path("/v1/log/{key}")
     @Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-    public Response addLog(final @PathParam("key") String key, final String log) {    
+    public Response addLogWithPost(final @PathParam("key") String key, final String log) {    
+		return doAddLog(key, log);
+	}
+	
+	@GET
+    @Path("/v1/log/{key}")
+    @Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+    public Response addLogWithGet(final @PathParam("key") String key, final @QueryParam("log") String log) {    		
+		try {
+			return doAddLog(key, URLDecoder.decode(log, Charsets.UTF_8.name()));
+		} catch (UnsupportedEncodingException exc) {
+			throw new RuntimeException("Cannot decode log '" + log + "'", exc);
+		}
+	}
+	
+	private Response doAddLog(final String key, final String log) {
 		Stopwatch stopwatch = statsTimer.start();
 
 		try {
@@ -157,7 +170,9 @@ public class EdgeResource {
 
 			// invoke service through Hystrix
 			HystrixCommand<String> getCommand = new AddLogCommand(key, log);
+			
 			Future<String> future = getCommand.queue();
+			
 			String responseString = future.get();
 
 			// increment the fallback counter if the response came from a
@@ -167,7 +182,6 @@ public class EdgeResource {
 			// this is here for demo purposes.
 			if (getCommand.isResponseFromFallback()) {
 				fallbackCounter.increment();
-				//responseString += " fallback=true";
 			}
 
 			// increment the timeout counter if the response timed out and
@@ -177,16 +191,7 @@ public class EdgeResource {
 			// this is here for demo purposes.
 			if (getCommand.isResponseTimedOut()) {
 				timeoutCounter.increment();
-				//responseString += " timeout=true";
 			}
-
-			// append failed=true
-			// TODO: this isn't needed as the hystrix framework exports its own
-			// metrics on a per-command basis.
-			// this is here for demo purposes.
-//			if (getCommand.isFailedExecution()) {
-//				//responseString += " failed=true";
-//			}
 
 			// return response
 			return Response.ok(responseString).build();
@@ -204,4 +209,5 @@ public class EdgeResource {
 					TimeUnit.MILLISECONDS);
 		}
 	}
+
 }

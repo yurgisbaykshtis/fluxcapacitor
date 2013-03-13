@@ -13,23 +13,16 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package com.fluxcapacitor.middletier.store;
+package com.fluxcapacitor.core.zookeeper;
 
-import java.util.List;
+import com.netflix.curator.framework.CuratorFramework;
 
-public interface AppStore {
-	/**
-	 * Get the logs 
-	 */
-	public List<String> getLogs(String key) throws Exception;
+public class ZooKeeperClientCacheItem {
+    public final String ensemble;
+    public final CuratorFramework client;
 
-	/**
-	 * Add log 
-	 */
-	public long addLog(String key, String log) throws Exception;
-	
-	/**
-	 * Readies the Store impl
-	 */
-	public void start();
+    public ZooKeeperClientCacheItem(String ensemble, CuratorFramework client) {
+        this.ensemble = ensemble;
+        this.client = client;
+    }
 }

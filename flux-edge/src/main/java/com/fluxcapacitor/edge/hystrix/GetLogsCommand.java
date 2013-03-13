@@ -17,8 +17,6 @@ package com.fluxcapacitor.edge.hystrix;
 
 import java.net.URI;
 
-import javax.ws.rs.core.MultivaluedMap;
-
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +32,6 @@ import com.netflix.niws.client.http.HttpClientRequest;
 import com.netflix.niws.client.http.HttpClientRequest.Verb;
 import com.netflix.niws.client.http.HttpClientResponse;
 import com.netflix.niws.client.http.RestClient;
-import com.sun.jersey.core.util.MultivaluedMapImpl;
 
 /**
  * Retrieve the logs.

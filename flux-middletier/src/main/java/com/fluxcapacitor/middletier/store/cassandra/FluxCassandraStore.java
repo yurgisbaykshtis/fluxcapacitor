@@ -77,7 +77,7 @@ public class FluxCassandraStore implements AppStore, Closeable {
     }
 
 	@Override
-    public void addLog(String key, String log) throws Exception{
+    public long addLog(String key, String log) throws Exception{
         try {
         	long timestamp = fluxKeyspace.getConfig().getClock().getCurrentTime();
         	
@@ -85,6 +85,8 @@ public class FluxCassandraStore implements AppStore, Closeable {
                 .putValue(log, null).execute();
         	
             logger.info("Time taken to add to Cassandra (in ms): " + opr.getLatency(TimeUnit.MILLISECONDS));
+            
+            return timestamp;
         } catch (Exception e) {
             logger.error("Exception occurred when writing to Cassandra: " + e);
             throw e;

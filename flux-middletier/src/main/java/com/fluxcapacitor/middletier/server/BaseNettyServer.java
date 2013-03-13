@@ -24,6 +24,7 @@ import com.fluxcapacitor.core.config.AppConfiguration;
 import com.fluxcapacitor.core.metrics.AppMetrics;
 import com.fluxcapacitor.core.netty.NettyHandlerContainer;
 import com.fluxcapacitor.core.netty.NettyServer;
+import com.fluxcapacitor.core.zookeeper.ZooKeeperClientFactory;
 import com.google.common.io.Closeables;
 import com.google.inject.Injector;
 import com.netflix.blitz4j.LoggingConfiguration;
@@ -74,7 +75,10 @@ public class BaseNettyServer implements Closeable {
 		
 		this.config = injector.getInstance(AppConfiguration.class);
 		this.metrics = injector.getInstance(AppMetrics.class);
-		
+
+		// Configure zookeeper config source
+		ZooKeeperClientFactory.initializeAndStartZkConfigSource();
+
 		// listen on any interface
 		this.host = config.getString("netty.http.host", "not-found-in-configuration");
 		this.port = config.getInt("netty.http.port", Integer.MIN_VALUE);

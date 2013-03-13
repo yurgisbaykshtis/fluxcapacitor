@@ -39,4 +39,8 @@ public class FluxConstants {
     public static final String CASSANDRA_MAXCONNSPERHOST = "cassandra.maxConnectionsPerHost";
     public static final String CASSANDRA_KEYSPACE        = "cassandra.keyspace";
     public static final String CASSANDRA_COLUMNFAMILY    = "cassandra.columnfamily";
+	
+    // zookeeper
+    public static final String ZK_CONFIG_ENSEMBLE = "zookeeper.config.ensemble";
+    public static final String ZK_CONFIG_ROOT_PATH = "zookeeper.config.root.path";
 }
