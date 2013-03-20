@@ -85,6 +85,7 @@ project(':flux-middletier') {
     jar {
         from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
         manifest { attributes 'Main-Class': 'com.fluxcapacitor.middletier.server.MiddleTierServer' }
+        exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA'
     }
 }
 
@@ -102,5 +103,6 @@ project(':flux-edge') {
     jar {
         from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
         manifest { attributes 'Main-Class': 'com.fluxcapacitor.edge.server.EdgeServer' }
+        exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA'
     }
 }
