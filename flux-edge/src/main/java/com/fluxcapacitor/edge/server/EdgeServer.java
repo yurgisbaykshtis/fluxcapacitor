@@ -27,16 +27,20 @@ import com.netflix.karyon.spi.PropertyNames;
 public class EdgeServer extends BaseJettyServer {
 	private static final Logger logger = LoggerFactory
 			.getLogger(EdgeServer.class);
-	
+
 	public EdgeServer() {
 	}
 
 	public static void main(final String[] args) throws Exception {
-        System.setProperty(PropertyNames.SERVER_BOOTSTRAP_BASE_PACKAGES_OVERRIDE, "com.fluxcapacitor");
+		System.setProperty(
+				PropertyNames.SERVER_BOOTSTRAP_BASE_PACKAGES_OVERRIDE,
+				"com.fluxcapacitor");
 
-        String appId = ConfigurationManager.getDeploymentContext().getApplicationId();
-        String env = ConfigurationManager.getDeploymentContext().getDeploymentEnvironment();
-		
+		String appId = ConfigurationManager.getDeploymentContext()
+				.getApplicationId();
+		String env = ConfigurationManager.getDeploymentContext()
+				.getDeploymentEnvironment();
+
 		// populate the eureka-specific properties
 		System.setProperty("eureka.client.props", appId);
 		if (env != null) {
