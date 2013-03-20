@@ -51,7 +51,6 @@ subprojects { project ->
         }
     }
 
-    // Ensure output is on a new line
     javadoc.doFirst { println "" }
 
     configurations {
@@ -79,5 +78,5 @@ task aggregateJavadoc(type: Javadoc) {
 
 // Generate wrapper, which is distributed as part of source to alleviate the need of installing gradle
 task createWrapper(type: Wrapper) {
-    gradleVersion = '1.1'
+    gradleVersion = '1.4'
 }

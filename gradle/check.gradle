@@ -9,17 +9,11 @@ subprojects {
 
     // FindBugs
     apply plugin: 'findbugs'
-    tasks.withType(FindBugs) { 
-        reports.html.enabled true 
-        reports.xml.enabled false
-    }
+    //tasks.withType(Findbugs) { reports.html.enabled true }
 
     // PMD
     apply plugin: 'pmd'
-    tasks.withType(Pmd) { 
-        reports.html.enabled true 
-        reports.xml.enabled false
-    }
+    //tasks.withType(Pmd) { reports.html.enabled true }
 
     apply plugin: 'cobertura'
     cobertura {
