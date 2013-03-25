@@ -52,17 +52,14 @@ public class BaseNettyServer implements Closeable {
 	protected AppMetrics metrics;
 
 	public BaseNettyServer() {
-		// This must be set before karyonServer.initialize() otherwise the
-		// archaius properties will not be available in JMX/jconsole
-		System.setProperty(DynamicPropertyFactory.ENABLE_JMX, "true");
-
 		this.karyonServer = new KaryonServer();
 		this.injector = karyonServer.initialize();		
 	}
 
 	public void start() {
+		// This has to come after any System.setProperty() calls as the configure() method triggers the initialization of the ConfigurationManager
 		LoggingConfiguration.getInstance().configure();
-	
+
 		try {
 			karyonServer.start();
 		} catch (Exception exc) {
@@ -71,7 +68,7 @@ public class BaseNettyServer implements Closeable {
 		
 		// Note:  after karyonServer.start(), the server will be marked as UP in eureka discovery.
 		//		  this is not ideal, but we need to call karyonServer.start() in order to start the Guice LifecyleManager 
-		//			to ultimately get the FluxConfiguration in the next step...
+		//			to ultimately build the FluxConfiguration used in later steps...
 		
 		this.config = injector.getInstance(AppConfiguration.class);
 		this.metrics = injector.getInstance(AppMetrics.class);
@@ -84,12 +81,12 @@ public class BaseNettyServer implements Closeable {
 		}
 
 		// listen on any interface
-		this.host = config.getString("netty.http.host", "not-found-in-configuration");
-		this.port = config.getInt("netty.http.port", Integer.MIN_VALUE);
+		this.host = DynamicPropertyFactory.getInstance().getStringProperty("netty.http.host", "not-found-in-configuration").get();
+		this.port = DynamicPropertyFactory.getInstance().getIntProperty("netty.http.port", Integer.MIN_VALUE).get();
 
 		PackagesResourceConfig rcf = new PackagesResourceConfig(
-				config.getString("jersey.resources.package",
-						"not-found-in-configuration"));
+				DynamicPropertyFactory.getInstance().getStringProperty("jersey.resources.package",
+						"not-found-in-configuration").get());
 
 		try {
 			metrics.start();

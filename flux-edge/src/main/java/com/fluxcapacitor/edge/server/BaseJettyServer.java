@@ -46,7 +46,6 @@ public class BaseJettyServer implements Closeable {
 			.getLogger(BaseJettyServer.class);
 
 	public final Server jettyServer;
-
 	public final KaryonServer karyonServer;
 
 	public String host;
@@ -58,10 +57,6 @@ public class BaseJettyServer implements Closeable {
 	protected AppMetrics metrics;
 
 	public BaseJettyServer() {
-		// This must be set before karyonServer.initialize() otherwise the
-		// archaius properties will not be available in JMX/jconsole
-		System.setProperty(DynamicPropertyFactory.ENABLE_JMX, "true");
-
 		this.karyonServer = new KaryonServer();
 		this.injector = karyonServer.initialize();
 
@@ -69,6 +64,7 @@ public class BaseJettyServer implements Closeable {
 	}
 	
 	public void start() {
+		// This has to come after any System.setProperty() calls as the configure() method triggers the initialization of the ConfigurationManager
 		LoggingConfiguration.getInstance().configure();
 
 		try {
@@ -79,8 +75,7 @@ public class BaseJettyServer implements Closeable {
 
 		// Note:  after karyonServer.start(), the service will be marked as UP in eureka discovery.
 		//		  this is not ideal, but we need to call karyonServer.start() in order to start the Guice LifecyleManager 
-		//			to ultimately get the FluxConfiguration in the next step...
-
+		//			to ultimately build the FluxConfiguration needed by later steps...
 		config = injector.getInstance(AppConfiguration.class);
 		metrics = injector.getInstance(AppMetrics.class);
 
@@ -91,7 +86,7 @@ public class BaseJettyServer implements Closeable {
 			throw new RuntimeException("Cannot initialize and start zk config source.", exc);
 		}
 
-		port = config.getInt("jetty.http.port", Integer.MIN_VALUE);
+		port = DynamicPropertyFactory.getInstance().getIntProperty("jetty.http.port", Integer.MIN_VALUE).get();
 		host = InetAddressUtils.getBestReachableIp();
 
 		// NOTE: make sure any changes made here are reflected in web.xml -->
@@ -103,7 +98,7 @@ public class BaseJettyServer implements Closeable {
 		context.addServlet(JspServlet.class, "/jsp/*.jsp");
 		
 		// enable Jersey REST endpoints
-		final PackagesResourceConfig rcf = new PackagesResourceConfig(config.getString("jersey.resources.package", "not-found-in-configuration"));
+		final PackagesResourceConfig rcf = new PackagesResourceConfig(DynamicPropertyFactory.getInstance().getStringProperty("jersey.resources.package", "not-found-in-configuration").get());
 		final ServletContainer container = new ServletContainer(rcf);
 		context.addServlet(new ServletHolder(container), "/service/*");
 
@@ -131,11 +126,11 @@ public class BaseJettyServer implements Closeable {
 	public void close() {
 		try {
 			jettyServer.stop();
-			Closeables.closeQuietly(karyonServer);
-			Closeables.closeQuietly(metrics);
 		} catch (Exception exc) {
 			logger.error("Error shutting down jetty.", exc);
 		}
+		Closeables.closeQuietly(karyonServer);
+		Closeables.closeQuietly(metrics);
 		LoggingConfiguration.getInstance().stop();
 	}
 }

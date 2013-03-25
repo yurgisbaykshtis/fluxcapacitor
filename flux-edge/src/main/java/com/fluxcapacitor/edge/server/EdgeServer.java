@@ -18,8 +18,9 @@ package com.fluxcapacitor.edge.server;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.netflix.blitz4j.LoggingConfiguration;
 import com.netflix.config.ConfigurationManager;
-import com.netflix.karyon.spi.PropertyNames;
+import com.netflix.config.DynamicPropertyFactory;
 
 /**
  * @author Chris Fregly (chris@fregly.com)
@@ -32,9 +33,9 @@ public class EdgeServer extends BaseJettyServer {
 	}
 
 	public static void main(final String[] args) throws Exception {
-		System.setProperty(
-				PropertyNames.SERVER_BOOTSTRAP_BASE_PACKAGES_OVERRIDE,
-				"com.fluxcapacitor");
+		// These must be set before karyonServer.initialize() otherwise the
+		// archaius properties will not be available in JMX/jconsole
+		System.setProperty(DynamicPropertyFactory.ENABLE_JMX, "true");
 
 		String appId = ConfigurationManager.getDeploymentContext()
 				.getApplicationId();
@@ -46,6 +47,9 @@ public class EdgeServer extends BaseJettyServer {
 		if (env != null) {
 			System.setProperty("eureka.environment", env);
 		}
+		
+		// This has to come after the above System.setProperty() calls as the configure() method triggers the initialization of the ConfigurationManager
+		LoggingConfiguration.getInstance().configure();
 
 		EdgeServer edgeServer = new EdgeServer();
 		edgeServer.start();

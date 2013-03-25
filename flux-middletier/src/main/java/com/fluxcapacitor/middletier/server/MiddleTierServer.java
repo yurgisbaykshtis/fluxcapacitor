@@ -19,8 +19,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.netflix.appinfo.InstanceInfo;
+import com.netflix.blitz4j.LoggingConfiguration;
+import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.discovery.DiscoveryManager;
-import com.netflix.karyon.spi.PropertyNames;
 
 /**
  * @author Chris Fregly (chris@fregly.com)
@@ -62,8 +63,10 @@ public class MiddleTierServer extends BaseNettyServer {
     }
         
     public static void main(String args[]) throws Exception {
-        System.setProperty(PropertyNames.SERVER_BOOTSTRAP_BASE_PACKAGES_OVERRIDE, "com.fluxcapacitor");
-    	
+		// This must be set before karyonServer.initialize() otherwise the
+		// archaius properties will not be available in JMX/jconsole
+		System.setProperty(DynamicPropertyFactory.ENABLE_JMX, "true");
+
     	MiddleTierServer middleTierServer = new MiddleTierServer();
     	middleTierServer.start();    	
     }
