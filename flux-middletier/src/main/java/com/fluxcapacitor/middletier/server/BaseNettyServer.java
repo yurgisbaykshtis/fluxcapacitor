@@ -29,6 +29,7 @@ import com.google.common.io.Closeables;
 import com.google.inject.Injector;
 import com.netflix.blitz4j.LoggingConfiguration;
 import com.netflix.config.DynamicPropertyFactory;
+import com.netflix.hystrix.Hystrix;
 import com.netflix.karyon.server.KaryonServer;
 import com.sun.jersey.api.container.ContainerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
@@ -110,6 +111,7 @@ public class BaseNettyServer implements Closeable {
 	public void close() {
 		Closeables.closeQuietly(nettyServer);
 		Closeables.closeQuietly(karyonServer);
+		Hystrix.reset();
 		Closeables.closeQuietly(metrics);
 		LoggingConfiguration.getInstance().stop();
 	}
