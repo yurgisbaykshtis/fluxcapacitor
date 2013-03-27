@@ -34,10 +34,11 @@ import com.netflix.blitz4j.LoggingConfiguration;
 import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.hystrix.Hystrix;
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
+import com.netflix.hystrix.contrib.servopublisher.HystrixServoMetricsPublisher;
+import com.netflix.hystrix.strategy.HystrixPlugins;
 import com.netflix.karyon.server.KaryonServer;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.spi.container.servlet.ServletContainer;
-
 
 /**
  * @author Chris Fregly (chris@fregly.com)
@@ -63,9 +64,11 @@ public class BaseJettyServer implements Closeable {
 
 		this.jettyServer = new Server();
 	}
-	
+
 	public void start() {
-		// This has to come after any System.setProperty() calls as the configure() method triggers the initialization of the ConfigurationManager
+		// This has to come after any System.setProperty() calls as the
+		// configure() method triggers the initialization of the
+		// ConfigurationManager
 		LoggingConfiguration.getInstance().configure();
 
 		try {
@@ -74,9 +77,11 @@ public class BaseJettyServer implements Closeable {
 			throw new RuntimeException("Cannot start karyon server.", exc);
 		}
 
-		// Note:  after karyonServer.start(), the service will be marked as UP in eureka discovery.
-		//		  this is not ideal, but we need to call karyonServer.start() in order to start the Guice LifecyleManager 
-		//			to ultimately build the FluxConfiguration needed by later steps...
+		// Note: after karyonServer.start(), the service will be marked as UP in
+		// eureka discovery.
+		// this is not ideal, but we need to call karyonServer.start() in order
+		// to start the Guice LifecyleManager
+		// to ultimately build the FluxConfiguration needed by later steps...
 		config = injector.getInstance(AppConfiguration.class);
 		metrics = injector.getInstance(AppMetrics.class);
 
@@ -84,22 +89,28 @@ public class BaseJettyServer implements Closeable {
 		try {
 			ZooKeeperClientFactory.initializeAndStartZkConfigSource();
 		} catch (Exception exc) {
-			throw new RuntimeException("Cannot initialize and start zk config source.", exc);
+			throw new RuntimeException(
+					"Cannot initialize and start zk config source.", exc);
 		}
 
-		port = DynamicPropertyFactory.getInstance().getIntProperty("jetty.http.port", Integer.MIN_VALUE).get();
+		port = DynamicPropertyFactory.getInstance()
+				.getIntProperty("jetty.http.port", Integer.MIN_VALUE).get();
 		host = InetAddressUtils.getBestReachableIp();
 
 		// NOTE: make sure any changes made here are reflected in web.xml -->
 		final Context context = new Context(jettyServer, "/", Context.SESSIONS);
 		context.setResourceBase("webapp");
 		context.setClassLoader(Thread.currentThread().getContextClassLoader());
-		
+
 		// enable jsp's
 		context.addServlet(JspServlet.class, "/jsp/*.jsp");
-		
+
 		// enable Jersey REST endpoints
-		final PackagesResourceConfig rcf = new PackagesResourceConfig(DynamicPropertyFactory.getInstance().getStringProperty("jersey.resources.package", "not-found-in-configuration").get());
+		final PackagesResourceConfig rcf = new PackagesResourceConfig(
+				DynamicPropertyFactory
+						.getInstance()
+						.getStringProperty("jersey.resources.package",
+								"not-found-in-configuration").get());
 		final ServletContainer container = new ServletContainer(rcf);
 		context.addServlet(new ServletHolder(container), "/service/*");
 
@@ -112,6 +123,9 @@ public class BaseJettyServer implements Closeable {
 			logger.error("Error starting metrics publisher.", exc);
 		}
 
+		HystrixPlugins.getInstance().registerMetricsPublisher(
+				HystrixServoMetricsPublisher.getInstance());
+
 		final Server server = new Server(port);
 		server.setHandler(context);
 
@@ -120,7 +134,7 @@ public class BaseJettyServer implements Closeable {
 		} catch (Exception exc) {
 			logger.error("Error starting jetty.", exc);
 			throw new RuntimeException("Error starting jetty.", exc);
-		}			
+		}
 	}
 
 	@Override
