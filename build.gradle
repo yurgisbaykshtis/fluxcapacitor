@@ -69,6 +69,7 @@ project(':flux-core') {
 
 project(':flux-middletier') {
     apply plugin: 'java'
+    apply plugin: 'war'
 
     dependencies {
         compile project(':flux-core')
@@ -83,6 +84,14 @@ project(':flux-middletier') {
         compile 'com.google.code.gson:gson:2.2.2'       
     }
 
+	war {
+	    from('resources')  {
+	        include '*.properties'
+	        into 'WEB-INF/classes/'
+	    }
+	    webXml = file('webapp/WEB-INF/web.xml')
+	}
+
     jar {
         from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
         manifest { attributes 'Main-Class': 'com.fluxcapacitor.middletier.server.MiddleTierServer' }
@@ -92,6 +101,7 @@ project(':flux-middletier') {
 
 project(':flux-edge') {
     apply plugin: 'java'
+    apply plugin: 'war'
 
     dependencies {
         compile project(':flux-core')
@@ -100,6 +110,14 @@ project(':flux-edge') {
         compile 'org.json:json:20090211'
         testCompile project(':flux-middletier')        
     }
+
+	war {
+	    from('resources')  {
+	        include '*.properties'
+	        into 'WEB-INF/classes/'
+	    }
+	    webXml = file('webapp/WEB-INF/web.xml')
+	}
 
     jar {
         from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
