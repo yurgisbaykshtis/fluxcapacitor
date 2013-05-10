@@ -24,78 +24,34 @@ import org.mortbay.jetty.servlet.ServletHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fluxcapacitor.core.config.AppConfiguration;
-import com.fluxcapacitor.core.metrics.AppMetrics;
+import com.fluxcapacitor.core.server.BaseServer;
 import com.fluxcapacitor.core.util.InetAddressUtils;
-import com.fluxcapacitor.core.zookeeper.ZooKeeperClientFactory;
-import com.google.common.io.Closeables;
-import com.google.inject.Injector;
-import com.netflix.blitz4j.LoggingConfiguration;
 import com.netflix.config.DynamicPropertyFactory;
-import com.netflix.hystrix.Hystrix;
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
-import com.netflix.hystrix.contrib.servopublisher.HystrixServoMetricsPublisher;
-import com.netflix.hystrix.strategy.HystrixPlugins;
-import com.netflix.karyon.server.KaryonServer;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.spi.container.servlet.ServletContainer;
 
 /**
  * @author Chris Fregly (chris@fregly.com)
  */
-public class BaseJettyServer implements Closeable {
+public class BaseJettyServer extends BaseServer implements Closeable {
 	private static final Logger logger = LoggerFactory
 			.getLogger(BaseJettyServer.class);
 
-	public final Server jettyServer;
-	public final KaryonServer karyonServer;
+	public Server jettyServer;
 
-	public String host;
-	public int port;
-
-	protected final Injector injector;
-
-	protected AppConfiguration config;
-	protected AppMetrics metrics;
-
-	public BaseJettyServer() {
-		this.karyonServer = new KaryonServer();
-		this.injector = karyonServer.initialize();
-
-		this.jettyServer = new Server();
+	public BaseJettyServer() {	
 	}
 
+	@Override
 	public void start() {
-		// This has to come after any System.setProperty() calls as the
-		// configure() method triggers the initialization of the
-		// ConfigurationManager
-		LoggingConfiguration.getInstance().configure();
-
-		try {
-			karyonServer.start();
-		} catch (Exception exc) {
-			throw new RuntimeException("Cannot start karyon server.", exc);
-		}
-
-		// Note: after karyonServer.start(), the service will be marked as UP in
-		// eureka discovery.
-		// this is not ideal, but we need to call karyonServer.start() in order
-		// to start the Guice LifecyleManager
-		// to ultimately build the FluxConfiguration needed by later steps...
-		config = injector.getInstance(AppConfiguration.class);
-		metrics = injector.getInstance(AppMetrics.class);
-
-		// Configure zookeeper config source
-		try {
-			ZooKeeperClientFactory.initializeAndStartZkConfigSource();
-		} catch (Exception exc) {
-			throw new RuntimeException(
-					"Cannot initialize and start zk config source.", exc);
-		}
-
+		super.start();
+		
 		port = DynamicPropertyFactory.getInstance()
 				.getIntProperty("jetty.http.port", Integer.MIN_VALUE).get();
 		host = InetAddressUtils.getBestReachableIp();
+
+		jettyServer = new Server(port);
 
 		// NOTE: make sure any changes made here are reflected in web.xml -->
 		final Context context = new Context(jettyServer, "/", Context.SESSIONS);
@@ -111,30 +67,23 @@ public class BaseJettyServer implements Closeable {
 						.getInstance()
 						.getStringProperty("jersey.resources.package",
 								"not-found-in-configuration").get());
+		
 		final ServletContainer container = new ServletContainer(rcf);
 		context.addServlet(new ServletHolder(container), "/service/*");
 
 		// enable hystrix.stream
 		context.addServlet(HystrixMetricsStreamServlet.class, "/hystrix.stream");
-
+	
+		jettyServer.setHandler(context);
+		
 		try {
-			metrics.start();
-		} catch (Exception exc) {
-			logger.error("Error starting metrics publisher.", exc);
-		}
-
-		HystrixPlugins.getInstance().registerMetricsPublisher(
-				HystrixServoMetricsPublisher.getInstance());
-
-		final Server server = new Server(port);
-		server.setHandler(context);
-
-		try {
-			server.start();
+			jettyServer.start();
 		} catch (Exception exc) {
 			logger.error("Error starting jetty.", exc);
 			throw new RuntimeException("Error starting jetty.", exc);
 		}
+		
+		logger.info("Started jetty server at {}:{}", host, port);
 	}
 
 	@Override
@@ -144,9 +93,7 @@ public class BaseJettyServer implements Closeable {
 		} catch (Exception exc) {
 			logger.error("Error shutting down jetty.", exc);
 		}
-		Closeables.closeQuietly(karyonServer);
-		Hystrix.reset();
-		Closeables.closeQuietly(metrics);
-		LoggingConfiguration.getInstance().stop();
+		
+		super.close();
 	}
 }

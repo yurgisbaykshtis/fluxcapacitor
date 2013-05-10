@@ -28,6 +28,7 @@ import com.netflix.config.DynamicWatchedConfiguration;
 import com.netflix.config.source.ZooKeeperConfigurationSource;
 import com.netflix.curator.framework.CuratorFramework;
 import com.netflix.curator.framework.CuratorFrameworkFactory;
+import com.netflix.curator.framework.imps.CuratorFrameworkState;
 import com.netflix.curator.retry.ExponentialBackoffRetry;
 
 /**
@@ -49,7 +50,7 @@ public class ZooKeeperClientFactory {
         if (cachedItem != null) {
             return cachedItem.client;
         }
-        return createZKClient(ensemble);
+        return createAndStartZKClient(ensemble);
     }
 
 	public static void initializeAndStartZkConfigSource() throws Exception {
@@ -58,7 +59,12 @@ public class ZooKeeperClientFactory {
 
         // ZooKeeper Dynamic Override Properties
         CuratorFramework client = ZooKeeperClientFactory.getStartedZKClient(zkConfigEnsemble);
-        ZooKeeperConfigurationSource zookeeperConfigSource = new ZooKeeperConfigurationSource(
+        
+        if (client.getState() != CuratorFrameworkState.STARTED) {
+        	throw new RuntimeException("ZooKeeper located at " + zkConfigEnsemble + " is not started.");
+        }
+        
+    	ZooKeeperConfigurationSource zookeeperConfigSource = new ZooKeeperConfigurationSource(
                 client, zkConfigRootPath);
         zookeeperConfigSource.start();
         
@@ -73,7 +79,7 @@ public class ZooKeeperClientFactory {
     /**
      * Create and start a zkclient if needed
      */
-    private synchronized static CuratorFramework createZKClient(String ensemble) {
+    private synchronized static CuratorFramework createAndStartZKClient(String ensemble) {
         ZooKeeperClientCacheItem cachedItem = cache.getIfPresent(ensemble);
         if (cachedItem != null) {
             return cachedItem.client;
@@ -83,6 +89,7 @@ public class ZooKeeperClientFactory {
                 DynamicPropertyFactory.getInstance().getIntProperty("zookeeper.session.timeout", Integer.MIN_VALUE).get(),
                 DynamicPropertyFactory.getInstance().getIntProperty("zookeeper.connection.timeout", Integer.MIN_VALUE).get(),
                 new ExponentialBackoffRetry(1000, 3));
+       
         client.start();
 
         cache.put(ensemble, new ZooKeeperClientCacheItem(ensemble, client));
