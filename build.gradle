@@ -24,6 +24,7 @@ subprojects {
         compile 'io.netty:netty:3.6.3.Final'
         compile 'com.netflix.servo:servo-core:0.4.32'
         compile 'com.netflix.servo:servo-graphite:0.4.32'
+		compile 'com.netflix.servo:servo-aws:0.4.32'
         compile 'com.google.guava:guava:11.0.2'
         compile 'com.google.inject:guice:3.0'
         compile 'com.netflix.archaius:archaius-core:0.5.6'

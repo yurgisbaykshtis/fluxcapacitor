@@ -5,8 +5,13 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
            version="2.5">
 
-	<!-- NOTE:  make sure any changes made here are reflected in BaseNettyServer.java -->
+	<!-- NOTE:  make sure any changes made here are reflected in BaseJettyServer.java -->
 
+    <servlet>
+        <display-name>HystrixMetricsStreamServlet</display-name>
+        <servlet-name>HystrixMetricsStreamServlet</servlet-name>
+        <servlet-class>com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet</servlet-class>
+    </servlet>
     <servlet>
         <servlet-name>Jersey REST Service</servlet-name>
         <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
@@ -16,12 +21,16 @@
         </init-param>
         <init-param>
         	<param-name>com.sun.jersey.config.property.packages</param-name>
-        	<param-value>com.fluxcapacitor.edge.jersey.resources</param-value>
+        	<param-value>com.fluxcapacitor.middletier.jersey.resources</param-value>
     	</init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
+        <servlet-name>HystrixMetricsStreamServlet</servlet-name>
+        <url-pattern>/hystrix.stream</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>Jersey REST Service</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/service/*</url-pattern>
     </servlet-mapping>
 </web-app>

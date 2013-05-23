@@ -33,7 +33,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.fluxcapacitor.middletier.store.AppStore;
-import com.fluxcapacitor.middletier.store.cassandra.FluxCassandraStore;
+import com.fluxcapacitor.middletier.store.cassandra.FluxDynamoDbStore;
 import com.google.common.base.Charsets;
 import com.google.gson.Gson;
 import com.netflix.servo.DefaultMonitorRegistry;
@@ -71,7 +71,7 @@ public class MiddleTierResource {
     }
 
     public MiddleTierResource() {
-    	store = new FluxCassandraStore();    	
+    	store = new FluxDynamoDbStore();    	
 
     	// TODO:  avoid calling start() from the constructor.
     	// 		  it would be nice to use Guice/Governator to control the lifecycle of these jersey resources

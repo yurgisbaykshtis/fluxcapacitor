@@ -18,15 +18,15 @@ package com.fluxcapacitor.middletier.server;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fluxcapacitor.core.server.BaseJettyServer;
 import com.netflix.appinfo.InstanceInfo;
-import com.netflix.blitz4j.LoggingConfiguration;
 import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.discovery.DiscoveryManager;
 
 /**
  * @author Chris Fregly (chris@fregly.com)
  */
-public class MiddleTierServer extends BaseNettyServer {
+public class MiddleTierServer extends BaseJettyServer {
     private static final Logger logger = LoggerFactory.getLogger(MiddleTierServer.class);
     
     public MiddleTierServer() {

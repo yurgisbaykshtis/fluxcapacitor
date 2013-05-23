@@ -13,7 +13,7 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package com.fluxcapacitor.middletier.server;
+package com.fluxcapacitor.core.server;
 
 import java.io.Closeable;
 
@@ -22,7 +22,6 @@ import org.slf4j.LoggerFactory;
 
 import com.fluxcapacitor.core.netty.NettyHandlerContainer;
 import com.fluxcapacitor.core.netty.NettyServer;
-import com.fluxcapacitor.core.server.BaseServer;
 import com.google.common.io.Closeables;
 import com.netflix.config.DynamicPropertyFactory;
 import com.sun.jersey.api.container.ContainerFactory;
