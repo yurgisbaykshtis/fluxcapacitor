@@ -19,6 +19,7 @@ In addition to the Netflix OSS components listed above, Flux Capacitor uses the 
 * [graphite] (http://graphite.wikidot.com) metrics
 * [jersey] (http://jersey.java.net) REST 
 * [jetty] (http://jetty.codehaus.org/jetty) servlet container 
+* [jmeter] (http://jmeter.apache.org) jmeter load test
 * [netty] (http://netty.io) io server 
 * [tomcat] (http://tomcat.apache.org/) servlet container
 
