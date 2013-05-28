@@ -20,7 +20,6 @@ import org.slf4j.LoggerFactory;
 
 import com.fluxcapacitor.core.server.BaseJettyServer;
 import com.netflix.appinfo.InstanceInfo;
-import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.discovery.DiscoveryManager;
 
 /**
@@ -63,10 +62,6 @@ public class MiddleTierServer extends BaseJettyServer {
     }
         
     public static void main(String args[]) throws Exception {
-		// This must be set before karyonServer.initialize() otherwise the
-		// archaius properties will not be available in JMX/jconsole
-		System.setProperty(DynamicPropertyFactory.ENABLE_JMX, "true");
-
     	MiddleTierServer middleTierServer = new MiddleTierServer();
     	middleTierServer.start();    	
     }

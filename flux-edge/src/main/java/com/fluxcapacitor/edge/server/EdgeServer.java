@@ -31,13 +31,6 @@ public class EdgeServer extends BaseJettyServer {
 			.getLogger(EdgeServer.class);
 
 	public EdgeServer() {
-	}
-
-	public static void main(final String[] args) throws Exception {
-		// These must be set before karyonServer.initialize() otherwise the
-		// archaius properties will not be available in JMX/jconsole
-		System.setProperty(DynamicPropertyFactory.ENABLE_JMX, "true");
-
 		String appId = ConfigurationManager.getDeploymentContext()
 				.getApplicationId();
 		String env = ConfigurationManager.getDeploymentContext()
@@ -51,7 +44,9 @@ public class EdgeServer extends BaseJettyServer {
 		
 		// This has to come after the above System.setProperty() calls as the configure() method triggers the initialization of the ConfigurationManager
 		LoggingConfiguration.getInstance().configure();
+	}
 
+	public static void main(final String[] args) throws Exception {
 		EdgeServer edgeServer = new EdgeServer();
 		edgeServer.start();
 	}

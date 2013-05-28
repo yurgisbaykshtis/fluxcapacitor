@@ -90,7 +90,7 @@ project(':flux-middletier') {
 	        include '*.properties'
 	        into 'WEB-INF/classes/'
 	    }
-	    webXml = file('webapp/WEB-INF/web.xml')
+	    webXml = file('WebContent/WEB-INF/web.xml')
 	}
 
     jar {
@@ -117,7 +117,7 @@ project(':flux-edge') {
 	        include '*.properties'
 	        into 'WEB-INF/classes/'
 	    }
-	    webXml = file('webapp/WEB-INF/web.xml')
+	    webXml = file('WebContent/WEB-INF/web.xml')
 	}
 
     jar {

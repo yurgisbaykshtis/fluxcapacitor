@@ -26,6 +26,7 @@ import com.fluxcapacitor.core.zookeeper.ZooKeeperClientFactory;
 import com.google.common.io.Closeables;
 import com.google.inject.Injector;
 import com.netflix.blitz4j.LoggingConfiguration;
+import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.hystrix.Hystrix;
 import com.netflix.hystrix.contrib.servopublisher.HystrixServoMetricsPublisher;
 import com.netflix.hystrix.strategy.HystrixPlugins;
@@ -49,6 +50,10 @@ public class BaseServer implements Closeable {
 	protected AppMetrics metrics;
 
 	public BaseServer() {
+		// These must be set before karyonServer.initialize() otherwise the
+		// archaius properties will not be available in JMX/jconsole
+		System.setProperty(DynamicPropertyFactory.ENABLE_JMX, "true");
+
 		this.karyonServer = new KaryonServer();
 		this.injector = karyonServer.initialize();
 	}
