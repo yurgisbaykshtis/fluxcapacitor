@@ -27,7 +27,7 @@ import org.junit.Test;
 
 import com.fluxcapacitor.core.test.BaseAppTest;
 import com.fluxcapacitor.edge.test.utils.EmbeddedEdgeForTests;
-import com.fluxcapacitor.middletier.test.utils.EmbeddedMiddleTierForTests;
+//import com.fluxcapacitor.middletier.test.utils.EmbeddedMiddleTierForTests;
 import com.google.common.base.Charsets;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
@@ -44,7 +44,7 @@ public class EdgeIntegrationTest extends BaseAppTest {
 	private static Client client;
 	private static WebResource webResource;
 
-	private static EmbeddedMiddleTierForTests middleTier;
+//	private static EmbeddedMiddleTierForTests middleTier;
 	private static EmbeddedEdgeForTests edge;
 
 	@BeforeClass
@@ -52,8 +52,8 @@ public class EdgeIntegrationTest extends BaseAppTest {
 		baseSetUp();
 
 		// Setup middle tier
-		middleTier = new EmbeddedMiddleTierForTests();
-		middleTier.setUp();
+//		middleTier = new EmbeddedMiddleTierForTests();
+//		middleTier.setUp();
 
 		// Setup edge
 		edge = new EmbeddedEdgeForTests();
@@ -81,9 +81,9 @@ public class EdgeIntegrationTest extends BaseAppTest {
 			edge.tearDown();
 		}
 
-		if (middleTier != null) {
-			middleTier.tearDown();
-		}
+//		if (middleTier != null) {
+//			middleTier.tearDown();
+//		}
 
 		baseTearDown();
 	}

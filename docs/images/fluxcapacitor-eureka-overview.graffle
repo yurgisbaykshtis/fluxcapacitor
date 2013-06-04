@@ -14,7 +14,7 @@
 	<key>BackgroundGraphic</key>
 	<dict>
 		<key>Bounds</key>
-		<string>{{0, 0}, {576, 733}}</string>
+		<string>{{0, 0}, {756, 553}}</string>
 		<key>Class</key>
 		<string>SolidGraphic</string>
 		<key>ID</key>
@@ -42,7 +42,7 @@
 	<key>ColumnSpacing</key>
 	<real>36</real>
 	<key>CreationDate</key>
-	<string>2013-03-05 01:13:49 +0000</string>
+	<string>2013-06-16 23:03:59 +0000</string>
 	<key>Creator</key>
 	<string>Chris Fregly</string>
 	<key>DisplayScale</key>
@@ -53,11 +53,440 @@
 	<array>
 		<dict>
 			<key>Bounds</key>
-			<string>{{245.908203125, 77.791770935058594}, {86.5, 63}}</string>
+			<string>{{93.83796406832198, 281.546875}, {568.3240966796875, 5.513671875}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>106</integer>
+			<integer>93</integer>
+			<key>Shape</key>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>width</key>
+				<real>10</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 3: invoke Hystrix-wrapped service at\
+ zone-aware, Eureka/Ribbon-selected endpoint}</string>
+			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{388.25229165929716, 461.54804135444994}, {272.36346435546875, 9.4628757596171003}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>92</integer>
+			<key>Rotation</key>
+			<real>353.3477783203125</real>
+			<key>Shape</key>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>90</integer>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 4b: collect \
+middletier metrics}</string>
+			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{90.314351073974535, 461.30465615272738}, {222.62814331054688, 9.4620352862685575}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>90</integer>
+			</dict>
+			<key>ID</key>
+			<integer>91</integer>
+			<key>Rotation</key>
+			<real>7.8809208869934082</real>
+			<key>Shape</key>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 4a: collect \
+edge metrics}</string>
+			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{307.69509967996089, 462.89452605277182}, {85, 47.412109375}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>90</integer>
 			<key>Shape</key>
 			<string>Hexagon</string>
 			<key>Style</key>
@@ -70,22 +499,310 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf0 CloudWatch}</string>
-				<key>VerticalPad</key>
-				<integer>0</integer>
+\f0\fs24 \cf0 Servo}</string>
 			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0, 0.10000000000000001}, {1, 0.80000000000000004}}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{287.99998736381531, 580.11033380278786}, {89.50848388671875, 78.840073225410336}}</string>
+			<string>{{388.25229638958444, 301.54805079720421}, {272.36346435546875, 9.4628757596171003}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>104</integer>
+			<integer>89</integer>
+			<key>Rotation</key>
+			<real>353.3477783203125</real>
 			<key>Shape</key>
-			<string>Circle</string>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>87</integer>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 4b: collect \
+middletier metrics}</string>
+			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{90.314351467739073, 301.30465941845029}, {222.62814331054688, 9.4620352862685575}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>87</integer>
+			</dict>
+			<key>ID</key>
+			<integer>88</integer>
+			<key>Rotation</key>
+			<real>7.8809189796447754</real>
+			<key>Shape</key>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 4a: collect \
+edge metrics}</string>
+			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{307.695099679961, 302.89452605277182}, {85, 47.412109375}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>87</integer>
+			<key>Shape</key>
+			<string>Hexagon</string>
 			<key>Style</key>
 			<dict/>
 			<key>Text</key>
@@ -96,2123 +813,31 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf0 DynamoDB}</string>
-				<key>VerticalPad</key>
-				<integer>0</integer>
+\f0\fs24 \cf0 Servo}</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{439.67314662509875, 628.60763448831744}, {102.21620178222656, 15}}</string>
+			<string>{{388.02431262012601, 141.12104275076973}, {272.406982421875, 9.4628757596171003}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>103</integer>
-			<key>Rotation</key>
-			<real>270.2452392578125</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
+			<key>Head</key>
 			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
+				<key>ID</key>
+				<integer>44</integer>
 			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{78.23866531154691, 674.34973804250421}, {21.022676467895508, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>102</integer>
-			<key>Rotation</key>
-			<real>92.673561096191406</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{90.994430838421067, 684.99999087315177}, {404.01113891601562, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>101</integer>
-			<key>Rotation</key>
-			<real>359.57455444335938</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Invoke Middletier Service \
-Provided by Eureka Discovery}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{342.11007769237688, 557.41736341805654}, {95.188056945800781, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>HFlip</key>
-			<string>YES</string>
-			<key>ID</key>
-			<integer>100</integer>
-			<key>Rotation</key>
-			<real>336.72439575195312</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Read/Write Data}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{312.2057715430617, 309.48863673391793}, {131.33845520019531, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>HFlip</key>
-			<string>YES</string>
-			<key>ID</key>
-			<integer>98</integer>
-			<key>Rotation</key>
-			<real>45.687068939208984</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Statically Configure}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{128.44441246615628, 309.98863814484093}, {138.86117553710938, 14}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>97</integer>
-			<key>Rotation</key>
-			<real>312.74490356445312</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Statically Configure}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{331.17604762584767, 357.99999996211773}, {100.64790344238281, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>HFlip</key>
-			<string>YES</string>
-			<key>ID</key>
-			<integer>96</integer>
-			<key>Rotation</key>
-			<real>27.838081359863281</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Dynamically Configure}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{330.25935887531489, 264.61247645568568}, {100.29798889160156, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>HFlip</key>
-			<string>YES</string>
-			<key>ID</key>
-			<integer>95</integer>
-			<key>Rotation</key>
-			<real>30.050117492675781</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Async Log Events}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{329.94229173711153, 189.47727302132995}, {98.61541748046875, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>HFlip</key>
-			<string>YES</string>
-			<key>ID</key>
-			<integer>94</integer>
-			<key>Rotation</key>
-			<real>22.664556503295898</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Custom Metrics}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{331.64594526832889, 124.47726786490165}, {96.208106994628906, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>HFlip</key>
-			<string>YES</string>
-			<key>ID</key>
-			<integer>93</integer>
-			<key>Rotation</key>
-			<real>339.3045654296875</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Framework Metrics}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{153.29282007306441, 122.48863670130453}, {94.164360046386719, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>92</integer>
-			<key>Rotation</key>
-			<real>18.592378616333008</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Framework  Metrics}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{339.76685595503909, 488.31797156373977}, {94.903793334960938, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>HFlip</key>
-			<string>YES</string>
-			<key>ID</key>
-			<integer>91</integer>
-			<key>Rotation</key>
-			<real>327.9482421875</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Register Middletier}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{145.42293526899954, 448.50000149647678}, {94.154129028320312, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>90</integer>
-			<key>Rotation</key>
-			<real>329.34933471679688</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Circuit  Metrics }</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{142.27632445215716, 361.16170769746384}, {101.82235717773438, 14}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>88</integer>
-			<key>Rotation</key>
-			<real>331.66763305664062</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Dynamically Configure}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{144.29913565876839, 267.49458721847634}, {101.1549072265625, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>87</integer>
-			<key>Rotation</key>
-			<real>326.392578125</real>
-			<key>Shape</key>
-			<string>AdjustableArrow</string>
-			<key>ShapeData</key>
-			<dict>
-				<key>ratio</key>
-				<real>0.34472709894180298</real>
-				<key>width</key>
-				<real>14.986950874328613</real>
-			</dict>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>tiff</key>
-						<data>
-						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
-						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
-						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
-						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
-						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
-						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
-						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
-						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
-						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
-						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
-						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
-						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
-						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
-						AQAIAAABAQADAAAAAQAIAAABAgAD
-						AAAABAAAAbYBAwADAAAAAQABAAAB
-						BgADAAAAAQACAAABEQAEAAAAAQAA
-						AAgBEgADAAAAAQABAAABFQADAAAA
-						AQAEAAABFgADAAAAAQAIAAABFwAE
-						AAAAAQAAAQABHAADAAAAAQABAAAB
-						UgADAAAAAQABAAABUwADAAAABAAA
-						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
-						CAAIAAgAAQABAAEAAQAAA+xhcHBs
-						AgAAAG1udHJSR0IgWFlaIAfYAAEA
-						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
-						1gABAAAAANMtYXBwbHuBR48ySeTZ
-						c+utLOki444AAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAADnJY
-						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
-						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
-						AAAAFGNoYWQAAAF8AAAALHJUUkMA
-						AAGoAAAADmdUUkMAAAG4AAAADmJU
-						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
-						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
-						AAAAZGRzY20AAAKkAAAA+m1tb2QA
-						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
-						WiAAAAAAAAB3egAAP1oAAAI3WFla
-						IAAAAAAAAFiwAACsBQAAFl9YWVog
-						AAAAAAAAJqwAABTDAAC6jVhZWiAA
-						AAAAAADyaAABAAAAARLhc2YzMgAA
-						AAAAAQxnAAAGBP//85YAAAfbAAD9
-						If//+8H///3CAAADogAAw0VjdXJ2
-						AAAAAAAAAAEBzQAAY3VydgAAAAAA
-						AAABAc0AAGN1cnYAAAAAAAAAAQHN
-						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
-						AAABAAAAANF0AAAAAAABAAAAANF0
-						AAAAAAABAABuZGluAAAAAAAAADAA
-						AKPAAABXwAAASsAAAJyAAAAmlwAA
-						E1sAAFBAAABUwAACMzMAAjMzAAIz
-						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
-						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-						AAAAAAAAAAAAAAAAAAAAAABtbHVj
-						AAAAAAAAABIAAAAMbmJOTwAAABIA
-						AADocHRQVAAAABIAAADoc3ZTRQAA
-						ABIAAADoZmlGSQAAABIAAADoZGFE
-						SwAAABIAAADoemhDTgAAABIAAADo
-						ZnJGUgAAABIAAADoamFKUAAAABIA
-						AADoZW5VUwAAABIAAADocGxQTAAA
-						ABIAAADocHRCUgAAABIAAADoZXNF
-						UwAAABIAAADoemhUVwAAABIAAADo
-						cnVSVQAAABIAAADoa29LUgAAABIA
-						AADoZGVERQAAABIAAADobmxOTAAA
-						ABIAAADoaXRJVAAAABIAAADoAEMA
-						aQBuAGUAbQBhACAASABEAABtbW9k
-						AAAAAAAABhAAAJIyAgAOdr+/ywAA
-						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
-						AABDb3B5cmlnaHQgQXBwbGUsIElu
-						Yy4sIDIwMDgA
-						</data>
-					</dict>
-					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>a</key>
-						<string>0.5</string>
-						<key>b</key>
-						<string>0</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>0</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-					<key>ShadowVector</key>
-					<string>{0, 2}</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Async Log Events}</string>
-			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
-			<key>isConnectedShape</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{149.65154329016505, 188.23540267117522}, {103.67622375488281, 15}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
 			<key>ID</key>
 			<integer>86</integer>
 			<key>Rotation</key>
-			<real>336.421630859375</real>
+			<real>353.30828857421875</real>
 			<key>Shape</key>
-			<string>AdjustableArrow</string>
+			<string>AdjustableDoubleArrow</string>
 			<key>ShapeData</key>
 			<dict>
 				<key>ratio</key>
-				<real>0.34472709894180298</real>
+				<real>0.30191174149513245</real>
 				<key>width</key>
-				<real>14.986950874328613</real>
+				<real>13.905596733093262</real>
 			</dict>
 			<key>Style</key>
 			<dict>
@@ -2321,6 +946,11 @@ Provided by Eureka Discovery}</string>
 					<string>NO</string>
 				</dict>
 			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>83</integer>
+			</dict>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
@@ -2329,7 +959,8 @@ Provided by Eureka Discovery}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf0 Custom Metrics}</string>
+\f0\fs24 \cf0 4b: collect \
+middletier metrics}</string>
 			</dict>
 			<key>TextRelativeArea</key>
 			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
@@ -2338,21 +969,26 @@ Provided by Eureka Discovery}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{145.63420632310363, 532.72659625270967}, {92.085899353027344, 15}}</string>
+			<string>{{90.106166386552616, 140.86745378798992}, {222.68180847167969, 9.4620352862685575}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>83</integer>
+			</dict>
 			<key>ID</key>
-			<integer>26</integer>
+			<integer>84</integer>
 			<key>Rotation</key>
-			<real>331.1357421875</real>
+			<real>7.9310464859008789</real>
 			<key>Shape</key>
-			<string>AdjustableArrow</string>
+			<string>AdjustableDoubleArrow</string>
 			<key>ShapeData</key>
 			<dict>
 				<key>ratio</key>
-				<real>0.34472709894180298</real>
+				<real>0.30191174149513245</real>
 				<key>width</key>
-				<real>14.986950874328613</real>
+				<real>13.905596733093262</real>
 			</dict>
 			<key>Style</key>
 			<dict>
@@ -2461,6 +1097,11 @@ Provided by Eureka Discovery}</string>
 					<string>NO</string>
 				</dict>
 			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>46</integer>
+			</dict>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
@@ -2469,7 +1110,8 @@ Provided by Eureka Discovery}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf0 Discover Middletier }</string>
+\f0\fs24 \cf0 4a: collect \
+edge metrics}</string>
 			</dict>
 			<key>TextRelativeArea</key>
 			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
@@ -2478,91 +1120,524 @@ Provided by Eureka Discovery}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{443.0625, 426.09090909090958}, {93.999999999999957, 63.863636363636417}}</string>
+			<string>{{307.5, 142.587890625}, {85, 47.412109375}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>82</integer>
+			<integer>83</integer>
 			<key>Shape</key>
-			<string>Rectangle</string>
+			<string>Hexagon</string>
+			<key>Style</key>
+			<dict/>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf2 Eureka Client\
-(Discovery)}</string>
+\f0\fs24 \cf0 Servo}</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{443.0625, 343.0681818181821}, {93.999999999999957, 63.863636363636417}}</string>
+			<string>{{189.5, 5}, {377, 14}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
+			<key>FitText</key>
+			<string>YES</string>
+			<key>Flow</key>
+			<string>Resize</string>
 			<key>ID</key>
 			<integer>81</integer>
 			<key>Shape</key>
 			<string>Rectangle</string>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Pad</key>
+				<integer>0</integer>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\b\fs24 \cf0 Zone-Aware Service Invocation using Eureka, Ribbon, and Hystrix}</string>
+				<key>VerticalPad</key>
+				<integer>0</integer>
+			</dict>
+			<key>Wrap</key>
+			<string>NO</string>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{89.272396545272926, 415.28535258225821}, {224.13114929199219, 9.4620352862685575}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>77</integer>
+			</dict>
+			<key>ID</key>
+			<integer>80</integer>
+			<key>Rotation</key>
+			<real>349.4481201171875</real>
+			<key>Shape</key>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>75</integer>
+			</dict>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf2 Archaius/Curator\
-(Configuration)}</string>
+\f0\fs24 \cf0 2: periodically retrieve and cache service endpoints}</string>
 			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{443.0625, 94.000000000000142}, {94, 63.863636363636417}}</string>
+			<string>{{91.17591572847823, 442.751953125}, {568.3240966796875, 6.248046875}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>76</integer>
+			</dict>
 			<key>ID</key>
 			<integer>79</integer>
 			<key>Shape</key>
-			<string>Rectangle</string>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>width</key>
+				<real>10</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>75</integer>
+			</dict>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf2 Karyon/\
-Governator\
-(Base Service/Guice Dep Inj)}</string>
+\f0\fs24 \cf0 3: invoke Hystrix-wrapped service at\
+ zone-aware, Eureka/Ribbon-selected endpoint}</string>
 			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{443.0625, 509.00949859619141}, {94, 63.863636363636417}}</string>
+			<string>{{386.83666954007663, 414.88927262164219}, {274.32666015625, 9.4628757596171003}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>76</integer>
+			</dict>
 			<key>ID</key>
 			<integer>78</integer>
+			<key>Rotation</key>
+			<real>8.9156913757324219</real>
 			<key>Shape</key>
-			<string>Rectangle</string>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>77</integer>
+			</dict>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf2 Astyanax Client (Cassandra)}</string>
+\f0\fs24 \cf0 1: register service endpoint with eureka upon startup}</string>
 			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{443.0625, 260.04545454545473}, {94, 63.863636363636417}}</string>
+			<string>{{312, 362.91015625}, {76, 58.828125}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2574,16 +1649,16 @@ Governator\
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf2 Blitz4j\
-(Logging)}</string>
+\f0\fs24 \cf0 Eureka Server\
+Cluster}</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{443.0625, 177.02272727272737}, {94, 63.863636363636417}}</string>
+			<string>{{659.99999962601009, 386.3125}, {62.725490570068359, 119.126953125}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -2595,66 +1670,190 @@ Governator\
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf2 Servo\
-(Metrics)}</string>
+\f0\fs24 \cf0 Middletier\
+Cluster}</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{243.40820962190628, 349.67889855124724}, {89, 57.252929965729827}}</string>
+			<string>{{34.351878351500773, 386.3125}, {56.324062347412109, 119.126953125}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>74</integer>
+			<integer>75</integer>
 			<key>Shape</key>
-			<string>FlattenedRectangle</string>
-			<key>Style</key>
-			<dict/>
+			<string>Rectangle</string>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
 				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+{\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf2 Exhibitor\
-ZooKeeper Admin\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-\cf0 (Tomcat)}</string>
-				<key>VerticalPad</key>
-				<integer>0</integer>
+\f0\fs24 \cf0 Edge\
+Cluster}</string>
 			</dict>
-			<key>TextRelativeArea</key>
-			<string>{{0.10000000000000001, 0}, {0.80000000000000004, 1}}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{144, 380}, {2, 12}}</string>
+			<string>{{21, 358.369140625}, {714, 155.89453125}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
-			<key>FitText</key>
-			<string>YES</string>
-			<key>Flow</key>
-			<string>Resize</string>
 			<key>ID</key>
-			<integer>69</integer>
+			<integer>74</integer>
 			<key>Shape</key>
 			<string>Rectangle</string>
 			<key>Style</key>
 			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>CornerRadius</key>
+					<real>9</real>
+				</dict>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Align</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
+
+\f0\b\fs24 \cf0 avail zone
+\b0 : c}</string>
+			</dict>
+			<key>TextPlacement</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{89.418778556668656, 254.73547295290913}, {223.83837890625, 9.4620352862685575}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>70</integer>
+			</dict>
+			<key>ID</key>
+			<integer>73</integer>
+			<key>Rotation</key>
+			<real>349.8564453125</real>
+			<key>Shape</key>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
+			<key>Style</key>
+			<dict>
 				<key>fill</key>
 				<dict>
-					<key>Draws</key>
-					<string>NO</string>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
 				</dict>
 				<key>shadow</key>
 				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
 					<key>Draws</key>
 					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
 				</dict>
 				<key>stroke</key>
 				<dict>
@@ -2662,201 +1861,11 @@ ZooKeeper Admin\
 					<string>NO</string>
 				</dict>
 			</dict>
-			<key>Text</key>
+			<key>Tail</key>
 			<dict>
-				<key>Pad</key>
-				<integer>0</integer>
-				<key>VerticalPad</key>
-				<integer>0</integer>
+				<key>ID</key>
+				<integer>68</integer>
 			</dict>
-			<key>Wrap</key>
-			<string>NO</string>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{41.750000000000021, 426.09090909090941}, {93.999999999999957, 63.863636363636417}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>43</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf2 Hystrix Client\
-(Circuit Breaker)}</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{41.750000000000021, 343.06818181818193}, {93.999999999999957, 63.863636363636417}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>42</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf2 Archaius/Curator (Configuration)}</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{42.000000000000028, 592.13634490966797}, {93.999999999999957, 63.863636363636417}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>40</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf2 Ribbon\
-(Eureka-aware \
-REST Client)}</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{41.75, 94}, {94, 63.863636363636417}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>35</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf2 Karyon/\
-Governator\
-(Base Service/Guice Dep Inj)}</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{41.75, 509.00949859619129}, {94, 63.863636363636417}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>34</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf2 Eureka Client\
-(Discovery)}</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{41.75, 260.04545454545456}, {94, 63.863636363636417}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>33</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf2 Blitz4j (Logging)}</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{238.875, 420.96590089797974}, {100, 63}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>32</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict/>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf2 Hystrix/Turbine\
-Metrics Cluster\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-\cf0 (Tomcat)}</string>
-			</dict>
-			<key>TextPlacement</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{41.75, 177.0227272727272}, {94, 63.863636363636417}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>31</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf2 Servo\
-(Metrics)}</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{245.908203125, 148.25102970816863}, {86.5, 63}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>20</integer>
-			<key>Shape</key>
-			<string>Hexagon</string>
-			<key>Style</key>
-			<dict/>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
@@ -2865,48 +1874,148 @@ Metrics Cluster\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf0 Graphite Metrics Cluster}</string>
-				<key>VerticalPad</key>
-				<integer>0</integer>
+\f0\fs24 \cf0 2: periodically retrieve and cache service endpoints}</string>
 			</dict>
 			<key>TextRelativeArea</key>
-			<string>{{0, 0.10000000000000001}, {1, 0.80000000000000004}}</string>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{243.74999785423279, 226.73533508994353}, {89, 37}}</string>
+			<string>{{386.96489250906461, 254.35501876840436}, {274.07022094726562, 9.4628757596171003}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>5</integer>
-			<key>Shape</key>
-			<string>RoundRect</string>
-			<key>Style</key>
-			<dict/>
-			<key>Text</key>
+			<key>Head</key>
 			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 File system}</string>
-				<key>VerticalPad</key>
-				<integer>0</integer>
+				<key>ID</key>
+				<integer>69</integer>
 			</dict>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{242.15820962190628, 301.67889855124724}, {89, 48}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>24</integer>
+			<integer>71</integer>
+			<key>Rotation</key>
+			<real>8.56854248046875</real>
 			<key>Shape</key>
-			<string>FlattenedRectangle</string>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
 			<key>Style</key>
-			<dict/>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>70</integer>
+			</dict>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
@@ -2915,24 +2024,22 @@ Metrics Cluster\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf0 ZooKeeper Cluster}</string>
-				<key>VerticalPad</key>
-				<integer>0</integer>
+\f0\fs24 \cf0 1: register service endpoint with eureka upon startup}</string>
 			</dict>
 			<key>TextRelativeArea</key>
-			<string>{{0.10000000000000001, 0}, {0.80000000000000004, 1}}</string>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{201.5, 581.58558404692849}, {86.5, 75.889617919921875}}</string>
+			<string>{{312, 203.455078125}, {76, 58.828125}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>28</integer>
+			<integer>70</integer>
 			<key>Shape</key>
-			<string>Circle</string>
-			<key>Style</key>
-			<dict/>
+			<string>Rectangle</string>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
@@ -2941,23 +2048,19 @@ Metrics Cluster\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf0 Cassandra\
+\f0\fs24 \cf0 Eureka Server\
 Cluster}</string>
-				<key>VerticalPad</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{435.56250500679016, 38}, {109, 541}}</string>
+			<string>{{659.99999962601009, 224.740234375}, {62.725490570068359, 119.126953125}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>11</integer>
+			<integer>69</integer>
 			<key>Shape</key>
 			<string>Rectangle</string>
-			<key>Style</key>
-			<dict/>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
@@ -2967,100 +2070,18 @@ Cluster}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\fs24 \cf0 Middletier\
-Cluster\
-(Tomcat)}</string>
-			</dict>
-			<key>TextPlacement</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{240.125, 498}, {100, 63}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>ID</key>
-			<integer>6</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict/>
-			<key>Text</key>
-			<dict>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf2 Eureka\
-Discovery\
-Cluster\cf0 \
-(Tomcat)}</string>
-			</dict>
-			<key>TextPlacement</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>Bounds</key>
-			<string>{{148.125, 15.823150634765625}, {284, 42}}</string>
-			<key>Class</key>
-			<string>ShapedGraphic</string>
-			<key>FitText</key>
-			<string>Vertical</string>
-			<key>Flow</key>
-			<string>Resize</string>
-			<key>ID</key>
-			<integer>4</integer>
-			<key>Shape</key>
-			<string>Rectangle</string>
-			<key>Style</key>
-			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-				<key>shadow</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-				<key>stroke</key>
-				<dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
-			</dict>
-			<key>Text</key>
-			<dict>
-				<key>Pad</key>
-				<integer>0</integer>
-				<key>Text</key>
-				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-
-\f0\fs24 \cf0 Fluxcapacitor\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-\cf2 Netflix OSS Component\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
-\cf0 Overview}</string>
-				<key>VerticalPad</key>
-				<integer>0</integer>
+Cluster}</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{34.5, 38}, {109, 627}}</string>
+			<string>{{34.351878351500773, 224.740234375}, {56.324062347412109, 119.126953125}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>3</integer>
+			<integer>68</integer>
 			<key>Shape</key>
 			<string>Rectangle</string>
-			<key>Style</key>
-			<dict/>
 			<key>Text</key>
 			<dict>
 				<key>Text</key>
@@ -3069,9 +2090,609 @@ Cluster\cf0 \
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf0 Edge \
-Cluster\
-(Tomcat)}</string>
+\f0\fs24 \cf0 Edge\
+Cluster}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{21, 199.04296875}, {714, 155.89453125}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>67</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>CornerRadius</key>
+					<real>9</real>
+				</dict>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Align</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
+
+\f0\b\fs24 \cf0 avail zone
+\b0 : b}</string>
+			</dict>
+			<key>TextPlacement</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{89.32301040477364, 96.001511342803852}, {224.02992248535156, 9.4620352862685575}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>48</integer>
+			</dict>
+			<key>ID</key>
+			<integer>55</integer>
+			<key>Rotation</key>
+			<real>349.58737182617188</real>
+			<key>Shape</key>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>46</integer>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 2: periodically retrieve and cache service endpoints}</string>
+			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{91.17591572847823, 123.486328125}, {568.3240966796875, 5.513671875}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>44</integer>
+			</dict>
+			<key>ID</key>
+			<integer>53</integer>
+			<key>Shape</key>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>width</key>
+				<real>10</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>46</integer>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 3: invoke Hystrix-wrapped service at\
+ zone-aware, Eureka/Ribbon-selected endpoint}</string>
+			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{386.88099661631452, 95.610764473006881}, {274.23800659179688, 9.4628757596171003}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>44</integer>
+			</dict>
+			<key>ID</key>
+			<integer>26</integer>
+			<key>Rotation</key>
+			<real>8.7972726821899414</real>
+			<key>Shape</key>
+			<string>AdjustableDoubleArrow</string>
+			<key>ShapeData</key>
+			<dict>
+				<key>ratio</key>
+				<real>0.30191174149513245</real>
+				<key>width</key>
+				<real>13.905596733093262</real>
+			</dict>
+			<key>Style</key>
+			<dict>
+				<key>fill</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>tiff</key>
+						<data>
+						TU0AKgAAAQgAAAAAHh4e/x4eHv8A
+						AAAAAAAAAB4eHv8eHh7/AAAAAAAA
+						AAAAAAAAHh4e/x4eHv8AAAAAAAAA
+						AB4eHv8eHh7/Hh4e/wAAAAAAAAAA
+						Hh4e/x4eHv8AAAAAAAAAAB4eHv8e
+						Hh7/Hh4e/wAAAAAAAAAAHh4e/x4e
+						Hv8AAAAAAAAAAAAAAAAeHh7/Hh4e
+						/wAAAAAAAAAAHh4e/x4eHv8AAAAA
+						AAAAAAAAAAAeHh7/Hh4e/wAAAAAA
+						AAAAHh4e/x4eHv8eHh7/AAAAAAAA
+						AAAeHh7/Hh4e/wAAAAAAAAAAHh4e
+						/x4eHv8eHh7/AAAAAAAAAAAeHh7/
+						Hh4e/wAAAAAAAAAAAA4BAAADAAAA
+						AQAIAAABAQADAAAAAQAIAAABAgAD
+						AAAABAAAAbYBAwADAAAAAQABAAAB
+						BgADAAAAAQACAAABEQAEAAAAAQAA
+						AAgBEgADAAAAAQABAAABFQADAAAA
+						AQAEAAABFgADAAAAAQAIAAABFwAE
+						AAAAAQAAAQABHAADAAAAAQABAAAB
+						UgADAAAAAQABAAABUwADAAAABAAA
+						Ab6HcwAHAAAD7AAAAcYAAAAAAAgA
+						CAAIAAgAAQABAAEAAQAAA+xhcHBs
+						AgAAAG1udHJSR0IgWFlaIAfYAAEA
+						FQAOAA4AA2Fjc3BBUFBMAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAD2
+						1gABAAAAANMtYXBwbHuBR48ySeTZ
+						c+utLOki444AAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAADnJY
+						WVoAAAEsAAAAFGdYWVoAAAFAAAAA
+						FGJYWVoAAAFUAAAAFHd0cHQAAAFo
+						AAAAFGNoYWQAAAF8AAAALHJUUkMA
+						AAGoAAAADmdUUkMAAAG4AAAADmJU
+						UkMAAAHIAAAADnZjZ3QAAAHYAAAA
+						MG5kaW4AAAIIAAAAOGRlc2MAAAJA
+						AAAAZGRzY20AAAKkAAAA+m1tb2QA
+						AAOgAAAAKGNwcnQAAAPIAAAAJFhZ
+						WiAAAAAAAAB3egAAP1oAAAI3WFla
+						IAAAAAAAAFiwAACsBQAAFl9YWVog
+						AAAAAAAAJqwAABTDAAC6jVhZWiAA
+						AAAAAADyaAABAAAAARLhc2YzMgAA
+						AAAAAQxnAAAGBP//85YAAAfbAAD9
+						If//+8H///3CAAADogAAw0VjdXJ2
+						AAAAAAAAAAEBzQAAY3VydgAAAAAA
+						AAABAc0AAGN1cnYAAAAAAAAAAQHN
+						AAB2Y2d0AAAAAAAAAAEAANF0AAAA
+						AAABAAAAANF0AAAAAAABAAAAANF0
+						AAAAAAABAABuZGluAAAAAAAAADAA
+						AKPAAABXwAAASsAAAJyAAAAmlwAA
+						E1sAAFBAAABUwAACMzMAAjMzAAIz
+						M2Rlc2MAAAAAAAAACkNpbmVtYSBI
+						RAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+						AAAAAAAAAAAAAAAAAAAAAABtbHVj
+						AAAAAAAAABIAAAAMbmJOTwAAABIA
+						AADocHRQVAAAABIAAADoc3ZTRQAA
+						ABIAAADoZmlGSQAAABIAAADoZGFE
+						SwAAABIAAADoemhDTgAAABIAAADo
+						ZnJGUgAAABIAAADoamFKUAAAABIA
+						AADoZW5VUwAAABIAAADocGxQTAAA
+						ABIAAADocHRCUgAAABIAAADoZXNF
+						UwAAABIAAADoemhUVwAAABIAAADo
+						cnVSVQAAABIAAADoa29LUgAAABIA
+						AADoZGVERQAAABIAAADobmxOTAAA
+						ABIAAADoaXRJVAAAABIAAADoAEMA
+						aQBuAGUAbQBhACAASABEAABtbW9k
+						AAAAAAAABhAAAJIyAgAOdr+/ywAA
+						AAAAAAAAAAAAAAAAAAAAdGV4dAAA
+						AABDb3B5cmlnaHQgQXBwbGUsIElu
+						Yy4sIDIwMDgA
+						</data>
+					</dict>
+					<key>MiddleFraction</key>
+					<real>0.70634919404983521</real>
+				</dict>
+				<key>shadow</key>
+				<dict>
+					<key>Color</key>
+					<dict>
+						<key>a</key>
+						<string>0.5</string>
+						<key>b</key>
+						<string>0</string>
+						<key>g</key>
+						<string>0</string>
+						<key>r</key>
+						<string>0</string>
+					</dict>
+					<key>Draws</key>
+					<string>NO</string>
+					<key>ShadowVector</key>
+					<string>{0, 2}</string>
+				</dict>
+				<key>stroke</key>
+				<dict>
+					<key>Draws</key>
+					<string>NO</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>48</integer>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 1: register service endpoint with eureka upon startup}</string>
+			</dict>
+			<key>TextRelativeArea</key>
+			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
+			<key>isConnectedShape</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{312, 44}, {76, 58.828125}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>48</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 Eureka Server\
+Cluster}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{659.99999962601009, 66.6796875}, {62.725490570068359, 119.126953125}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>44</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 Middletier\
+Cluster}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{34.351878351500773, 66.6796875}, {56.324062347412109, 119.126953125}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>46</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Text</key>
+			<dict>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 Edge\
+Cluster}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{21, 38.736328125}, {714, 155.89453125}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>47</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>CornerRadius</key>
+					<real>9</real>
+				</dict>
+			</dict>
+			<key>Text</key>
+			<dict>
+				<key>Align</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
+
+\f0\b\fs24 \cf0 avail zone
+\b0 : a}</string>
+			</dict>
+			<key>TextPlacement</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Bounds</key>
+			<string>{{9, 19}, {738, 498}}</string>
+			<key>Class</key>
+			<string>ShapedGraphic</string>
+			<key>ID</key>
+			<integer>1</integer>
+			<key>Shape</key>
+			<string>Rectangle</string>
+			<key>Style</key>
+			<dict/>
+			<key>Text</key>
+			<dict>
+				<key>Align</key>
+				<integer>2</integer>
+				<key>Text</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qr
+
+\f0\b\fs24 \cf0 region
+\b0 : us-east-1}</string>
 			</dict>
 			<key>TextPlacement</key>
 			<integer>0</integer>
@@ -3106,8 +2727,6 @@ Cluster\
 	<dict>
 		<key>Animate</key>
 		<string>NO</string>
-		<key>AutoLayout</key>
-		<integer>2</integer>
 		<key>circoMinDist</key>
 		<real>18</real>
 		<key>circoSeparation</key>
@@ -3126,7 +2745,7 @@ Cluster\
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-06-16 23:31:21 +0000</string>
+	<string>2013-06-17 14:42:30 +0000</string>
 	<key>Modifier</key>
 	<string>Chris Fregly</string>
 	<key>NotesVisible</key>
@@ -3135,8 +2754,6 @@ Cluster\
 	<integer>2</integer>
 	<key>OriginVisible</key>
 	<string>NO</string>
-	<key>OutlineStyle</key>
-	<string>Business/OrgChart1</string>
 	<key>PageBreaks</key>
 	<string>YES</string>
 	<key>PrintInfo</key>
@@ -3156,10 +2773,15 @@ Cluster\
 			<string>float</string>
 			<string>18</string>
 		</array>
+		<key>NSOrientation</key>
+		<array>
+			<string>coded</string>
+			<string>BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU051bWJlcgCEhAdOU1ZhbHVlAISECE5TT2JqZWN0AIWEASqEhAFxlwGG</string>
+		</array>
 		<key>NSPaperSize</key>
 		<array>
 			<string>size</string>
-			<string>{612, 792}</string>
+			<string>{792, 612}</string>
 		</array>
 		<key>NSPrintReverseOrientation</key>
 		<array>
@@ -3202,21 +2824,28 @@ Cluster\
 		<key>CurrentSheet</key>
 		<integer>0</integer>
 		<key>ExpandedCanvases</key>
-		<array/>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Canvas 1</string>
+			</dict>
+		</array>
 		<key>Frame</key>
-		<string>{{-1, 352}, {1920, 826}}</string>
+		<string>{{-0, 31}, {1920, 1147}}</string>
 		<key>ListView</key>
-		<false/>
+		<true/>
 		<key>OutlineWidth</key>
 		<integer>142</integer>
 		<key>RightSidebar</key>
 		<false/>
+		<key>ShowRuler</key>
+		<true/>
 		<key>Sidebar</key>
-		<false/>
+		<true/>
 		<key>SidebarWidth</key>
-		<integer>138</integer>
+		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-671, 1}, {1920, 732}}</string>
+		<string>{{-515, -227}, {1785, 1008}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>

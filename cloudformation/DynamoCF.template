@@ -1,0 +1,138 @@
+{
+    "AWSTemplateFormatVersion" : "2010-09-09",
+ 
+    "Description" : "AWS CloudFormation Sample Template: This template demonstrates the creation of a DynamoDB table.",
+ 
+    "Parameters" : {
+      "HashKeyElementName" : {
+        "Description" : "HashType PrimaryKey Name",
+        "Type" : "String",
+        "AllowedPattern" : "[a-zA-Z0-9]*",
+        "MinLength": "1",
+        "MaxLength": "2048",
+        "ConstraintDescription" : "must contain only alphanumberic characters"
+      },
+      "HashKeyElementType" : {
+        "Description" : "HashType PrimaryKey Type",
+        "Type" : "String",
+        "Default" : "S",
+        "AllowedPattern" : "[S|N]",
+        "MinLength": "1",
+        "MaxLength": "1",
+        "ConstraintDescription" : "must be either S or N"
+      },
+      
+      "RangeKeyElementName" : {
+        "Description" : "RangeType PrimaryKey Name",
+        "Type" : "String",
+        "AllowedPattern" : "[a-zA-Z0-9]*",
+        "MinLength": "1",
+        "MaxLength": "2048",
+        "ConstraintDescription" : "must contain only alphanumberic characters"
+      },
+      "RangeKeyElementType" : {
+        "Description" : "RangeType PrimaryKey Type",
+        "Type" : "String",
+        "Default" : "S",
+        "AllowedPattern" : "[S|N]",
+        "MinLength": "1",
+        "MaxLength": "1",
+        "ConstraintDescription" : "must be either S or N"
+      },
+      
+      "ColumnKeyElementName" : {
+        "Description" : "Column Name",
+        "Type" : "String",
+        "AllowedPattern" : "[a-zA-Z0-9]*",
+        "MinLength": "1",
+        "MaxLength": "2048",
+        "ConstraintDescription" : "must contain only alphanumberic characters"
+      },
+      "ColumnKeyElementType" : {
+        "Description" : "Column Type",
+        "Type" : "String",
+        "Default" : "S",
+        "AllowedPattern" : "[S|N]",
+        "MinLength": "1",
+        "MaxLength": "1",
+        "ConstraintDescription" : "must be either S or N"
+      },
+
+      "ReadCapacityUnits" : {
+        "Description" : "Provisioned read throughput",
+        "Type" : "Number",
+        "Default" : "1",
+        "MinValue": "1",
+        "MaxValue": "10000",
+        "ConstraintDescription" : "should be between 1 and 10000"
+      },
+      "WriteCapacityUnits" : {
+        "Description" : "Provisioned write throughput",
+        "Type" : "Number",
+        "Default" : "1",
+        "MinValue": "1",
+        "MaxValue": "10000",
+        "ConstraintDescription" : "should be between 1 and 10000"
+      }
+    },
+ 
+    "Resources" : {
+        "archaiusProperties" : {
+             "Type" : "AWS::DynamoDB::Table",
+              "Properties" : {
+                	"KeySchema" : {
+	                    	"key": {
+	                        	"AttributeName" : {"Ref" : "HashKeyElementName"},
+	                        	"AttributeType" : {"Ref" : "HashKeyElementType"}
+	                     	},	                     
+							"value": {
+	                        	"AttributeName" : {"Ref" : "RangeKeyElementName"},
+	                        	"AttributeType" : {"Ref" : "RangeKeyElementType"}
+		                	}	                 
+                  	},
+    	         	"ProvisionedThroughput" : {
+        	           "ReadCapacityUnits" : {"Ref" : "ReadCapacityUnits"},
+            	       "WriteCapacityUnits" : {"Ref" : "WriteCapacityUnits"}
+                	}
+              }
+        },        
+
+        "logs" : {
+             "Type" : "AWS::DynamoDB::Table",
+              "Properties" : {
+                	"KeySchema" : {
+	                    	"key": {
+	                        	"AttributeName" : {"Ref" : "HashKeyElementName"},
+	                        	"AttributeType" : {"Ref" : "HashKeyElementType"}
+	                     	},	                     
+							"datetime": {
+	                        	"AttributeName" : {"Ref" : "RangeKeyElementName"},
+	                        	"AttributeType" : {"Ref" : "RangeKeyElementType"}
+		                	},	                 
+							"log": {
+		                        "AttributeName" : {"Ref" : "ColumnElementName"},
+		                        "AttributeType" : {"Ref" : "ColumnElementType"}
+			                }
+                   	},	
+    	         	"ProvisionedThroughput" : {
+        	           "ReadCapacityUnits" : {"Ref" : "ReadCapacityUnits"},
+            	       "WriteCapacityUnits" : {"Ref" : "WriteCapacityUnits"}
+                	}
+              }
+        }        
+   },
+ 
+   "Outputs" : {
+     "TableName" : {
+       "Value" : {"Ref" : "archaiusProperties"},
+       "Description" : "Table name of the archaiusProperties table"
+     },
+     
+     "TableName" : {
+       "Value" : {"Ref" : "logs"},
+       "Description" : "Table name of the logs table"
+     }    
+   }
+ 
+}
+

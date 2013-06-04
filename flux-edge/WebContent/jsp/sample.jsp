@@ -3,7 +3,7 @@
 <%@ page import="com.netflix.hystrix.HystrixCommand" %>
 
 <%
-	HystrixCommand<String> getCommand = new GetLogsCommand();
+	HystrixCommand<String> getCommand = new GetLogsCommand("1234");
 	Future<String> future = getCommand.queue();
 	String responseString = future.get();
 

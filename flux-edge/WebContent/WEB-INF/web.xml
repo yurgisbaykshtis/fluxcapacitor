@@ -25,6 +25,13 @@
     	</init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+  	<servlet>
+   	 	<description></description>
+    	<display-name>TurbineStreamServlet</display-name>
+    	<servlet-name>TurbineStreamServlet</servlet-name>
+    	<servlet-class>com.netflix.turbine.streaming.servlet.TurbineStreamServlet</servlet-class>
+  	</servlet>
+    
     <servlet-mapping>
         <servlet-name>HystrixMetricsStreamServlet</servlet-name>
         <url-pattern>/hystrix.stream</url-pattern>
@@ -33,4 +40,22 @@
         <servlet-name>Jersey REST Service</servlet-name>
         <url-pattern>/service/*</url-pattern>
     </servlet-mapping>
+  	<servlet-mapping>
+    	<servlet-name>TurbineStreamServlet</servlet-name>
+    	<url-pattern>/turbine.stream</url-pattern>
+  	</servlet-mapping>
+    
+    <filter>
+        <filter-name>GuiceFilter</filter-name>
+        <filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>GuiceFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>com.netflix.karyon.server.guice.KaryonGuiceContextListener</listener-class>
+    </listener>
 </web-app>

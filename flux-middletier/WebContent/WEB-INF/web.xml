@@ -23,8 +23,13 @@
         	<param-name>com.sun.jersey.config.property.packages</param-name>
         	<param-value>com.fluxcapacitor.middletier.jersey.resources</param-value>
     	</init-param>
+    	<init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+	
     <servlet-mapping>
         <servlet-name>HystrixMetricsStreamServlet</servlet-name>
         <url-pattern>/hystrix.stream</url-pattern>
@@ -33,4 +38,18 @@
         <servlet-name>Jersey REST Service</servlet-name>
         <url-pattern>/service/*</url-pattern>
     </servlet-mapping>
+   
+    <filter>
+        <filter-name>GuiceFilter</filter-name>
+        <filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>GuiceFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>com.netflix.karyon.server.guice.KaryonGuiceContextListener</listener-class>
+    </listener>
 </web-app>

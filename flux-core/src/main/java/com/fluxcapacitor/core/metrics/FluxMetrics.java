@@ -22,8 +22,12 @@ import com.netflix.servo.publish.graphite.GraphiteMetricObserver;
 @AutoBindSingleton(AppMetrics.class)
 public class FluxMetrics implements AppMetrics {
 	
-	@Inject
 	private AppConfiguration config;
+		
+	@Inject
+	public FluxMetrics(AppConfiguration config) {
+		this.config = config;
+	}
 	
 	public void start() throws Exception {
         final List<MetricObserver> observers = new ArrayList<MetricObserver>();
@@ -37,6 +41,11 @@ public class FluxMetrics implements AppMetrics {
         PollScheduler.getInstance().addPoller(task, config.getLong("graphite.poll.interval", 30), TimeUnit.SECONDS);
 	}
 	
+    private MetricObserver createCloudWatchObserver() {
+    	return new CloudWatchMetricObserver("FluxMetricsObserver", "Flux",
+    			new DefaultAWSCredentialsProviderChain());
+    }
+
 	private MetricObserver rateTransform(MetricObserver observer) {
         final long heartbeat = 2 * config.getLong("graphite.poll.interval", 5);
         return new CounterToRateMetricTransform(observer, heartbeat, TimeUnit.SECONDS);
@@ -53,11 +62,6 @@ public class FluxMetrics implements AppMetrics {
         final String addr = config.getString("graphite.server.address", "not-found-in-flux-configuration");
         
         return rateTransform(async("graphite", new GraphiteMetricObserver(prefix, addr)));
-    }
-
-    private MetricObserver createCloudWatchObserver() {
-    	return new CloudWatchMetricObserver("FluxMetricsObserver", "Flux",
-    			new DefaultAWSCredentialsProviderChain().getCredentials());
     }
     
     @Override
