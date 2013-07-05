@@ -1,2 +1,2 @@
 rootProject.name='fluxcapacitor'
-include 'flux-core','flux-middletier', 'flux-edge'
+include 'flux-core', 'flux-mapreduce', 'flux-middletier', 'flux-edge'
