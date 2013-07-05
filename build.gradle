@@ -2,12 +2,18 @@
 ext.githubProjectName = rootProject.name // Change if github project name is not the same as the root project's name
 
 buildscript {
-    repositories { mavenCentral() }
+    repositories {
+        mavenLocal()
+        mavenCentral() // maven { url 'http://jcenter.bintray.com' }
+    }
     apply from: file('gradle/buildscript.gradle'), to: buildscript 
 }
 
 allprojects {
-    repositories { mavenCentral() }
+    repositories { 
+        mavenCentral() // maven { url: 'http://jcenter.bintray.com' }
+        mavenLocal()
+    }
 }
 
 apply from: file('gradle/convention.gradle')
@@ -51,7 +57,7 @@ subprojects {
         compile 'com.netflix.ribbon:ribbon-eureka:0.1.14'
         compile 'com.netflix.ribbon:ribbon-httpclient:0.1.14'
         compile 'com.netflix.governator:governator:1.2.1'
-        compile 'com.netflix.karyon:karyon-core:1.0.19'  
+        compile 'com.netflix.karyon:karyon-core:1.0.20-SNAPSHOT'  
     	
         testCompile 'junit:junit:4.10'
         testCompile 'log4j:log4j:1.2.16'
@@ -62,6 +68,13 @@ subprojects {
 }
 
 project(':flux-core') {
+    apply plugin: 'java'
+    dependencies {
+        compile 'com.netflix.netflix-commons:netflix-statistics:0.1.1'
+    }
+}
+
+project(':flux-mapreduce') {
     apply plugin: 'java'
     dependencies {
         compile 'com.netflix.netflix-commons:netflix-statistics:0.1.1'
@@ -82,8 +95,8 @@ project(':flux-middletier') {
         compile 'com.netflix.astyanax:astyanax-thrift:1.56.37'
         compile 'com.netflix.astyanax:astyanax-cassandra:1.56.37'
         compile 'com.google.code.gson:gson:2.2.4'
-        compile 'com.netflix.karyon:karyon-extensions:1.0.19'
-    	compile 'com.netflix.karyon:karyon-admin-web:1.0.19'     
+        compile 'com.netflix.karyon:karyon-extensions:1.0.20-SNAPSHOT'
+    	compile 'com.netflix.karyon:karyon-admin-web:1.0.20-SNAPSHOT'     
     }
 
 	war {
@@ -109,8 +122,8 @@ project(':flux-edge') {
         compile project(':flux-core')
         compile 'com.amazonaws:aws-java-sdk:1.4.5'
         compile 'org.json:json:20090211'
-    	compile 'com.netflix.karyon:karyon-extensions:1.0.19'
-    	compile 'com.netflix.karyon:karyon-admin-web:1.0.19'
+    	compile 'com.netflix.karyon:karyon-extensions:1.0.20-SNAPSHOT'
+    	compile 'com.netflix.karyon:karyon-admin-web:1.0.20-SNAPSHOT'
     }
 
 	war {
