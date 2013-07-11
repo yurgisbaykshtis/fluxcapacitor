@@ -32,7 +32,7 @@ public class FluxMetrics implements AppMetrics {
 	public void start() throws Exception {
         final List<MetricObserver> observers = new ArrayList<MetricObserver>();
         observers.add(createGraphiteObserver());
-        observers.add(createCloudWatchObserver());
+       //observers.add(createCloudWatchObserver());
 
         final MetricPoller poller = new MonitorRegistryMetricPoller();
         final PollRunnable task = new PollRunnable(poller, BasicMetricFilter.MATCH_ALL, observers);
