@@ -35,7 +35,7 @@ public class FluxMetrics implements AppMetrics {
     public void start() throws Exception {
         final List<MetricObserver> observers = new ArrayList<MetricObserver>();
         observers.add(createGraphiteObserver());
-        observers.add(createCloudWatchObserver());
+        //observers.add(createCloudWatchObserver());
 
         // Create a new poller for the local JMX server that queries all metrics 
         // Note: this incldues the application-level metrics since, by default,
