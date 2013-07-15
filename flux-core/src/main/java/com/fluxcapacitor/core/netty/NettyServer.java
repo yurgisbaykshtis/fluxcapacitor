@@ -42,9 +42,9 @@ import org.jboss.netty.logging.Slf4JLoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.fluxcapacitor.core.util.DescriptiveThreadFactory;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Maps;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
 /**
  * NettyServer and Builder
@@ -153,12 +153,14 @@ public final class NettyServer implements Closeable {
 			ThreadPoolExecutor bossPool = new ThreadPoolExecutor(
 					numBossThreads, numBossThreads, 60, TimeUnit.SECONDS,
 					new LinkedBlockingQueue<Runnable>(),
-					new DescriptiveThreadFactory("Boss-Thread"));
+					new ThreadFactoryBuilder().setNameFormat("Boss-Thread-%d")
+						.setDaemon(false).setPriority(Thread.NORM_PRIORITY).build());
 
 			ThreadPoolExecutor workerPool = new ThreadPoolExecutor(
 					numWorkerThreads, numWorkerThreads, 60, TimeUnit.SECONDS,
 					new LinkedBlockingQueue<Runnable>(),
-					new DescriptiveThreadFactory("Worker-Thread"));
+					new ThreadFactoryBuilder().setNameFormat("Worker-Thread-%d")
+						.setDaemon(false).setPriority(Thread.NORM_PRIORITY).build());
 
 			ChannelFactory nioServer = new NioServerSocketChannelFactory(
 					bossPool, workerPool, numWorkerThreads);
@@ -201,8 +203,9 @@ public final class NettyServer implements Closeable {
 				ThreadPoolExecutor executorThreadPool = new ThreadPoolExecutor(
 						NettyServer.cpus, NettyServer.cpus * 4, 60,
 						TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(),
-						new DescriptiveThreadFactory("Executor-Thread"));
-
+						new ThreadFactoryBuilder().setNameFormat("Executor-Thread-%d")
+							.setDaemon(false).setPriority(Thread.NORM_PRIORITY).build());
+				
 				this.executionHandler = new ExecutionHandler(executorThreadPool);
 			} else {
 				this.executionHandler = null;
