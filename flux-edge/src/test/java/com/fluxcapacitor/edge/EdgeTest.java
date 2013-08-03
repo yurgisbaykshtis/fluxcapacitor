@@ -34,7 +34,7 @@ public class EdgeTest extends BaseAppTest {
 	private static final Logger logger = LoggerFactory
 			.getLogger(EdgeTest.class);
 
-	private EdgeResource edge = new EdgeResource();
+	private EdgeResource edge = new EdgeResource(null);
 	
 	@BeforeClass
 	public static void setUp() throws Exception {

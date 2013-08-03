@@ -41,13 +41,16 @@ import com.netflix.astyanax.serializers.StringSerializer;
 import com.netflix.astyanax.thrift.ThriftFamilyFactory;
 import com.netflix.config.DynamicPropertyFactory;
 
+// Uncomment out these annotation if using Cassandra
+//@Component
+//@AutoBindSingleton(AppStore.class)
 public class FluxCassandraStore implements AppStore, Closeable {
     private static final Logger logger = LoggerFactory.getLogger(FluxCassandraStore.class);
 
     private Keyspace fluxKeyspace; 
     private ColumnFamily<String, String> logsCF;
     
-    public void start() {
+    public FluxCassandraStore() {
     	fluxKeyspace = createKeyspace();
     	logsCF = createLogsColumnFamily();
     }

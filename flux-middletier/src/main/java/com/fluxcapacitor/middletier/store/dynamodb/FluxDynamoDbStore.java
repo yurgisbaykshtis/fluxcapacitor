@@ -15,6 +15,7 @@
  */
 package com.fluxcapacitor.middletier.store.dynamodb;
 
+import java.io.Closeable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -34,13 +35,18 @@ import com.fluxcapacitor.middletier.store.AppStore;
 import com.google.common.collect.ImmutableMap;
 import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.config.DynamicStringProperty;
+import com.netflix.governator.annotations.AutoBindSingleton;
+import com.netflix.karyon.spi.Component;
 import com.netflix.servo.DefaultMonitorRegistry;
 import com.netflix.servo.monitor.MonitorConfig;
 import com.netflix.servo.monitor.StatsTimer;
 import com.netflix.servo.monitor.Stopwatch;
 import com.netflix.servo.stats.StatsConfig;
 
-public class FluxDynamoDbStore implements AppStore {
+// Comment out these annotations if using Cassandra
+@Component
+@AutoBindSingleton(AppStore.class)
+public class FluxDynamoDbStore implements AppStore, Closeable {
     private static final Logger log = LoggerFactory.getLogger(FluxDynamoDbStore.class);
 
     //Property names
@@ -76,7 +82,7 @@ public class FluxDynamoDbStore implements AppStore {
     	DefaultMonitorRegistry.getInstance().register(addLogTimer);
     }
 
-    public void start() {
+    public FluxDynamoDbStore() {
     	dbClient = new AmazonDynamoDBClient();
     }
 
@@ -131,5 +137,9 @@ public class FluxDynamoDbStore implements AppStore {
         }
         
         return dateTime;        
+	}
+	
+	@Override
+	public void close() {
 	}
 }

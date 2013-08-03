@@ -32,10 +32,11 @@ import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fluxcapacitor.core.config.AppConfiguration;
 import com.fluxcapacitor.middletier.store.AppStore;
-import com.fluxcapacitor.middletier.store.dynamodb.FluxDynamoDbStore;
 import com.google.common.base.Charsets;
 import com.google.gson.Gson;
+import com.google.inject.Inject;
 import com.netflix.servo.DefaultMonitorRegistry;
 import com.netflix.servo.monitor.BasicCounter;
 import com.netflix.servo.monitor.Counter;
@@ -60,23 +61,25 @@ public class MiddleTierResource {
     // JMX:  com.netflix.servo.COUNTER.MiddleTierResource_statsTimer
     // JMX:  com.netflix.servo.MiddleTierResource_statsTimer (95th and 99th percentile)
     private static StatsTimer statsTimer = new StatsTimer(MonitorConfig.builder("MiddleTierResource_statsTimer").build(), new StatsConfig.Builder().build());
-        
-    private final AppStore store;
-    private final Gson gson = new Gson();
-    
+            
+	// This will be injected since the AppConfiguration is annotated with @Component
+	private final AppConfiguration config;
+	// This will be injected since the AppStore impls are annotated with @Component
+	private final AppStore store;	
+	
+	private final Gson gson = new Gson();
+	
     static {
     	DefaultMonitorRegistry.getInstance().register(requestCounter);
     	DefaultMonitorRegistry.getInstance().register(errorCounter);
     	DefaultMonitorRegistry.getInstance().register(statsTimer);
     }
 
-    public MiddleTierResource() {
-    	store = new FluxDynamoDbStore();    	
-
-    	// TODO:  avoid calling start() from the constructor.
-    	// 		  it would be nice to use Guice/Governator to control the lifecycle of these jersey resources
-    	store.start();    	
-    }
+    @Inject
+	public MiddleTierResource(AppConfiguration config, AppStore store) {
+		this.config = config;
+		this.store = store;
+	}
     
     @GET
     @Path("/v1/logs/{key}")

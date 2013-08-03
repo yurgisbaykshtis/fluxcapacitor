@@ -26,10 +26,5 @@ public interface AppStore {
 	/**
 	 * Add log 
 	 */
-	public long addLog(String key, String log) throws Exception;
-	
-	/**
-	 * Readies the Store impl
-	 */
-	public void start();
+	public long addLog(String key, String log) throws Exception;	
 }

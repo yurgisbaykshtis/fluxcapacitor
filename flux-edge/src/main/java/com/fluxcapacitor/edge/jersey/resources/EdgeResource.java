@@ -34,10 +34,11 @@ import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fluxcapacitor.core.config.AppConfiguration;
 import com.fluxcapacitor.edge.hystrix.AddLogCommand;
 import com.fluxcapacitor.edge.hystrix.GetLogsCommand;
 import com.google.common.base.Charsets;
-import com.netflix.config.DynamicPropertyFactory;
+import com.google.inject.Inject;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.servo.DefaultMonitorRegistry;
 import com.netflix.servo.monitor.BasicCounter;
@@ -85,7 +86,12 @@ public class EdgeResource {
 		DefaultMonitorRegistry.getInstance().register(statsTimer);
 	}
 
-	public EdgeResource() {
+	// This will be injected since FluxConfiguration is annotated with @Component
+	private final AppConfiguration config;
+	
+	@Inject
+	public EdgeResource(AppConfiguration config) {
+		this.config = config;
 	}
 
 	@GET
@@ -94,8 +100,6 @@ public class EdgeResource {
     public Response getLogs(final @PathParam("key") String key) {
 		Stopwatch stopwatch = statsTimer.start();
 
-		DynamicPropertyFactory.getInstance().getStringProperty("yoyo", "not-found").get();
-		
 		try {
 			// increment request counter
 			requestCounter.increment();

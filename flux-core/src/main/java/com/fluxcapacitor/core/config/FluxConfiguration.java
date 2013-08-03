@@ -28,6 +28,7 @@ import com.netflix.config.DynamicLongProperty;
 import com.netflix.config.DynamicPropertyFactory;
 import com.netflix.config.DynamicStringProperty;
 import com.netflix.governator.annotations.AutoBindSingleton;
+import com.netflix.karyon.spi.Component;
 
 
 
@@ -41,6 +42,7 @@ import com.netflix.governator.annotations.AutoBindSingleton;
  * 
  * @author Chris Fregly (chris@fregly.com)
  */
+@Component
 @AutoBindSingleton(AppConfiguration.class)
 public class FluxConfiguration implements AppConfiguration {
 	private static final Logger logger = LoggerFactory
