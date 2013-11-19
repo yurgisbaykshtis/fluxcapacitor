@@ -29,6 +29,24 @@ This project demonstrates many aspects of a complete distributed, scalable appli
 
 This app can be run standalone in a data center, but is optimized for an Amazon Web Services environment.
 
+Global Entities using Flux
+==========================
+Apple
+Cablevision
+Charter Communications
+Cisco
+CVS/Caremark
+Eucalyptus
+Eventbrite
+The Gap
+IBM
+Netflix
+Prezi.com
+Riot Games
+Samsung
+Various Stealth Startups
+ZScalar
+
 Architecture Overview
 =====================
 <img src="https://raw.github.com/cfregly/fluxcapacitor/master/docs/images/fluxcapacitor-netflixoss-overview.jpg">
