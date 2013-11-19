@@ -31,21 +31,21 @@ This app can be run standalone in a data center, but is optimized for an Amazon 
 
 Global Entities using Flux
 ==========================
-Apple
-Cablevision
-Charter Communications
-Cisco
-CVS/Caremark
-Eucalyptus
-Eventbrite
-The Gap
-IBM
-Netflix
-Prezi.com
-Riot Games
-Samsung
-Various Stealth Startups
-ZScalar
+* Apple
+* Cablevision
+* Charter Communications
+* Cisco
+* CVS/Caremark
+* Eucalyptus
+* Eventbrite
+* The Gap
+* IBM
+* Netflix
+* Prezi.com
+* Riot Games
+* Samsung
+* Various Stealth Startups
+* ZScalar
 
 Architecture Overview
 =====================
