@@ -18,7 +18,6 @@ import com.netflix.servo.publish.PollRunnable;
 import com.netflix.servo.publish.PollScheduler;
 import com.netflix.servo.publish.cloudwatch.CloudWatchMetricObserver;
 import com.netflix.servo.publish.graphite.GraphiteMetricObserver;
-import com.netflix.servo.publish.stackdriver.StackdriverMetricObserver;
 
 @AutoBindSingleton(AppMetrics.class)
 public class FluxMetrics implements AppMetrics {
