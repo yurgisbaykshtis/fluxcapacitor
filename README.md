@@ -2,7 +2,7 @@
 
 Overview
 ========
-Flux Capacitor is a Java-based distributed application demonstrating the following Netflix Open Source components (in alphabetical order):
+Flux Capacitor is a Java-based, cloud-native, reference architecture using many Netflix Open Source projects including the following:
 * [archaius] (https://github.com/Netflix/archaius) configuration
 * [astyanax] (https://github.com/Netflix/astyanax) cassandra client
 * [blitz4j] (https://github.com/Netflix/blitz4j) asynchronous logging
@@ -25,10 +25,7 @@ In addition to the Netflix OSS components listed above, Flux Capacitor uses the 
 * [netty] (http://netty.io) io server 
 * [tomcat] (http://tomcat.apache.org/) servlet container
 
-This project demonstrates many aspects of a complete distributed, scalable application from dynamic configuration to real-time metrics.
-
-This app can be run standalone in a data center, but is optimized for an Amazon Web Services environment.
-
+Flux can be deployed in any physical or virtual environment including traditional data centers, AWS, OpenStack, RackSpace, IBM Softlayer, etc.
 Global Entities using Flux
 ==========================
 * Apple
