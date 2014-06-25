@@ -39,6 +39,8 @@ import com.netflix.astyanax.model.ColumnFamily;
 import com.netflix.astyanax.model.ColumnList;
 import com.netflix.astyanax.serializers.StringSerializer;
 import com.netflix.astyanax.thrift.ThriftFamilyFactory;
+import com.netflix.governator.annotations.AutoBindSingleton;
+import com.netflix.karyon.spi.Component;
 import com.netflix.config.DynamicPropertyFactory;
 
 // Uncomment out these annotation if using Cassandra
