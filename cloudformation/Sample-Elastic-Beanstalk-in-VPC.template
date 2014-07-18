@@ -108,6 +108,7 @@
     },
 
     "PublicSubnet" : {
+      "DependsOn" : ["VPC"],
       "Type" : "AWS::EC2::Subnet",
       "Properties" : {
         "VpcId" : { "Ref" : "VPC" },
@@ -130,6 +131,7 @@
     },
 
     "GatewayToInternet" : {
+       "DependsOn" : ["VPC", "InternetGateway"],
        "Type" : "AWS::EC2::VPCGatewayAttachment",
        "Properties" : {
          "VpcId" : { "Ref" : "VPC" },
@@ -138,6 +140,7 @@
     },
 
     "PublicRouteTable" : {
+      "DependsOn" : ["VPC"],
       "Type" : "AWS::EC2::RouteTable",
       "Properties" : {
         "VpcId" : { "Ref" : "VPC" },
@@ -149,6 +152,7 @@
     },
 
     "PublicRoute" : {
+      "DependsOn" : ["PublicRouteTable", "InternetGateway"],
       "Type" : "AWS::EC2::Route",
       "Properties" : {
         "RouteTableId" : { "Ref" : "PublicRouteTable" },
@@ -158,6 +162,7 @@
     },
 
     "PublicSubnetRouteTableAssociation" : {
+      "DependsOn" : ["PublicSubnet", "PublicRouteTable"],
       "Type" : "AWS::EC2::SubnetRouteTableAssociation",
       "Properties" : {
         "SubnetId" : { "Ref" : "PublicSubnet" },
@@ -166,6 +171,7 @@
     },
 
     "PublicNetworkAcl" : {
+      "DependsOn" : ["VPC"],
       "Type" : "AWS::EC2::NetworkAcl",
       "Properties" : {
         "VpcId" : { "Ref" : "VPC" },
@@ -177,6 +183,7 @@
     },
 
     "InboundHTTPPublicNetworkAclEntry" : {
+      "DependsOn" : ["PublicNetworkAcl"],
       "Type" : "AWS::EC2::NetworkAclEntry",
       "Properties" : {
         "NetworkAclId" : { "Ref" : "PublicNetworkAcl" },
@@ -190,6 +197,7 @@
     },
 
     "InboundHTTPSPublicNetworkAclEntry" : {
+      "DependsOn" : ["PublicNetworkAcl"],
       "Type" : "AWS::EC2::NetworkAclEntry",
       "Properties" : {
         "NetworkAclId" : { "Ref" : "PublicNetworkAcl" },
@@ -203,6 +211,7 @@
     },
 
     "InboundSSHPublicNetworkAclEntry" : {
+      "DependsOn" : ["PublicNetworkAcl"],
       "Type" : "AWS::EC2::NetworkAclEntry",
       "Properties" : {
         "NetworkAclId" : { "Ref" : "PublicNetworkAcl" },
@@ -216,6 +225,7 @@
     },
 
     "InboundEmphemeralPublicNetworkAclEntry" : {
+      "DependsOn" : ["PublicNetworkAcl"],
       "Type" : "AWS::EC2::NetworkAclEntry",
       "Properties" : {
         "NetworkAclId" : { "Ref" : "PublicNetworkAcl" },
@@ -229,6 +239,7 @@
     },
 
     "OutboundPublicNetworkAclEntry" : {
+      "DependsOn" : ["PublicNetworkAcl"],
       "Type" : "AWS::EC2::NetworkAclEntry",
       "Properties" : {
         "NetworkAclId" : { "Ref" : "PublicNetworkAcl" },
@@ -242,6 +253,7 @@
     },
 
     "PublicSubnetNetworkAclAssociation" : {
+      "DependsOn" : ["PublicSubnet", "PublicNetworkAcl"],
       "Type" : "AWS::EC2::SubnetNetworkAclAssociation",
       "Properties" : {
         "SubnetId" : { "Ref" : "PublicSubnet" },
@@ -250,6 +262,7 @@
     },
 
     "PrivateSubnet" : {
+      "DependsOn" : ["VPC"],
       "Type" : "AWS::EC2::Subnet",
       "Properties" : {
         "VpcId" : { "Ref" : "VPC" },
@@ -262,6 +275,7 @@
     },
 
     "PrivateRouteTable" : {
+      "DependsOn" : ["VPC"],
       "Type" : "AWS::EC2::RouteTable",
       "Properties" : {
         "VpcId" : { "Ref" : "VPC" },
@@ -273,6 +287,7 @@
     },
 
     "PrivateSubnetRouteTableAssociation" : {
+      "DependsOn" : ["PrivateSubnet", "PrivateRouteTable"],
       "Type" : "AWS::EC2::SubnetRouteTableAssociation",
       "Properties" : {
         "SubnetId" : { "Ref" : "PrivateSubnet" },
@@ -281,6 +296,7 @@
     },
 
     "PrivateRoute" : {
+      "DependsOn" : ["PrivateRouteTable", "NATDevice"],
       "Type" : "AWS::EC2::Route",
       "Properties" : {
         "RouteTableId" : { "Ref" : "PrivateRouteTable" },
@@ -290,6 +306,7 @@
     },
 
     "PrivateNetworkAcl" : {
+      "DependsOn" : ["VPC"],
       "Type" : "AWS::EC2::NetworkAcl",
       "Properties" : {
         "VpcId" : { "Ref" : "VPC" },
@@ -301,6 +318,7 @@
     },
 
     "InboundPrivateNetworkAclEntry" : {
+      "DependsOn" : ["PrivateNetworkAcl"],
       "Type" : "AWS::EC2::NetworkAclEntry",
       "Properties" : {
         "NetworkAclId" : { "Ref" : "PrivateNetworkAcl" },
@@ -314,6 +332,7 @@
     },
 
     "OutBoundPrivateNetworkAclEntry" : {
+      "DependsOn" : ["PrivateNetworkAcl"],
       "Type" : "AWS::EC2::NetworkAclEntry",
       "Properties" : {
         "NetworkAclId" : { "Ref" : "PrivateNetworkAcl" },
@@ -327,6 +346,7 @@
     },
 
     "PrivateSubnetNetworkAclAssociation" : {
+      "DependsOn" : ["PrivateSubnet", "PrivateNetworkAcl"],
       "Type" : "AWS::EC2::SubnetNetworkAclAssociation",
       "Properties" : {
         "SubnetId" : { "Ref" : "PrivateSubnet" },
@@ -335,6 +355,7 @@
     },
 
     "NATIPAddress" : {
+      "DependsOn" : ["NATDevice"],
       "Type" : "AWS::EC2::EIP",
       "Properties" : {
         "Domain" : "vpc",
@@ -343,6 +364,7 @@
     },
 
     "NATDevice" : {
+      "DependsOn" : ["PublicSubnet", "NATSecurityGroup"],
       "Type" : "AWS::EC2::Instance",
       "Properties" : {
         "InstanceType" : { "Ref" : "NATInstanceType" },
@@ -354,6 +376,7 @@
     },
 
     "NATSecurityGroup" : {
+      "DependsOn" : ["BeanstalkSecurityGroup"],
       "Type" : "AWS::EC2::SecurityGroup",
       "Properties" : {
         "GroupDescription" : "Enable internal access to the NAT device",
@@ -376,6 +399,7 @@
     },
 
     "BastionHost" : {
+      "DependsOn" : ["PublicSubnet", "BastionSecurityGroup"],
       "Type" : "AWS::EC2::Instance",
       "Properties" : {
         "InstanceType" : { "Ref" : "BastionInstanceType" },
@@ -387,6 +411,7 @@
     },
 
     "BastionSecurityGroup" : {
+      "DependsOn" : ["VPC"],
       "Type" : "AWS::EC2::SecurityGroup",
       "Properties" : {
         "GroupDescription" : "Enable access to the Bastion host",
@@ -397,6 +422,7 @@
     },
 
     "BeanstalkSecurityGroup" : {
+      "DependsOn" : ["VPC"],
       "Type" : "AWS::EC2::SecurityGroup",
       "Properties" : {
         "GroupDescription" : "Allow the Elastic Beanstalk instances to access the NAT device",
@@ -420,6 +446,7 @@
     },
 
     "SampleEnvironment" : {
+      "DependsOn" : ["SampleApplication", "BastionSecurityGroup", "BeanstalkSecurityGroup", "VPC", "PrivateSubnet", "PublicSubnet"],
       "Type" : "AWS::ElasticBeanstalk::Environment",
       "Properties" : {
         "ApplicationName" : { "Ref" : "SampleApplication" },
