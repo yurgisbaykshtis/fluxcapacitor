@@ -26,6 +26,11 @@ In addition to the Netflix OSS components listed above, Flux Capacitor uses the 
 * [tomcat] (http://tomcat.apache.org/) servlet container
 
 Flux can be deployed in any physical or virtual environment including traditional data centers, AWS, OpenStack, RackSpace, IBM Softlayer, etc.
+
+Flux In a Box
+=============
+Thanks to [Joe Hohertz](https://www.linkedin.com/profile/view?id=10471302) for creating the automated, Ansible-based version of [Flux In a Box](https://github.com/viafoura/buri)!!
+
 Global Entities using Flux
 ==========================
 * Apple
