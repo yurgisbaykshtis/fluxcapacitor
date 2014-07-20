@@ -26,11 +26,12 @@ subprojects {
     group = "com.netflix.${githubProjectName}" // TEMPLATE: Set to organization of project
 
     dependencies {
+        compile 'com.ibm.icu:icu4j:4.8.1.1'
         compile 'org.slf4j:slf4j-api:1.7.2'
         compile 'io.netty:netty:3.6.3.Final'
         compile 'com.netflix.servo:servo-core:0.4.41'
         compile 'com.netflix.servo:servo-graphite:0.4.41'
-		compile 'com.netflix.servo:servo-aws:0.4.41'
+	compile 'com.netflix.servo:servo-aws:0.4.41'
         compile 'com.google.guava:guava:14.0.1'
         compile 'com.google.inject:guice:3.0'
         compile 'com.netflix.archaius:archaius-core:0.5.9'
@@ -91,6 +92,9 @@ project(':flux-middletier') {
         compile 'asm:asm-all:3.2'
         compile 'commons-configuration:commons-configuration:1.9'
         compile 'com.sun.jersey:jersey-server:1.17.1'
+        compile 'com.sun.jersey:jersey-core:1.17.1'
+        compile 'com.sun.jersey:jersey-bundle:1.17.1'
+        compile 'com.sun.jersey.contribs:jersey-guice:1.17.1'
         compile 'com.netflix.astyanax:astyanax-core:1.56.37'
         compile 'com.netflix.astyanax:astyanax-thrift:1.56.37'
         compile 'com.netflix.astyanax:astyanax-cassandra:1.56.37'

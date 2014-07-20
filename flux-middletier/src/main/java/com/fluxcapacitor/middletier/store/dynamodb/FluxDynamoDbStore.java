@@ -44,8 +44,8 @@ import com.netflix.servo.monitor.Stopwatch;
 import com.netflix.servo.stats.StatsConfig;
 
 // Comment out these annotations if using Cassandra
-@Component
-@AutoBindSingleton(AppStore.class)
+//@Component
+//@AutoBindSingleton(AppStore.class)
 public class FluxDynamoDbStore implements AppStore, Closeable {
     private static final Logger log = LoggerFactory.getLogger(FluxDynamoDbStore.class);
 
