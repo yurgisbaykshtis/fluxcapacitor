@@ -14,6 +14,9 @@ RUN apt-get -y install gradle
 # clone the eureka project
 RUN git clone https://github.com/Netflix/eureka
 
+# switch into eureka to run gradle
+WORKDIR eureka
+
 # build the eureka project
 RUN ./gradlew clean build
 
