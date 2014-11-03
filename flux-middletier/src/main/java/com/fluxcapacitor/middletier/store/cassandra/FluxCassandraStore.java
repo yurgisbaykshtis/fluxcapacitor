@@ -32,7 +32,8 @@ import com.netflix.astyanax.connectionpool.NodeDiscoveryType;
 import com.netflix.astyanax.connectionpool.OperationResult;
 import com.netflix.astyanax.connectionpool.exceptions.NotFoundException;
 import com.netflix.astyanax.connectionpool.impl.ConnectionPoolConfigurationImpl;
-import com.netflix.astyanax.connectionpool.impl.CountingConnectionPoolMonitor;
+import com.netflix.astyanax.connectionpool.impl.Slf4jConnectionPoolMonitorImpl;
+import com.netflix.astyanax.connectionpool.impl.ConnectionPoolType;
 import com.netflix.astyanax.impl.AstyanaxConfigurationImpl;
 import com.netflix.astyanax.model.Column;
 import com.netflix.astyanax.model.ColumnFamily;
@@ -117,13 +118,14 @@ public class FluxCassandraStore implements AppStore, Closeable {
                     .forKeyspace(keyspace)
                     .withAstyanaxConfiguration(new AstyanaxConfigurationImpl()
                             .setDiscoveryType(NodeDiscoveryType.RING_DESCRIBE)
+                            .setConnectionPoolType(ConnectionPoolType.ROUND_ROBIN)
                     )
                     .withConnectionPoolConfiguration(new ConnectionPoolConfigurationImpl("FluxCassandraConnectionPool")
                             .setPort(port)
                             .setMaxConnsPerHost(maxConns)
                             .setSeeds(host + ":" + port)
                     )
-                    .withConnectionPoolMonitor(new CountingConnectionPoolMonitor())
+                    .withConnectionPoolMonitor(new Slf4jConnectionPoolMonitorImpl())
                     .buildKeyspace(ThriftFamilyFactory.getInstance());
 
             context.start();
