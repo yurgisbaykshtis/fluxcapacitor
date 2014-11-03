@@ -110,7 +110,7 @@ public class FluxCassandraStore implements AppStore, Closeable {
         try {
             String keyspace = DynamicPropertyFactory.getInstance().getStringProperty(FluxConstants.CASSANDRA_KEYSPACE, "not-found-in-flux-configuration").get();
             String host = DynamicPropertyFactory.getInstance().getStringProperty(FluxConstants.CASSANDRA_HOST, "not-found-in-flux-configuration").get();
-            String port = DynamicPropertyFactory.getInstance().getIntProperty(FluxConstants.CASSANDRA_PORT, Integer.MIN_VALUE).get();
+            int port = DynamicPropertyFactory.getInstance().getIntProperty(FluxConstants.CASSANDRA_PORT, Integer.MIN_VALUE).get();
             int maxConns = DynamicPropertyFactory.getInstance().getIntProperty(FluxConstants.CASSANDRA_MAXCONNSPERHOST, Integer.MIN_VALUE).get();
             logger.info("Creating cassandra keyspace {} for host {}", keyspace, host + port);
             AstyanaxContext<Keyspace> context = new AstyanaxContext.Builder()
