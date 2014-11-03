@@ -33,8 +33,8 @@ import com.netflix.karyon.spi.Component;
 
 
 /**
- * FluxConfiguration follows a hierarchy as follows: <appId>-<env>.properties
- * (optional: <env>=local|dev|qa|prod) <appId>.properties (default values)
+ * FluxConfiguration follows a hierarchy as follows: &lt;appId&gt;-&lt;env&gt;.properties
+ * (optional: &lt;env&gt;=local|dev|qa|prod) &lt;appId&gt;.properties (default values)
  * System Properties (-D)
  * 
  * JMX: All properties can be viewed and updated (on a per instance basis) here:
