@@ -33,7 +33,6 @@ import com.netflix.astyanax.connectionpool.OperationResult;
 import com.netflix.astyanax.connectionpool.exceptions.NotFoundException;
 import com.netflix.astyanax.connectionpool.impl.ConnectionPoolConfigurationImpl;
 import com.netflix.astyanax.connectionpool.impl.CountingConnectionPoolMonitor;
-import com.netflix.astyanax.connectionpool.impl.ConnectionPoolType;
 import com.netflix.astyanax.impl.AstyanaxConfigurationImpl;
 import com.netflix.astyanax.model.Column;
 import com.netflix.astyanax.model.ColumnFamily;
@@ -109,18 +108,20 @@ public class FluxCassandraStore implements AppStore, Closeable {
      */
     private Keyspace createKeyspace() {
         try {
+            String keyspace = DynamicPropertyFactory.getInstance().getStringProperty(FluxConstants.CASSANDRA_KEYSPACE, "not-found-in-flux-configuration").get();
+            String host = DynamicPropertyFactory.getInstance().getStringProperty(FluxConstants.CASSANDRA_HOST, "not-found-in-flux-configuration").get();
+            String port = DynamicPropertyFactory.getInstance().getIntProperty(FluxConstants.CASSANDRA_PORT, Integer.MIN_VALUE).get();
+            int maxConns = DynamicPropertyFactory.getInstance().getIntProperty(FluxConstants.CASSANDRA_MAXCONNSPERHOST, Integer.MIN_VALUE).get();
+            logger.info("Creating cassandra keyspace {} for host {}", keyspace, host + port);
             AstyanaxContext<Keyspace> context = new AstyanaxContext.Builder()
-                    .forKeyspace(DynamicPropertyFactory.getInstance().getStringProperty(FluxConstants.CASSANDRA_KEYSPACE, "not-found-in-flux-configuration").get())
+                    .forKeyspace(keyspace)
                     .withAstyanaxConfiguration(new AstyanaxConfigurationImpl()
-                            .setDiscoveryType(NodeDiscoveryType.NONE)
-                            .setConnectionPoolType(ConnectionPoolType.BAG)
+                            .setDiscoveryType(NodeDiscoveryType.RING_DESCRIBE)
                     )
                     .withConnectionPoolConfiguration(new ConnectionPoolConfigurationImpl("FluxCassandraConnectionPool")
-                            .setPort(DynamicPropertyFactory.getInstance().getIntProperty(FluxConstants.CASSANDRA_PORT, Integer.MIN_VALUE).get())
-                            .setMaxConnsPerHost(DynamicPropertyFactory.getInstance().getIntProperty(FluxConstants.CASSANDRA_MAXCONNSPERHOST, Integer.MIN_VALUE).get())
-                            .setSeeds(DynamicPropertyFactory.getInstance().getStringProperty(FluxConstants.CASSANDRA_HOST, "not-found-in-flux-configuration").get() + ":"
-                                    + DynamicPropertyFactory.getInstance().getIntProperty(FluxConstants.CASSANDRA_PORT, Integer.MIN_VALUE).get()
-                            )
+                            .setPort(port)
+                            .setMaxConnsPerHost(maxConns)
+                            .setSeeds(host + ":" + port)
                     )
                     .withConnectionPoolMonitor(new CountingConnectionPoolMonitor())
                     .buildKeyspace(ThriftFamilyFactory.getInstance());
