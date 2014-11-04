@@ -55,14 +55,21 @@ public class FluxCassandraStore implements AppStore, Closeable {
     private ColumnFamily<String, String> logsCF;
 
     public FluxCassandraStore() {
-        fluxKeyspace = createKeyspace();
+//        fluxKeyspace = createKeyspace();
         logsCF = createLogsColumnFamily();
     }
 
+    synchronized private void ensureKeySpace() {
+        if (fluxKeyspace == null) {
+            fluxKeyspace = createKeyspace();
+        }
+    }
+    
     @Override
     public List<String> getLogs(String key) throws Exception {
         OperationResult<ColumnList<String>> response;
         try {
+            ensureKeySpace();
             response = fluxKeyspace.prepareQuery(logsCF).getKey(key).execute();
         } catch (NotFoundException exc) {
             logger.error("No records found for this key: " + key);
@@ -86,6 +93,7 @@ public class FluxCassandraStore implements AppStore, Closeable {
     @Override
     public long addLog(String key, String log) throws Exception {
         try {
+            ensureKeySpace();
             long timestamp = fluxKeyspace.getConfig().getClock().getCurrentTime();
 
             OperationResult<Void> opr = fluxKeyspace.prepareColumnMutation(logsCF, key, String.valueOf(timestamp))
