@@ -15,5 +15,20 @@
 			<artifactId>flux-core</artifactId>
 			<version>0.1</version>
 		</dependency>
+	 <dependency>
+	  <groupId>com.google.code.gson</groupId>
+	  <artifactId>gson</artifactId>
+	  <version>2.2.4</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>com.netflix.karyon</groupId>
+	  <artifactId>karyon-core</artifactId>
+	  <version>1.0.19</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>com.netflix.governator</groupId>
+	  <artifactId>governator</artifactId>
+	  <version>1.2.1</version>
+	 </dependency>
 	</dependencies>
 </project>
