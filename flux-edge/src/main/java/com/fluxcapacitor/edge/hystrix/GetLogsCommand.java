@@ -87,7 +87,7 @@ public class GetLogsCommand extends HystrixCommand<String> {
 			HttpClientRequest request = HttpClientRequest
 					.newBuilder()
 					.setVerb(Verb.GET)
-					.setUri(new URI("/service/"
+					.setUri(new URI("service/"
 							+ FluxConstants.MIDDLETIER_WEB_RESOURCE_ROOT_PATH
 							+ "/"
 							+ FluxConstants.MIDDLETIER_WEB_RESOURCE_VERSION
